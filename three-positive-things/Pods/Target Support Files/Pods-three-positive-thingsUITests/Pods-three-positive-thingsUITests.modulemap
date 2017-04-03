@@ -1,0 +1,6 @@
+framework module Pods_three_positive_thingsUITests {
+  umbrella header "Pods-three-positive-thingsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

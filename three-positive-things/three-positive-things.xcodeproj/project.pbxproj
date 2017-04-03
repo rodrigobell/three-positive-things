@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10D635E4DC4C920FAC0A4CE4 /* Pods_three_positive_things.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6567EBD4392E33EEBFBFCF /* Pods_three_positive_things.framework */; };
+		4F739D7A1E91985E005D7103 /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F739D791E91985E005D7103 /* CellView.xib */; };
+		4F739D7C1E91991E005D7103 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F739D7B1E91991E005D7103 /* CellView.swift */; };
+		4F739D811E91A0BE005D7103 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F739D801E91A0BE005D7103 /* CalendarViewController.swift */; };
+		4FB8EC7B1E918ED6002D7346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */; };
+		4FB8EC801E918ED6002D7346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB8EC7E1E918ED6002D7346 /* Main.storyboard */; };
+		4FB8EC821E918ED6002D7346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB8EC811E918ED6002D7346 /* Assets.xcassets */; };
+		4FB8EC851E918ED6002D7346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB8EC831E918ED6002D7346 /* LaunchScreen.storyboard */; };
+		4FB8EC901E918ED7002D7346 /* three_positive_thingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC8F1E918ED7002D7346 /* three_positive_thingsTests.swift */; };
+		4FB8EC9B1E918ED7002D7346 /* three_positive_thingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC9A1E918ED7002D7346 /* three_positive_thingsUITests.swift */; };
+		51AEFB4C310A684038A0AAB7 /* Pods_three_positive_thingsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C22897677CB5C3164B2FD64 /* Pods_three_positive_thingsUITests.framework */; };
+		78D8B0093C4781F7F1EE595C /* Pods_three_positive_thingsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FB8EC8C1E918ED7002D7346 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB8EC6F1E918ED6002D7346 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FB8EC761E918ED6002D7346;
+			remoteInfo = "three-positive-things";
+		};
+		4FB8EC971E918ED7002D7346 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB8EC6F1E918ED6002D7346 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FB8EC761E918ED6002D7346;
+			remoteInfo = "three-positive-things";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C22897677CB5C3164B2FD64 /* Pods_three_positive_thingsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_thingsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2032EF96EEE7BCE7B84A4C01 /* Pods-three-positive-things.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-things.release.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things.release.xcconfig"; sourceTree = "<group>"; };
+		33B81409C78A2ED1BEAC17EE /* Pods-three-positive-thingsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_thingsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		491DDCAB4AFDD48AEF74B17C /* Pods-three-positive-thingsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsTests/Pods-three-positive-thingsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F739D791E91985E005D7103 /* CellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
+		4F739D7B1E91991E005D7103 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		4F739D801E91A0BE005D7103 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		4FB8EC771E918ED6002D7346 /* three-positive-things.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "three-positive-things.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FB8EC7F1E918ED6002D7346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FB8EC811E918ED6002D7346 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FB8EC841E918ED6002D7346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FB8EC861E918ED6002D7346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB8EC8B1E918ED7002D7346 /* three-positive-thingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "three-positive-thingsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB8EC8F1E918ED7002D7346 /* three_positive_thingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = three_positive_thingsTests.swift; sourceTree = "<group>"; };
+		4FB8EC911E918ED7002D7346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB8EC961E918ED7002D7346 /* three-positive-thingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "three-positive-thingsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB8EC9A1E918ED7002D7346 /* three_positive_thingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = three_positive_thingsUITests.swift; sourceTree = "<group>"; };
+		4FB8EC9C1E918ED7002D7346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC115E4103E2A0D2D38AD7F /* Pods-three-positive-things.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-things.debug.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things.debug.xcconfig"; sourceTree = "<group>"; };
+		8BE4A9657E36A75B987181C6 /* Pods-three-positive-thingsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		97BE730A04740932B067FFE6 /* Pods-three-positive-thingsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsTests/Pods-three-positive-thingsTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD6567EBD4392E33EEBFBFCF /* Pods_three_positive_things.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_things.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FB8EC741E918ED6002D7346 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D635E4DC4C920FAC0A4CE4 /* Pods_three_positive_things.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB8EC881E918ED7002D7346 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D8B0093C4781F7F1EE595C /* Pods_three_positive_thingsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB8EC931E918ED7002D7346 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51AEFB4C310A684038A0AAB7 /* Pods_three_positive_thingsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F739D7D1E919927005D7103 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4F739D7E1E91992D005D7103 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F739D7B1E91991E005D7103 /* CellView.swift */,
+				4F739D791E91985E005D7103 /* CellView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4F739D7F1E919931005D7103 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F739D801E91A0BE005D7103 /* CalendarViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4FB8EC6E1E918ED6002D7346 = {
+			isa = PBXGroup;
+			children = (
+				4FB8EC791E918ED6002D7346 /* three-positive-things */,
+				4FB8EC8E1E918ED7002D7346 /* three-positive-thingsTests */,
+				4FB8EC991E918ED7002D7346 /* three-positive-thingsUITests */,
+				4FB8EC781E918ED6002D7346 /* Products */,
+				CA69FB70C59E86D27736E6A2 /* Pods */,
+				D72263A3B951ABA8DDD7BF4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FB8EC781E918ED6002D7346 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FB8EC771E918ED6002D7346 /* three-positive-things.app */,
+				4FB8EC8B1E918ED7002D7346 /* three-positive-thingsTests.xctest */,
+				4FB8EC961E918ED7002D7346 /* three-positive-thingsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FB8EC791E918ED6002D7346 /* three-positive-things */ = {
+			isa = PBXGroup;
+			children = (
+				4F739D7D1E919927005D7103 /* Model */,
+				4F739D7E1E91992D005D7103 /* View */,
+				4F739D7F1E919931005D7103 /* Controller */,
+				4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */,
+				4FB8EC7E1E918ED6002D7346 /* Main.storyboard */,
+				4FB8EC811E918ED6002D7346 /* Assets.xcassets */,
+				4FB8EC831E918ED6002D7346 /* LaunchScreen.storyboard */,
+				4FB8EC861E918ED6002D7346 /* Info.plist */,
+			);
+			path = "three-positive-things";
+			sourceTree = "<group>";
+		};
+		4FB8EC8E1E918ED7002D7346 /* three-positive-thingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FB8EC8F1E918ED7002D7346 /* three_positive_thingsTests.swift */,
+				4FB8EC911E918ED7002D7346 /* Info.plist */,
+			);
+			path = "three-positive-thingsTests";
+			sourceTree = "<group>";
+		};
+		4FB8EC991E918ED7002D7346 /* three-positive-thingsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FB8EC9A1E918ED7002D7346 /* three_positive_thingsUITests.swift */,
+				4FB8EC9C1E918ED7002D7346 /* Info.plist */,
+			);
+			path = "three-positive-thingsUITests";
+			sourceTree = "<group>";
+		};
+		CA69FB70C59E86D27736E6A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DC115E4103E2A0D2D38AD7F /* Pods-three-positive-things.debug.xcconfig */,
+				2032EF96EEE7BCE7B84A4C01 /* Pods-three-positive-things.release.xcconfig */,
+				491DDCAB4AFDD48AEF74B17C /* Pods-three-positive-thingsTests.debug.xcconfig */,
+				97BE730A04740932B067FFE6 /* Pods-three-positive-thingsTests.release.xcconfig */,
+				8BE4A9657E36A75B987181C6 /* Pods-three-positive-thingsUITests.debug.xcconfig */,
+				33B81409C78A2ED1BEAC17EE /* Pods-three-positive-thingsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D72263A3B951ABA8DDD7BF4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD6567EBD4392E33EEBFBFCF /* Pods_three_positive_things.framework */,
+				4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */,
+				0C22897677CB5C3164B2FD64 /* Pods_three_positive_thingsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FB8EC761E918ED6002D7346 /* three-positive-things */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB8EC9F1E918ED7002D7346 /* Build configuration list for PBXNativeTarget "three-positive-things" */;
+			buildPhases = (
+				68FBC4B00CE513D72B021EB8 /* [CP] Check Pods Manifest.lock */,
+				4FB8EC731E918ED6002D7346 /* Sources */,
+				4FB8EC741E918ED6002D7346 /* Frameworks */,
+				4FB8EC751E918ED6002D7346 /* Resources */,
+				C4D736592C022294AF411B49 /* [CP] Embed Pods Frameworks */,
+				CFDE0BD5FBF0484049AB1941 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "three-positive-things";
+			productName = "three-positive-things";
+			productReference = 4FB8EC771E918ED6002D7346 /* three-positive-things.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FB8EC8A1E918ED7002D7346 /* three-positive-thingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB8ECA21E918ED7002D7346 /* Build configuration list for PBXNativeTarget "three-positive-thingsTests" */;
+			buildPhases = (
+				C5CDE4A64E1DC62F7061702F /* [CP] Check Pods Manifest.lock */,
+				4FB8EC871E918ED7002D7346 /* Sources */,
+				4FB8EC881E918ED7002D7346 /* Frameworks */,
+				4FB8EC891E918ED7002D7346 /* Resources */,
+				567EADF46B18E193D897F50F /* [CP] Embed Pods Frameworks */,
+				ED16C1B5726223BD09094941 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FB8EC8D1E918ED7002D7346 /* PBXTargetDependency */,
+			);
+			name = "three-positive-thingsTests";
+			productName = "three-positive-thingsTests";
+			productReference = 4FB8EC8B1E918ED7002D7346 /* three-positive-thingsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FB8EC951E918ED7002D7346 /* three-positive-thingsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB8ECA51E918ED7002D7346 /* Build configuration list for PBXNativeTarget "three-positive-thingsUITests" */;
+			buildPhases = (
+				F92DAD313E01686AC04D625A /* [CP] Check Pods Manifest.lock */,
+				4FB8EC921E918ED7002D7346 /* Sources */,
+				4FB8EC931E918ED7002D7346 /* Frameworks */,
+				4FB8EC941E918ED7002D7346 /* Resources */,
+				8D9FA82E9CF3BB6554795523 /* [CP] Embed Pods Frameworks */,
+				EED6A53807E320DC72CD24C0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FB8EC981E918ED7002D7346 /* PBXTargetDependency */,
+			);
+			name = "three-positive-thingsUITests";
+			productName = "three-positive-thingsUITests";
+			productReference = 4FB8EC961E918ED7002D7346 /* three-positive-thingsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FB8EC6F1E918ED6002D7346 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Rodrigo Bell";
+				TargetAttributes = {
+					4FB8EC761E918ED6002D7346 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K64ZP5ML7E;
+						ProvisioningStyle = Automatic;
+					};
+					4FB8EC8A1E918ED7002D7346 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K64ZP5ML7E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4FB8EC761E918ED6002D7346;
+					};
+					4FB8EC951E918ED7002D7346 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K64ZP5ML7E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4FB8EC761E918ED6002D7346;
+					};
+				};
+			};
+			buildConfigurationList = 4FB8EC721E918ED6002D7346 /* Build configuration list for PBXProject "three-positive-things" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FB8EC6E1E918ED6002D7346;
+			productRefGroup = 4FB8EC781E918ED6002D7346 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FB8EC761E918ED6002D7346 /* three-positive-things */,
+				4FB8EC8A1E918ED7002D7346 /* three-positive-thingsTests */,
+				4FB8EC951E918ED7002D7346 /* three-positive-thingsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FB8EC751E918ED6002D7346 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F739D7A1E91985E005D7103 /* CellView.xib in Resources */,
+				4FB8EC851E918ED6002D7346 /* LaunchScreen.storyboard in Resources */,
+				4FB8EC821E918ED6002D7346 /* Assets.xcassets in Resources */,
+				4FB8EC801E918ED6002D7346 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB8EC891E918ED7002D7346 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB8EC941E918ED7002D7346 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		567EADF46B18E193D897F50F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-thingsTests/Pods-three-positive-thingsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68FBC4B00CE513D72B021EB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9FA82E9CF3BB6554795523 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D736592C022294AF411B49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5CDE4A64E1DC62F7061702F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFDE0BD5FBF0484049AB1941 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED16C1B5726223BD09094941 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-thingsTests/Pods-three-positive-thingsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EED6A53807E320DC72CD24C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F92DAD313E01686AC04D625A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FB8EC731E918ED6002D7346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F739D811E91A0BE005D7103 /* CalendarViewController.swift in Sources */,
+				4FB8EC7B1E918ED6002D7346 /* AppDelegate.swift in Sources */,
+				4F739D7C1E91991E005D7103 /* CellView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB8EC871E918ED7002D7346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB8EC901E918ED7002D7346 /* three_positive_thingsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB8EC921E918ED7002D7346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB8EC9B1E918ED7002D7346 /* three_positive_thingsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FB8EC8D1E918ED7002D7346 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FB8EC761E918ED6002D7346 /* three-positive-things */;
+			targetProxy = 4FB8EC8C1E918ED7002D7346 /* PBXContainerItemProxy */;
+		};
+		4FB8EC981E918ED7002D7346 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FB8EC761E918ED6002D7346 /* three-positive-things */;
+			targetProxy = 4FB8EC971E918ED7002D7346 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FB8EC7E1E918ED6002D7346 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FB8EC7F1E918ED6002D7346 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FB8EC831E918ED6002D7346 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FB8EC841E918ED6002D7346 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FB8EC9D1E918ED7002D7346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FB8EC9E1E918ED7002D7346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FB8ECA01E918ED7002D7346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC115E4103E2A0D2D38AD7F /* Pods-three-positive-things.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K64ZP5ML7E;
+				INFOPLIST_FILE = "three-positive-things/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigobell.three-positive-things";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4FB8ECA11E918ED7002D7346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2032EF96EEE7BCE7B84A4C01 /* Pods-three-positive-things.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K64ZP5ML7E;
+				INFOPLIST_FILE = "three-positive-things/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigobell.three-positive-things";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4FB8ECA31E918ED7002D7346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 491DDCAB4AFDD48AEF74B17C /* Pods-three-positive-thingsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K64ZP5ML7E;
+				INFOPLIST_FILE = "three-positive-thingsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigobell.three-positive-thingsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/three-positive-things.app/three-positive-things";
+			};
+			name = Debug;
+		};
+		4FB8ECA41E918ED7002D7346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97BE730A04740932B067FFE6 /* Pods-three-positive-thingsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K64ZP5ML7E;
+				INFOPLIST_FILE = "three-positive-thingsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigobell.three-positive-thingsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/three-positive-things.app/three-positive-things";
+			};
+			name = Release;
+		};
+		4FB8ECA61E918ED7002D7346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE4A9657E36A75B987181C6 /* Pods-three-positive-thingsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K64ZP5ML7E;
+				INFOPLIST_FILE = "three-positive-thingsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigobell.three-positive-thingsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "three-positive-things";
+			};
+			name = Debug;
+		};
+		4FB8ECA71E918ED7002D7346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33B81409C78A2ED1BEAC17EE /* Pods-three-positive-thingsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K64ZP5ML7E;
+				INFOPLIST_FILE = "three-positive-thingsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigobell.three-positive-thingsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "three-positive-things";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FB8EC721E918ED6002D7346 /* Build configuration list for PBXProject "three-positive-things" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB8EC9D1E918ED7002D7346 /* Debug */,
+				4FB8EC9E1E918ED7002D7346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB8EC9F1E918ED7002D7346 /* Build configuration list for PBXNativeTarget "three-positive-things" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB8ECA01E918ED7002D7346 /* Debug */,
+				4FB8ECA11E918ED7002D7346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB8ECA21E918ED7002D7346 /* Build configuration list for PBXNativeTarget "three-positive-thingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB8ECA31E918ED7002D7346 /* Debug */,
+				4FB8ECA41E918ED7002D7346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB8ECA51E918ED7002D7346 /* Build configuration list for PBXNativeTarget "three-positive-thingsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB8ECA61E918ED7002D7346 /* Debug */,
+				4FB8ECA71E918ED7002D7346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FB8EC6F1E918ED6002D7346 /* Project object */;
+}
