@@ -15,31 +15,32 @@
             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EEx-uQ-RGB">
-                    <rect key="frame" x="65" y="90" width="70" height="21"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nsd-9r-tUa">
-                            <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsG-DJ-tJf">
-                                    <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
-                    </subviews>
-                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsG-DJ-tJf">
+                    <rect key="frame" x="65" y="89" width="69.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXf-2s-eyX">
+                    <rect key="frame" x="80" y="80" width="40" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.54215365790000003" blue="0.17239399750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="F3E-dQ-VGf"/>
+                        <constraint firstAttribute="width" constant="40" id="g8L-xU-frQ"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="EEx-uQ-RGB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7GE-6O-UQw"/>
-                <constraint firstItem="EEx-uQ-RGB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZgA-UD-Jli"/>
+                <constraint firstItem="RXf-2s-eyX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1b6-ze-Zy5"/>
+                <constraint firstItem="RXf-2s-eyX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UQW-aP-Pb2"/>
+                <constraint firstItem="QsG-DJ-tJf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Uui-26-eYb"/>
+                <constraint firstItem="QsG-DJ-tJf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ffV-Mi-5M0"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="dayLabel" destination="QsG-DJ-tJf" id="bTx-rB-KOf"/>
+                <outlet property="selectedView" destination="RXf-2s-eyX" id="xfB-Wf-hnt"/>
             </connections>
             <point key="canvasLocation" x="-100.5" y="-210"/>
         </view>
