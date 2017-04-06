@@ -27,8 +27,7 @@ class CalendarViewController: UIViewController {
         calendarView.registerCellViewXib(file: "CellView") // Registering your cell is mandatory
         calendarView.cellInset = CGPoint(x: 0, y: 0)
         
-        calendarView.scrollToDate(Date())
-        calendarView.selectDates([Date()])
+        goToToday()
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,7 +57,6 @@ class CalendarViewController: UIViewController {
             return
         }
         if cellState.isSelected {
-            // TODO: Deselect cell if part of different month
             myCustomCell.selectedView.layer.cornerRadius = 20
             myCustomCell.selectedView.isHidden = false
         } else {
@@ -66,25 +64,15 @@ class CalendarViewController: UIViewController {
         }
     }
     
-    func updateMonthLabel() {
-        guard let startDate = calendarView.visibleDates().monthDates.first else {
-            return
-        }
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM"
-        let month = dateFormatter.string(from: startDate)
-        self.monthLabel.text = month
+    func goToToday() {
+        calendarView.scrollToDate(Date())
+        calendarView.selectDates([Date()])
     }
     
-    func updateYearLabel() {
-        guard let startDate = calendarView.visibleDates().monthDates.first else {
-            return
-        }
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY"
-        let year = dateFormatter.string(from: startDate)
-        self.yearLabel.text = year
+    @IBAction func didTapToday(_ sender: Any) {
+        goToToday()
     }
+    
 }
 
 extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
@@ -139,6 +127,10 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
+        // TODO: Deselect cell if part of different than current month
+//        let lastSelectedDate = calendarView.selectedDates.last
+//        let cellState = calendarView.cellStatus(for: lastSelectedDate)
+        
         // Update header text month and year labels
         let startDate = visibleDates.monthDates[0]
         
