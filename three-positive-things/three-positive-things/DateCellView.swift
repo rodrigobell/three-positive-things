@@ -1,5 +1,5 @@
 //
-//  CellView.swift
+//  DateCellView.swift
 //  three-positive-things
 //
 //  Created by Rodrigo Bell on 4/2/17.
@@ -9,7 +9,7 @@
 import UIKit
 import JTAppleCalendar
 
-class CellView: JTAppleDayCellView {
+class DateCellView: JTAppleDayCellView {
+    @IBOutlet weak var selectedView: DateCellView!
     @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var selectedView: UIView!
 }

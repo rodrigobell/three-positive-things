@@ -11,13 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="CellView" customModule="three_positive_things" customModuleProvider="target">
+        <view opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Date Cell View" customClass="DateCellView" customModule="three_positive_things" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXf-2s-eyX">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXf-2s-eyX" userLabel="Selected View" customClass="DateCellView" customModule="three_positive_things" customModuleProvider="target">
                     <rect key="frame" x="80" y="80" width="40" height="40"/>
-                    <color key="backgroundColor" red="1" green="0.54215365790000003" blue="0.17239399750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="F3E-dQ-VGf"/>
                         <constraint firstAttribute="width" constant="40" id="g8L-xU-frQ"/>
@@ -39,8 +39,8 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="dayLabel" destination="QsG-DJ-tJf" id="bTx-rB-KOf"/>
-                <outlet property="selectedView" destination="RXf-2s-eyX" id="xfB-Wf-hnt"/>
+                <outlet property="dayLabel" destination="QsG-DJ-tJf" id="fPJ-yk-Xov"/>
+                <outlet property="selectedView" destination="RXf-2s-eyX" id="eO6-8T-HVp"/>
             </connections>
             <point key="canvasLocation" x="-100.5" y="-210"/>
         </view>

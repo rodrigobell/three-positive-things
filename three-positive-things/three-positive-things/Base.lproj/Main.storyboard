@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vez-ih-nm0" userLabel="Header View">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="August" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7s-DM-maA">
                                         <rect key="frame" x="8" y="56" width="201" height="36"/>
@@ -31,17 +31,10 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="S          M          T          W          T           F           S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtS-0e-cSy">
-                                        <rect key="frame" x="18" y="112" width="342" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v03-pS-TEH">
-                                        <rect key="frame" x="8" y="27" width="71" height="24"/>
+                                        <rect key="frame" x="8" y="29" width="71" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -56,25 +49,44 @@
                                             <action selector="didTapToday:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBZ-jv-DlW"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="S          M          T          W          T           F           S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtS-0e-cSy">
+                                        <rect key="frame" x="16" y="104" width="342" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.54215365787179781" blue="0.17239399754420526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ySs-Lb-6pQ">
-                                <rect key="frame" x="0.0" y="408" width="375" height="259"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ySs-Lb-6pQ">
+                                <rect key="frame" x="0.0" y="399" width="375" height="268"/>
                                 <color key="backgroundColor" red="1" green="0.78817216388104783" blue="0.24538425308097656" alpha="0.097228167808219176" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="custom-cell" rowHeight="58" id="6aR-G6-w75">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="58"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="positive-thing-cell" rowHeight="83" id="6aR-G6-w75" customClass="PositiveThingTableViewCell" customModule="three_positive_things" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6aR-G6-w75" id="ISh-hs-OGi">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S7X-AH-52i">
+                                                    <rect key="frame" x="8" y="8" width="359" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="positiveThingTextView" destination="S7X-AH-52i" id="MRg-MY-Q5l"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cby-B5-VgH" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
-                                <rect key="frame" x="0.0" y="141" width="375" height="267"/>
+                                <rect key="frame" x="0.0" y="133" width="375" height="267"/>
                                 <color key="backgroundColor" red="0.89504303333117874" green="0.89504303333117874" blue="0.89504303333117874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -85,9 +97,9 @@
                             <constraint firstAttribute="trailing" secondItem="ySs-Lb-6pQ" secondAttribute="trailing" id="UEl-kK-yAq"/>
                             <constraint firstItem="Vez-ih-nm0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="a5M-3o-ccc"/>
                             <constraint firstAttribute="trailing" secondItem="cby-B5-VgH" secondAttribute="trailing" id="ak2-hW-84j"/>
-                            <constraint firstItem="cby-B5-VgH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="141" id="gQl-Pw-Wfa"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cby-B5-VgH" secondAttribute="bottom" constant="259" id="ir5-J6-57h"/>
-                            <constraint firstItem="ySs-Lb-6pQ" firstAttribute="top" secondItem="cby-B5-VgH" secondAttribute="bottom" id="n6g-N8-PmJ"/>
+                            <constraint firstItem="cby-B5-VgH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="133" id="gQl-Pw-Wfa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cby-B5-VgH" secondAttribute="bottom" constant="267" id="ir5-J6-57h"/>
+                            <constraint firstItem="ySs-Lb-6pQ" firstAttribute="top" secondItem="cby-B5-VgH" secondAttribute="bottom" constant="-1" id="n6g-N8-PmJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ySs-Lb-6pQ" secondAttribute="bottom" id="nXc-tu-b0w"/>
                             <constraint firstAttribute="trailing" secondItem="Vez-ih-nm0" secondAttribute="trailing" id="nq4-8l-fxw"/>
                             <constraint firstItem="cby-B5-VgH" firstAttribute="top" secondItem="Vez-ih-nm0" secondAttribute="bottom" id="ze4-0s-PxJ"/>
@@ -97,6 +109,7 @@
                     <connections>
                         <outlet property="calendarView" destination="cby-B5-VgH" id="ixC-RY-eSx"/>
                         <outlet property="monthLabel" destination="V7s-DM-maA" id="6Qx-5j-ON2"/>
+                        <outlet property="tableView" destination="ySs-Lb-6pQ" id="ysP-ld-Auc"/>
                         <outlet property="yearLabel" destination="v03-pS-TEH" id="NX6-jG-DqU"/>
                     </connections>
                 </viewController>

@@ -14,17 +14,22 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     let black = UIColor.black
     let gray = UIColor.gray
     let white = UIColor.white
+    let red = UIColor.red
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        calendarView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         calendarView.delegate = self
-        calendarView.registerCellViewXib(file: "CellView") // Registering your cell is mandatory
+        calendarView.dataSource = self
+        calendarView.registerCellViewXib(file: "DateCellView") // Registering your cell is mandatory
         calendarView.cellInset = CGPoint(x: 0, y: 0)
         
         goToToday()
@@ -35,15 +40,17 @@ class CalendarViewController: UIViewController {
     }
     
     // Function to handle the text color of the calendar
-    func handleCellTextColor(view: JTAppleDayCellView?, cellState: CellState) {
-        guard let myCustomCell = view as? CellView else {
+    func handleCellTextColor(view: JTAppleDayCellView?, date: Date, cellState: CellState) {
+        guard let myCustomCell = view as? DateCellView else {
             return
         }
-        
+
         if cellState.isSelected {
             myCustomCell.dayLabel.textColor = white
         } else {
-            if cellState.dateBelongsTo == .thisMonth {
+            if Calendar.current.isDateInToday(date) && cellState.dateBelongsTo == .thisMonth {
+                myCustomCell.dayLabel.textColor = red
+            } else if cellState.dateBelongsTo == .thisMonth {
                 myCustomCell.dayLabel.textColor = black
             } else {
                 myCustomCell.dayLabel.textColor = gray
@@ -52,10 +59,15 @@ class CalendarViewController: UIViewController {
     }
     
     // Function to handle the calendar selection
-    func handleCellSelection(view: JTAppleDayCellView?, cellState: CellState) {
-        guard let myCustomCell = view as? CellView  else {
+    func handleCellSelection(view: JTAppleDayCellView?, date: Date, cellState: CellState) {
+        guard let myCustomCell = view as? DateCellView  else {
             return
         }
+        
+        if Calendar.current.isDateInToday(date) && cellState.dateBelongsTo == .thisMonth  {
+            myCustomCell.selectedView.layer.backgroundColor = red.cgColor
+        }
+        
         if cellState.isSelected {
             myCustomCell.selectedView.layer.cornerRadius = 20
             myCustomCell.selectedView.isHidden = false
@@ -95,7 +107,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
     }
     
     func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
-        let myCustomCell = cell as! CellView
+        let myCustomCell = cell as! DateCellView
         
         // Setup Cell text
         myCustomCell.dayLabel.text = cellState.text
@@ -106,24 +118,19 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
             myCustomCell.isUserInteractionEnabled = false
         }
         
-        if Calendar.current.isDateInToday(date) && cellState.dateBelongsTo == .thisMonth  {
-            // TODO: highlight today's date in red
-            myCustomCell.dayLabel.text = "-\(cellState.text)-"
-            myCustomCell.dayLabel.textColor = UIColor.red
-        }
+        handleCellTextColor(view: cell, date: date, cellState: cellState)
+        handleCellSelection(view: cell, date: date, cellState: cellState)
         
-        handleCellTextColor(view: cell, cellState: cellState)
-        handleCellSelection(view: cell, cellState: cellState)
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
-        handleCellSelection(view: cell, cellState: cellState)
-        handleCellTextColor(view: cell, cellState: cellState)
+        handleCellSelection(view: cell, date: date, cellState: cellState)
+        handleCellTextColor(view: cell, date: date, cellState: cellState)
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
-        handleCellSelection(view: cell, cellState: cellState)
-        handleCellTextColor(view: cell, cellState: cellState)
+        handleCellSelection(view: cell, date: date, cellState: cellState)
+        handleCellTextColor(view: cell, date: date, cellState: cellState)
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
@@ -145,6 +152,18 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         yearLabel.text = "\(year)"
     }
 
+}
+
+extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "positive-thing-cell", for: indexPath) as! PositiveThingTableViewCell
+        
+        return cell
+    }
 }
 
 extension UIColor {
