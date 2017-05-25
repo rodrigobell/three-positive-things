@@ -96,8 +96,8 @@ class CalendarViewController: UIViewController, UIGestureRecognizerDelegate {
         let tapLocation = sender.location(in: self.tableView)
         
         if let tapIndexPath = self.tableView.indexPathForRow(at: tapLocation) {
-            if let tapCell = self.tableView.cellForRow(at: tapIndexPath) {
-                tapCell.becomeFirstResponder()
+            if let tapCell = self.tableView.cellForRow(at: tapIndexPath) as? PositiveThingTableViewCell {
+                tapCell.positiveThingTextView.becomeFirstResponder()
                 print("tapped cell")
             }
         }

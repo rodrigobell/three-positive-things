@@ -68,7 +68,7 @@
                                 <rect key="frame" x="0.0" y="133" width="375" height="267"/>
                                 <color key="backgroundColor" red="0.89504303333117874" green="0.89504303333117874" blue="0.89504303333117874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ySs-Lb-6pQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ySs-Lb-6pQ">
                                 <rect key="frame" x="0.0" y="400" width="375" height="268"/>
                                 <color key="backgroundColor" red="1" green="0.78817216388104783" blue="0.24538425308097656" alpha="0.097228167808219176" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
@@ -76,15 +76,15 @@
                                     <constraint firstAttribute="height" constant="268" id="Zj0-Ph-MCf"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="positive-thing-cell" rowHeight="95" id="6aR-G6-w75" customClass="PositiveThingTableViewCell" customModule="three_positive_things" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="95"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="positive-thing-cell" rowHeight="92" id="6aR-G6-w75" customClass="PositiveThingTableViewCell" customModule="three_positive_things" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6aR-G6-w75" id="ISh-hs-OGi">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S7X-AH-52i">
-                                                    <rect key="frame" x="8" y="8" width="359" height="78.5"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="71.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <gestureRecognizers/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -93,7 +93,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="S7X-AH-52i" firstAttribute="trailing" secondItem="ISh-hs-OGi" secondAttribute="trailingMargin" id="ADv-Pe-vMG"/>
-                                                <constraint firstItem="S7X-AH-52i" firstAttribute="bottom" secondItem="ISh-hs-OGi" secondAttribute="bottomMargin" id="CJX-SV-Due"/>
+                                                <constraint firstItem="S7X-AH-52i" firstAttribute="bottom" secondItem="ISh-hs-OGi" secondAttribute="bottomMargin" constant="-4" id="CJX-SV-Due"/>
                                                 <constraint firstItem="S7X-AH-52i" firstAttribute="leading" secondItem="ISh-hs-OGi" secondAttribute="leadingMargin" id="XjB-j3-YNa"/>
                                                 <constraint firstItem="S7X-AH-52i" firstAttribute="top" secondItem="ISh-hs-OGi" secondAttribute="topMargin" id="aCx-ao-nKU"/>
                                             </constraints>
