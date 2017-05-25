@@ -9,7 +9,7 @@
 import UIKit
 import JTAppleCalendar
 
-class CalendarViewController: UIViewController {
+class CalendarViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var monthLabel: UILabel!
@@ -20,6 +20,9 @@ class CalendarViewController: UIViewController {
     let gray = UIColor.gray
     let white = UIColor.white
     let red = UIColor.red
+    
+    var bottomPositionTableView: CGPoint?
+    var topPositionTableView: CGPoint?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +36,10 @@ class CalendarViewController: UIViewController {
         calendarView.cellInset = CGPoint(x: 0, y: 0)
         
         goToToday()
+        
+        bottomPositionTableView = tableView.center
+        topPositionTableView = CGPoint(x: tableView.center.x, y: tableView.center.y - 267)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,11 +92,27 @@ class CalendarViewController: UIViewController {
         goToToday()
     }
     
-    @IBAction func onTableViewTapGesture(_ sender: Any) {
+    @IBAction func onTableViewCoverTapGesture(_ sender: UITapGestureRecognizer) {
+        let tapLocation = sender.location(in: self.tableView)
         
+        if let tapIndexPath = self.tableView.indexPathForRow(at: tapLocation) {
+            if let tapCell = self.tableView.cellForRow(at: tapIndexPath) {
+                tapCell.becomeFirstResponder()
+                print("tapped cell")
+            }
+        }
         
+        UIView.animate(withDuration: 0.3) {
+            self.tableView.center = self.topPositionTableView!
+        }
     }
     
+    @IBAction func onHeaderViewTapGesture(_ sender: UITapGestureRecognizer) {
+        UIView.animate(withDuration: 0.3) {
+            self.tableView.center = self.bottomPositionTableView!
+        }
+        tableView.endEditing(true)
+    }
     
 }
 
@@ -172,6 +195,8 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "positive-thing-cell", for: indexPath) as! PositiveThingTableViewCell
+        
+        cell.selectionStyle = .none
         
         if (indexPath.row == 0) {
             cell.positiveThingTextView.text = "1."
