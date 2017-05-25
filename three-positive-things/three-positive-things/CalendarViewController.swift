@@ -85,6 +85,12 @@ class CalendarViewController: UIViewController {
         goToToday()
     }
     
+    @IBAction func onTableViewTapGesture(_ sender: Any) {
+        
+        
+    }
+    
+    
 }
 
 extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
@@ -156,11 +162,24 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
 
 extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 3
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "positive-thing-cell", for: indexPath) as! PositiveThingTableViewCell
+        
+        if (indexPath.row == 0) {
+            cell.positiveThingTextView.text = "1."
+        } else if (indexPath.row == 1) {
+            cell.positiveThingTextView.text = "2."
+        } else if (indexPath.row == 2) {
+            cell.positiveThingTextView.text = "3."
+        }
         
         return cell
     }
