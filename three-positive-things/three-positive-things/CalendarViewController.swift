@@ -199,11 +199,11 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         
         if (indexPath.row == 0) {
-            cell.positiveThingTextView.text = "1."
+            cell.positiveThingNumberLabel.text = "1."
         } else if (indexPath.row == 1) {
-            cell.positiveThingTextView.text = "2."
+            cell.positiveThingNumberLabel.text = "2."
         } else if (indexPath.row == 2) {
-            cell.positiveThingTextView.text = "3."
+            cell.positiveThingNumberLabel.text = "3."
         }
         
         return cell

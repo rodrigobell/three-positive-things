@@ -51,7 +51,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="August" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7s-DM-maA">
-                                        <rect key="frame" x="73" y="19" width="201" height="36"/>
+                                        <rect key="frame" x="8" y="60" width="201" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,7 +68,7 @@
                                 <rect key="frame" x="0.0" y="133" width="375" height="267"/>
                                 <color key="backgroundColor" red="0.89504303333117874" green="0.89504303333117874" blue="0.89504303333117874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ySs-Lb-6pQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ySs-Lb-6pQ">
                                 <rect key="frame" x="0.0" y="400" width="375" height="268"/>
                                 <color key="backgroundColor" red="1" green="0.78817216388104783" blue="0.24538425308097656" alpha="0.097228167808219176" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
@@ -76,37 +76,45 @@
                                     <constraint firstAttribute="height" constant="268" id="Zj0-Ph-MCf"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="positive-thing-cell" rowHeight="92" id="6aR-G6-w75" customClass="PositiveThingTableViewCell" customModule="three_positive_things" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="92"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="positive-thing-cell" rowHeight="90" id="6aR-G6-w75" customClass="PositiveThingTableViewCell" customModule="three_positive_things" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6aR-G6-w75" id="ISh-hs-OGi">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3s-Wh-rGB">
+                                                    <rect key="frame" x="8" y="18" width="26" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S7X-AH-52i">
-                                                    <rect key="frame" x="8" y="8" width="359" height="71.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <rect key="frame" x="42" y="8" width="325" height="70.5"/>
                                                     <gestureRecognizers/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
+                                            <color key="backgroundColor" red="1" green="0.9182156454" blue="0.75540929010000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="S7X-AH-52i" firstAttribute="trailing" secondItem="ISh-hs-OGi" secondAttribute="trailingMargin" id="ADv-Pe-vMG"/>
-                                                <constraint firstItem="S7X-AH-52i" firstAttribute="bottom" secondItem="ISh-hs-OGi" secondAttribute="bottomMargin" constant="-4" id="CJX-SV-Due"/>
-                                                <constraint firstItem="S7X-AH-52i" firstAttribute="leading" secondItem="ISh-hs-OGi" secondAttribute="leadingMargin" id="XjB-j3-YNa"/>
+                                                <constraint firstItem="S7X-AH-52i" firstAttribute="bottom" secondItem="ISh-hs-OGi" secondAttribute="bottomMargin" constant="-3" id="CJX-SV-Due"/>
+                                                <constraint firstItem="S7X-AH-52i" firstAttribute="leading" secondItem="ISh-hs-OGi" secondAttribute="leadingMargin" constant="34" id="XjB-j3-YNa"/>
                                                 <constraint firstItem="S7X-AH-52i" firstAttribute="top" secondItem="ISh-hs-OGi" secondAttribute="topMargin" id="aCx-ao-nKU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <gestureRecognizers/>
                                         <connections>
+                                            <outlet property="positiveThingNumberLabel" destination="Q3s-Wh-rGB" id="YQ7-8n-5nI"/>
                                             <outlet property="positiveThingTextView" destination="S7X-AH-52i" id="MRg-MY-Q5l"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PUu-Lm-Hk0" userLabel="Table View Cover">
-                                <rect key="frame" x="0.0" y="400" width="375" height="267"/>
+                                <rect key="frame" x="0.0" y="400" width="375" height="268"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
