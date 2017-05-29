@@ -9,12 +9,14 @@
 import UIKit
 import JTAppleCalendar
 
-class CalendarViewController: UIViewController, UIGestureRecognizerDelegate {
+class CalendarViewController: UIViewController {
     
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    
+    var positiveThings: [NSDictionary] = []
     
     let black = UIColor.black
     let gray = UIColor.gray
@@ -91,29 +93,6 @@ class CalendarViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBAction func didTapToday(_ sender: Any) {
         goToToday()
     }
-    
-    @IBAction func onTableViewCoverTapGesture(_ sender: UITapGestureRecognizer) {
-        let tapLocation = sender.location(in: self.tableView)
-        
-        if let tapIndexPath = self.tableView.indexPathForRow(at: tapLocation) {
-            if let tapCell = self.tableView.cellForRow(at: tapIndexPath) as? PositiveThingTableViewCell {
-                tapCell.positiveThingTextView.becomeFirstResponder()
-                print("tapped cell")
-            }
-        }
-        
-        UIView.animate(withDuration: 0.3) {
-            self.tableView.center = self.topPositionTableView!
-        }
-    }
-    
-    @IBAction func onHeaderViewTapGesture(_ sender: UITapGestureRecognizer) {
-        UIView.animate(withDuration: 0.3) {
-            self.tableView.center = self.bottomPositionTableView!
-        }
-        tableView.endEditing(true)
-    }
-    
 }
 
 extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
@@ -207,6 +186,30 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
+    }
+}
+
+extension CalendarViewController: UIGestureRecognizerDelegate {
+    @IBAction func onTableViewCoverTapGesture(_ sender: UITapGestureRecognizer) {
+        let tapLocation = sender.location(in: self.tableView)
+        
+        if let tapIndexPath = self.tableView.indexPathForRow(at: tapLocation) {
+            if let tapCell = self.tableView.cellForRow(at: tapIndexPath) as? PositiveThingTableViewCell {
+                tapCell.positiveThingTextView.becomeFirstResponder()
+                print("tapped cell")
+            }
+        }
+        
+        UIView.animate(withDuration: 0.3) {
+            self.tableView.center = self.topPositionTableView!
+        }
+    }
+    
+    @IBAction func onHeaderViewTapGesture(_ sender: UITapGestureRecognizer) {
+        UIView.animate(withDuration: 0.3) {
+            self.tableView.center = self.bottomPositionTableView!
+        }
+        tableView.endEditing(true)
     }
 }
 

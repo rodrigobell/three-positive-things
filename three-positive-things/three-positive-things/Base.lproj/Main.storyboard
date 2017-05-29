@@ -91,7 +91,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S7X-AH-52i">
-                                                    <rect key="frame" x="42" y="8" width="325" height="70.5"/>
+                                                    <rect key="frame" x="38" y="8" width="329" height="71"/>
                                                     <gestureRecognizers/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -100,8 +100,8 @@
                                             <color key="backgroundColor" red="1" green="0.9182156454" blue="0.75540929010000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="S7X-AH-52i" firstAttribute="trailing" secondItem="ISh-hs-OGi" secondAttribute="trailingMargin" id="ADv-Pe-vMG"/>
-                                                <constraint firstItem="S7X-AH-52i" firstAttribute="bottom" secondItem="ISh-hs-OGi" secondAttribute="bottomMargin" constant="-3" id="CJX-SV-Due"/>
-                                                <constraint firstItem="S7X-AH-52i" firstAttribute="leading" secondItem="ISh-hs-OGi" secondAttribute="leadingMargin" constant="34" id="XjB-j3-YNa"/>
+                                                <constraint firstItem="S7X-AH-52i" firstAttribute="bottom" secondItem="ISh-hs-OGi" secondAttribute="bottomMargin" constant="-2" id="CJX-SV-Due"/>
+                                                <constraint firstItem="S7X-AH-52i" firstAttribute="leading" secondItem="ISh-hs-OGi" secondAttribute="leadingMargin" constant="30" id="XjB-j3-YNa"/>
                                                 <constraint firstItem="S7X-AH-52i" firstAttribute="top" secondItem="ISh-hs-OGi" secondAttribute="topMargin" id="aCx-ao-nKU"/>
                                             </constraints>
                                         </tableViewCellContentView>

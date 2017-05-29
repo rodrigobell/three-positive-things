@@ -11,7 +11,7 @@
 		4F739D7A1E91985E005D7103 /* DateCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F739D791E91985E005D7103 /* DateCellView.xib */; };
 		4F739D7C1E91991E005D7103 /* DateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F739D7B1E91991E005D7103 /* DateCellView.swift */; };
 		4F739D811E91A0BE005D7103 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F739D801E91A0BE005D7103 /* CalendarViewController.swift */; };
-		4FB2A22B1E97FE5B00637649 /* PositiveThing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A22A1E97FE5B00637649 /* PositiveThing.swift */; };
+		4FB2A22B1E97FE5B00637649 /* PositiveThingsDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A22A1E97FE5B00637649 /* PositiveThingsDay.swift */; };
 		4FB2A22D1E9800F700637649 /* PositiveThingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */; };
 		4FB8EC7B1E918ED6002D7346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */; };
 		4FB8EC801E918ED6002D7346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB8EC7E1E918ED6002D7346 /* Main.storyboard */; };
@@ -49,7 +49,7 @@
 		4F739D791E91985E005D7103 /* DateCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCellView.xib; sourceTree = "<group>"; };
 		4F739D7B1E91991E005D7103 /* DateCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCellView.swift; sourceTree = "<group>"; };
 		4F739D801E91A0BE005D7103 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		4FB2A22A1E97FE5B00637649 /* PositiveThing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositiveThing.swift; sourceTree = "<group>"; };
+		4FB2A22A1E97FE5B00637649 /* PositiveThingsDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositiveThingsDay.swift; sourceTree = "<group>"; };
 		4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositiveThingTableViewCell.swift; sourceTree = "<group>"; };
 		4FB8EC771E918ED6002D7346 /* three-positive-things.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "three-positive-things.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		4F739D7D1E919927005D7103 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4FB2A22A1E97FE5B00637649 /* PositiveThing.swift */,
+				4FB2A22A1E97FE5B00637649 /* PositiveThingsDay.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -490,7 +490,7 @@
 				4FB8EC7B1E918ED6002D7346 /* AppDelegate.swift in Sources */,
 				4FB2A22D1E9800F700637649 /* PositiveThingTableViewCell.swift in Sources */,
 				4F739D7C1E91991E005D7103 /* DateCellView.swift in Sources */,
-				4FB2A22B1E97FE5B00637649 /* PositiveThing.swift in Sources */,
+				4FB2A22B1E97FE5B00637649 /* PositiveThingsDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

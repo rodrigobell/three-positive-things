@@ -1,5 +1,5 @@
 //
-//  PositiveThing.swift
+//  PositiveThingsDay.swift
 //  three-positive-things
 //
 //  Created by Rodrigo Bell on 4/7/17.
@@ -8,6 +8,8 @@
 
 import UIKit
 
-class PositiveThing: NSObject {
-
+class PositiveThingsDay: NSObject {
+    var thingOne: String?
+    var thingTwo: String?
+    var thingThree: String?
 }
