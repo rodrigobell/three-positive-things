@@ -16,6 +16,8 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    let userDefaults = UserDefaults.standard
+    
     var positiveThings: [NSDictionary] = []
     
     let black = UIColor.black
@@ -29,19 +31,17 @@ class CalendarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        
         calendarView.delegate = self
         calendarView.dataSource = self
         calendarView.registerCellViewXib(file: "DateCellView") // Registering your cell is mandatory
         calendarView.cellInset = CGPoint(x: 0, y: 0)
-        
         goToToday()
         
+        tableView.delegate = self
+        tableView.dataSource = self
         bottomPositionTableView = tableView.center
-        topPositionTableView = CGPoint(x: tableView.center.x, y: tableView.center.y - 267)
-        
+        topPositionTableView = CGPoint(x: tableView.center.x, y: tableView.center.y - 262)
+    
     }
     
     override func didReceiveMemoryWarning() {
@@ -95,6 +95,7 @@ class CalendarViewController: UIViewController {
     }
 }
 
+// JTAppleCalendar methods
 extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
         let formatter = DateFormatter()
@@ -134,6 +135,11 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
         handleCellSelection(view: cell, date: date, cellState: cellState)
         handleCellTextColor(view: cell, date: date, cellState: cellState)
+        
+        if let tempThing = userDefaults.string(forKey: "test") {
+            let tempCell = tableView.visibleCells.first as! PositiveThingTableViewCell
+            tempCell.positiveThingTextView.text = tempThing
+        }
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
@@ -162,6 +168,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
 
 }
 
+// TableView methods
 extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
@@ -189,6 +196,7 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+// GestireRecognizer methods
 extension CalendarViewController: UIGestureRecognizerDelegate {
     @IBAction func onTableViewCoverTapGesture(_ sender: UITapGestureRecognizer) {
         let tapLocation = sender.location(in: self.tableView)
@@ -196,7 +204,6 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
         if let tapIndexPath = self.tableView.indexPathForRow(at: tapLocation) {
             if let tapCell = self.tableView.cellForRow(at: tapIndexPath) as? PositiveThingTableViewCell {
                 tapCell.positiveThingTextView.becomeFirstResponder()
-                print("tapped cell")
             }
         }
         
@@ -210,6 +217,19 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
             self.tableView.center = self.bottomPositionTableView!
         }
         tableView.endEditing(true)
+        
+        saveThingsToDate()
+    }
+    
+    func saveThingsToDate() {
+        for cell in tableView.visibleCells {
+            let customCell = cell as! PositiveThingTableViewCell
+            let thing = customCell.positiveThingTextView.text as String
+            print(customCell.positiveThingTextView.text)
+            print(thing)
+            
+            userDefaults.set(thing, forKey: "test")
+        }
     }
 }
 
