@@ -40,7 +40,7 @@ class CalendarViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         bottomPositionTableView = tableView.center
-        topPositionTableView = CGPoint(x: tableView.center.x, y: tableView.center.y - 262)
+        topPositionTableView = CGPoint(x: tableView.center.x, y: tableView.center.y - 258)
     
     }
     
