@@ -116,19 +116,22 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
     }
     
     func calendar(_ calendar: JTAppleCalendarView, willDisplayCell cell: JTAppleDayCellView, date: Date, cellState: CellState) {
-        let myCustomCell = cell as! DateCellView
-        
-        // Setup Cell text
-        myCustomCell.dayLabel.text = cellState.text
-        
-        if cellState.dateBelongsTo == .thisMonth {
-            myCustomCell.isUserInteractionEnabled = true
-        } else {
-            myCustomCell.isUserInteractionEnabled = false
-        }
-        
         handleCellTextColor(view: cell, date: date, cellState: cellState)
         handleCellSelection(view: cell, date: date, cellState: cellState)
+        
+        let myCustomCell = cell as! DateCellView
+        
+        // Setup Cell text day numbers
+        myCustomCell.dayLabel.text = cellState.text
+        
+        let isPartOfThisMonth = cellState.dateBelongsTo == .thisMonth
+        myCustomCell.isUserInteractionEnabled = isPartOfThisMonth ? true : false
+        
+        let today = Date()
+        let isAfterToday = date.timeIntervalSinceNow > today.timeIntervalSinceNow
+        if isAfterToday {
+            myCustomCell.isUserInteractionEnabled = false
+        }
         
     }
     
