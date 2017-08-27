@@ -136,15 +136,30 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         handleCellSelection(view: cell, date: date, cellState: cellState)
         handleCellTextColor(view: cell, date: date, cellState: cellState)
         
-        if let tempThing = userDefaults.string(forKey: "test") {
-            let tempCell = tableView.visibleCells.first as! PositiveThingTableViewCell
-            tempCell.positiveThingTextView.text = tempThing
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let dateString = dateFormatter.string(from: date)
+        
+        if let things = userDefaults.stringArray(forKey: "\(dateString)") {
+            print("found \(things) for \(dateString)")
+            var i = 0
+            for thing in things {
+                let tableCell = tableView.visibleCells[i]
+                let customCell = tableCell as! PositiveThingTableViewCell
+                customCell.positiveThingTextView.text = thing
+                i += 1
+            }
         }
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
         handleCellSelection(view: cell, date: date, cellState: cellState)
         handleCellTextColor(view: cell, date: date, cellState: cellState)
+        
+        for cell in tableView.visibleCells {
+            let customCell = cell as! PositiveThingTableViewCell
+            customCell.positiveThingTextView.text = nil
+        }
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
@@ -222,14 +237,27 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
     }
     
     func saveThingsToDate() {
+
+        let date = calendarView.selectedDates[0]
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let dateString = dateFormatter.string(from: date)
+        
+        var things = [String]()
         for cell in tableView.visibleCells {
             let customCell = cell as! PositiveThingTableViewCell
             let thing = customCell.positiveThingTextView.text as String
-            print(customCell.positiveThingTextView.text)
-            print(thing)
-            
-            userDefaults.set(thing, forKey: "test")
+            if !(thing.isEmpty) {
+                things.append(thing)
+            }
         }
+        
+        if !(things.isEmpty) {
+            print("saving \(things) to date \(dateString)")
+            userDefaults.set(things, forKey: "\(dateString)")
+        }
+        
     }
 }
 
