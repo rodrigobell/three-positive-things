@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,11 +24,19 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsG-DJ-tJf">
-                    <rect key="frame" x="65" y="89" width="69.5" height="20.5"/>
+                    <rect key="frame" x="65" y="89" width="70" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view hidden="YES" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFj-5e-pjs">
+                    <rect key="frame" x="97.5" y="111" width="5" height="5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="DLf-rq-UeO"/>
+                        <constraint firstAttribute="height" constant="5" id="sct-Fa-IOs"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -36,13 +44,16 @@
                 <constraint firstItem="RXf-2s-eyX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UQW-aP-Pb2"/>
                 <constraint firstItem="QsG-DJ-tJf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Uui-26-eYb"/>
                 <constraint firstItem="QsG-DJ-tJf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ffV-Mi-5M0"/>
+                <constraint firstItem="HFj-5e-pjs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="13.5" id="jel-Ke-vCr"/>
+                <constraint firstItem="HFj-5e-pjs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zpj-73-gIz"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="dayLabel" destination="QsG-DJ-tJf" id="fPJ-yk-Xov"/>
+                <outlet property="dotView" destination="HFj-5e-pjs" id="CU6-eq-tWM"/>
                 <outlet property="selectedView" destination="RXf-2s-eyX" id="eO6-8T-HVp"/>
             </connections>
-            <point key="canvasLocation" x="-100.5" y="-210"/>
+            <point key="canvasLocation" x="-101" y="-210"/>
         </view>
     </objects>
 </document>

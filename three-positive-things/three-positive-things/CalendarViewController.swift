@@ -73,16 +73,40 @@ class CalendarViewController: UIViewController {
             return
         }
         
-        if Calendar.current.isDateInToday(date) && cellState.dateBelongsTo == .thisMonth  {
-            myCustomCell.selectedView.layer.backgroundColor = red.cgColor
-        }
-        
         if cellState.isSelected {
+            if Calendar.current.isDateInToday(date) && cellState.dateBelongsTo == .thisMonth  {
+                myCustomCell.selectedView.layer.backgroundColor = red.cgColor
+            } else {
+                myCustomCell.selectedView.layer.backgroundColor = black.cgColor
+            }
             myCustomCell.selectedView.layer.cornerRadius = 20
             myCustomCell.selectedView.isHidden = false
         } else {
             myCustomCell.selectedView.isHidden = true
         }
+    }
+    
+    // Function to handle displaying dot view for cells with data
+    func handleCellDisplayDotView(view: JTAppleDayCellView?, date: Date, cellState: CellState) {
+        guard let myCustomCell = view as? DateCellView  else {
+            return
+        }
+        
+        myCustomCell.dotView.layer.cornerRadius = 3
+        myCustomCell.dotView.isHidden = false
+        
+        if cellState.isSelected {
+            myCustomCell.dotView.layer.backgroundColor  = white.cgColor
+        } else {
+            if Calendar.current.isDateInToday(date) && cellState.dateBelongsTo == .thisMonth {
+                myCustomCell.dotView.layer.backgroundColor = red.cgColor
+            } else if cellState.dateBelongsTo == .thisMonth {
+                myCustomCell.dotView.layer.backgroundColor = black.cgColor
+            } else {
+                myCustomCell.dotView.layer.backgroundColor = gray.cgColor
+            }
+        }
+        
     }
     
     func goToToday() {
@@ -123,15 +147,24 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         
         // Setup Cell text day numbers
         myCustomCell.dayLabel.text = cellState.text
+        myCustomCell.dotView.isHidden = true
         
         let isPartOfThisMonth = cellState.dateBelongsTo == .thisMonth
         myCustomCell.isUserInteractionEnabled = isPartOfThisMonth ? true : false
         
-        let today = Date()
-        let isAfterToday = date.timeIntervalSinceNow > today.timeIntervalSinceNow
-        if isAfterToday {
-            myCustomCell.isUserInteractionEnabled = false
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let dateString = dateFormatter.string(from: date)
+        
+        if let things = userDefaults.stringArray(forKey: "\(dateString)") {
+            handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
         }
+        
+//        let today = Date()
+//        let isAfterToday = date.timeIntervalSinceNow > today.timeIntervalSinceNow
+//        if isAfterToday {
+//            myCustomCell.isUserInteractionEnabled = false
+//        }
         
     }
     
@@ -153,15 +186,26 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
                 i += 1
             }
         }
+        
+        if let things = userDefaults.stringArray(forKey: "\(dateString)") {
+            handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
+        }
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
         handleCellSelection(view: cell, date: date, cellState: cellState)
         handleCellTextColor(view: cell, date: date, cellState: cellState)
         
-        for cell in tableView.visibleCells {
-            let customCell = cell as! PositiveThingTableViewCell
-            customCell.positiveThingTextView.text = nil
+        if let myCustomCell = cell as? DateCellView {
+        
+            if myCustomCell.dotView.isHidden == false {
+                handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
+            }
+            
+            for cell in tableView.visibleCells {
+                let customCell = cell as! PositiveThingTableViewCell
+                customCell.positiveThingTextView.text = nil
+            }
         }
     }
     
