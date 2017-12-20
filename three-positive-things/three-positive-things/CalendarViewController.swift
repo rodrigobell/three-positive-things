@@ -6,6 +6,11 @@
 //  Copyright © 2017 Rodrigo Bell. All rights reserved.
 //
 
+//
+// TODO:
+// > save empty table view cell if user deletes their data for a given day
+//
+
 import UIKit
 import JTAppleCalendar
 
@@ -106,7 +111,37 @@ class CalendarViewController: UIViewController {
                 myCustomCell.dotView.layer.backgroundColor = gray.cgColor
             }
         }
+    }
+    
+    func endTableViewEditing() {
+        UIView.animate(withDuration: 0.3) {
+            self.tableView.center = self.bottomPositionTableView!
+        }
+        tableView.endEditing(true)
         
+        saveThingsToDate()
+    }
+    
+    func saveThingsToDate() {
+        let date = calendarView.selectedDates[0]
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let dateString = dateFormatter.string(from: date)
+        
+        var things = [String]()
+        for cell in tableView.visibleCells {
+            let customCell = cell as! PositiveThingTableViewCell
+            let thing = customCell.positiveThingTextView.text as String
+            if !(thing.isEmpty) {
+                things.append(thing)
+            }
+        }
+        
+        if !(things.isEmpty) {
+            print("saving \(things) to date \(dateString)")
+            userDefaults.set(things, forKey: "\(dateString)")
+        }
     }
     
     func goToToday() {
@@ -115,6 +150,7 @@ class CalendarViewController: UIViewController {
     }
     
     @IBAction func didTapToday(_ sender: Any) {
+        endTableViewEditing()
         goToToday()
     }
 }
@@ -159,13 +195,6 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         if let things = userDefaults.stringArray(forKey: "\(dateString)") {
             handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
         }
-        
-//        let today = Date()
-//        let isAfterToday = date.timeIntervalSinceNow > today.timeIntervalSinceNow
-//        if isAfterToday {
-//            myCustomCell.isUserInteractionEnabled = false
-//        }
-        
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
@@ -185,9 +214,6 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
                 customCell.positiveThingTextView.text = thing
                 i += 1
             }
-        }
-        
-        if let things = userDefaults.stringArray(forKey: "\(dateString)") {
             handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
         }
     }
@@ -196,12 +222,15 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         handleCellSelection(view: cell, date: date, cellState: cellState)
         handleCellTextColor(view: cell, date: date, cellState: cellState)
         
-        if let myCustomCell = cell as? DateCellView {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let dateString = dateFormatter.string(from: date)
         
-            if myCustomCell.dotView.isHidden == false {
-                handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
-            }
-            
+        if let things = userDefaults.stringArray(forKey: "\(dateString)") {
+            handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
+        }
+        
+        if let myCustomCell = cell as? DateCellView {
             for cell in tableView.visibleCells {
                 let customCell = cell as! PositiveThingTableViewCell
                 customCell.positiveThingTextView.text = nil
@@ -274,37 +303,12 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
         }
     }
     
-    @IBAction func onHeaderViewTapGesture(_ sender: UITapGestureRecognizer) {
-        UIView.animate(withDuration: 0.3) {
-            self.tableView.center = self.bottomPositionTableView!
-        }
-        tableView.endEditing(true)
-        
-        saveThingsToDate()
+    @IBAction func onTableViewSwipeGesture(_ sender: Any) {
+        endTableViewEditing()
     }
     
-    func saveThingsToDate() {
-
-        let date = calendarView.selectedDates[0]
-
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let dateString = dateFormatter.string(from: date)
-        
-        var things = [String]()
-        for cell in tableView.visibleCells {
-            let customCell = cell as! PositiveThingTableViewCell
-            let thing = customCell.positiveThingTextView.text as String
-            if !(thing.isEmpty) {
-                things.append(thing)
-            }
-        }
-        
-        if !(things.isEmpty) {
-            print("saving \(things) to date \(dateString)")
-            userDefaults.set(things, forKey: "\(dateString)")
-        }
-        
+    @IBAction func onHeaderViewTapGesture(_ sender: UITapGestureRecognizer) {
+        endTableViewEditing()
     }
 }
 
