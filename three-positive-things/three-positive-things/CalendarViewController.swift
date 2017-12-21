@@ -141,6 +141,8 @@ class CalendarViewController: UIViewController {
         if !(things.isEmpty) {
             print("saving \(things) to date \(dateString)")
             userDefaults.set(things, forKey: "\(dateString)")
+        } else {
+            userDefaults.set(nil, forKey: "\(dateString)")
         }
     }
     
@@ -226,8 +228,15 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateString = dateFormatter.string(from: date)
         
+        let myCustomCell = cell as! DateCellView
+        
+        
         if let things = userDefaults.stringArray(forKey: "\(dateString)") {
             handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
+        }
+        
+        if userDefaults.stringArray(forKey: "\(dateString)") == nil {
+            myCustomCell.dotView.isHidden = true
         }
         
         if let myCustomCell = cell as? DateCellView {
