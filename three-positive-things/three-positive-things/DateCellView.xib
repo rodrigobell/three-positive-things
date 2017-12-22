@@ -16,19 +16,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXf-2s-eyX" userLabel="Selected View" customClass="DateCellView" customModule="three_positive_things" customModuleProvider="target">
-                    <rect key="frame" x="80" y="80" width="40" height="40"/>
+                    <rect key="frame" x="81" y="81" width="38" height="38"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="F3E-dQ-VGf"/>
-                        <constraint firstAttribute="width" constant="40" id="g8L-xU-frQ"/>
+                        <constraint firstAttribute="height" constant="38" id="F3E-dQ-VGf"/>
+                        <constraint firstAttribute="width" constant="38" id="g8L-xU-frQ"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsG-DJ-tJf">
-                    <rect key="frame" x="65" y="89" width="70" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <view hidden="YES" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFj-5e-pjs">
                     <rect key="frame" x="97.5" y="111" width="5" height="5"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,13 +31,19 @@
                         <constraint firstAttribute="height" constant="5" id="sct-Fa-IOs"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsG-DJ-tJf">
+                    <rect key="frame" x="65" y="90" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="RXf-2s-eyX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1b6-ze-Zy5"/>
+                <constraint firstItem="QsG-DJ-tJf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PwX-ir-Vmi"/>
                 <constraint firstItem="RXf-2s-eyX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UQW-aP-Pb2"/>
-                <constraint firstItem="QsG-DJ-tJf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Uui-26-eYb"/>
-                <constraint firstItem="QsG-DJ-tJf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ffV-Mi-5M0"/>
+                <constraint firstItem="QsG-DJ-tJf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bAQ-ui-2Xr"/>
                 <constraint firstItem="HFj-5e-pjs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="13.5" id="jel-Ke-vCr"/>
                 <constraint firstItem="HFj-5e-pjs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zpj-73-gIz"/>
             </constraints>

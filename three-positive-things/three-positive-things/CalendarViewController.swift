@@ -161,11 +161,10 @@ class CalendarViewController: UIViewController {
 extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendarViewDelegate {
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy MM dd"
-        
-        let startDate = formatter.date(from: "2016 01 01")! // You can use date generated from a formatter
-        let endDate = Date()                                // You can also use dates created from this function
-        let calendar = Calendar.current                     // Make sure you set this up to your time zone. We'll just use default here
+        formatter.dateFormat = "yyyy-MM-dd"
+        let startDate = formatter.date(from: "2016-01-01")!
+        let endDate = Date()
+        let calendar = Calendar.current
         
         let parameters = ConfigurationParameters(startDate: startDate,
                                                  endDate: endDate,
@@ -194,7 +193,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateString = dateFormatter.string(from: date)
         
-        if let things = userDefaults.stringArray(forKey: "\(dateString)") {
+        if userDefaults.stringArray(forKey: "\(dateString)") != nil {
             handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
         }
     }
@@ -228,18 +227,17 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateString = dateFormatter.string(from: date)
         
-        let myCustomCell = cell as! DateCellView
+        if let myCustomCell = cell as? DateCellView {
+            if userDefaults.stringArray(forKey: "\(dateString)") == nil {
+                myCustomCell.dotView.isHidden = true
+            }
+        }
         
-        
-        if let things = userDefaults.stringArray(forKey: "\(dateString)") {
+        if userDefaults.stringArray(forKey: "\(dateString)") != nil {
             handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
         }
         
-        if userDefaults.stringArray(forKey: "\(dateString)") == nil {
-            myCustomCell.dotView.isHidden = true
-        }
-        
-        if let myCustomCell = cell as? DateCellView {
+        if (cell as? DateCellView) != nil {
             for cell in tableView.visibleCells {
                 let customCell = cell as! PositiveThingTableViewCell
                 customCell.positiveThingTextView.text = nil
@@ -248,9 +246,18 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
-        // TODO: Deselect cell if part of different than current month
-//        let lastSelectedDate = calendarView.selectedDates.last
-//        let cellState = calendarView.cellStatus(for: lastSelectedDate)
+        calendarView.deselectAllDates()
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let strDate = formatter.string(from: Date())
+        let curDate = formatter.date(from: strDate)!
+        
+        if visibleDates.monthDates.contains(curDate) {
+            calendarView.selectDates([Date()])
+        } else {
+            calendarView.selectDates([visibleDates.monthDates.first!])
+        }
         
         // Update header text month and year labels
         let startDate = visibleDates.monthDates[0]
