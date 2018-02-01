@@ -6,6 +6,9 @@
 build/
 DerivedData/
 
+# Photoshop/Illustrator app icon project files
+Design/AppIcon/
+
 ## Various settings
 *.pbxuser
 !default.pbxuser

@@ -35,6 +35,7 @@ class CalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(UserDefaults.standard.dictionaryRepresentation().values)
         
         calendarView.delegate = self
         calendarView.dataSource = self
@@ -236,12 +237,10 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         if userDefaults.stringArray(forKey: "\(dateString)") != nil {
             handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
         }
-        
-        if (cell as? DateCellView) != nil {
-            for cell in tableView.visibleCells {
-                let customCell = cell as! PositiveThingTableViewCell
-                customCell.positiveThingTextView.text = nil
-            }
+    
+        for cell in tableView.visibleCells {
+            let customCell = cell as! PositiveThingTableViewCell
+            customCell.positiveThingTextView.text = nil
         }
     }
     
