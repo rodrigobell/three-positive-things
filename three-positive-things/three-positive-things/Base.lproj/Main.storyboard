@@ -42,12 +42,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa0-vy-5PG">
                                         <rect key="frame" x="277" y="71" width="90" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                         <state key="normal" title="Today">
                                             <color key="titleColor" red="1" green="0.9182156453828817" blue="0.75540929006879365" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="didTapToday:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBZ-jv-DlW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5M-gK-DSU">
+                                        <rect key="frame" x="277" y="35" width="90" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" red="1" green="0.9182156454" blue="0.75540929010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="iNw-YJ-29x" kind="presentation" id="rU6-bb-RrG"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="August" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7s-DM-maA">
@@ -145,6 +156,7 @@
                         <outlet property="calendarView" destination="cby-B5-VgH" id="ixC-RY-eSx"/>
                         <outlet property="monthLabel" destination="V7s-DM-maA" id="6Qx-5j-ON2"/>
                         <outlet property="tableView" destination="ySs-Lb-6pQ" id="ysP-ld-Auc"/>
+                        <outlet property="weekDaysLabel" destination="KtS-0e-cSy" id="Gva-hJ-RNk"/>
                         <outlet property="yearLabel" destination="v03-pS-TEH" id="NX6-jG-DqU"/>
                     </connections>
                 </viewController>
@@ -178,12 +190,20 @@
                     <view key="view" contentMode="scaleToFill" id="VqM-Xn-KkC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAN-9i-gex">
+                                <rect key="frame" x="302" y="28" width="53" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgm-LR-TgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="124"/>
+            <point key="canvasLocation" x="784.79999999999995" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>

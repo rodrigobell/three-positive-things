@@ -19,6 +19,7 @@
 		4FB8EC851E918ED6002D7346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB8EC831E918ED6002D7346 /* LaunchScreen.storyboard */; };
 		4FB8EC901E918ED7002D7346 /* three_positive_thingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC8F1E918ED7002D7346 /* three_positive_thingsTests.swift */; };
 		4FB8EC9B1E918ED7002D7346 /* three_positive_thingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC9A1E918ED7002D7346 /* three_positive_thingsUITests.swift */; };
+		4FD35D41202A5EB40033A5E8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */; };
 		51AEFB4C310A684038A0AAB7 /* Pods_three_positive_thingsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C22897677CB5C3164B2FD64 /* Pods_three_positive_thingsUITests.framework */; };
 		78D8B0093C4781F7F1EE595C /* Pods_three_positive_thingsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		4FB8EC961E918ED7002D7346 /* three-positive-thingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "three-positive-thingsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB8EC9A1E918ED7002D7346 /* three_positive_thingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = three_positive_thingsUITests.swift; sourceTree = "<group>"; };
 		4FB8EC9C1E918ED7002D7346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5DC115E4103E2A0D2D38AD7F /* Pods-three-positive-things.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-things.debug.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things.debug.xcconfig"; sourceTree = "<group>"; };
 		8BE4A9657E36A75B987181C6 /* Pods-three-positive-thingsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		97BE730A04740932B067FFE6 /* Pods-three-positive-thingsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsTests/Pods-three-positive-thingsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				4F739D801E91A0BE005D7103 /* CalendarViewController.swift */,
+				4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				4FB2A22D1E9800F700637649 /* PositiveThingTableViewCell.swift in Sources */,
 				4F739D7C1E91991E005D7103 /* DateCellView.swift in Sources */,
 				4FB2A22B1E97FE5B00637649 /* PositiveThingsDay.swift in Sources */,
+				4FD35D41202A5EB40033A5E8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

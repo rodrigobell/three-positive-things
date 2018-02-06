@@ -20,6 +20,7 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var weekDaysLabel: UILabel!
     
     let userDefaults = UserDefaults.standard
     
@@ -117,6 +118,7 @@ class CalendarViewController: UIViewController {
     func endTableViewEditing() {
         UIView.animate(withDuration: 0.3) {
             self.tableView.center = self.bottomPositionTableView!
+            self.weekDaysLabel.isHidden = false
         }
         tableView.endEditing(true)
         
@@ -316,6 +318,10 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
         UIView.animate(withDuration: 0.3) {
             self.tableView.center = self.topPositionTableView!
         }
+        
+        UIView.transition(with: self.weekDaysLabel, duration: 0.4, options: .transitionCrossDissolve, animations: {() -> Void in
+            self.weekDaysLabel.isHidden = true
+        }, completion: { _ in })
     }
     
     @IBAction func onTableViewSwipeGesture(_ sender: Any) {
