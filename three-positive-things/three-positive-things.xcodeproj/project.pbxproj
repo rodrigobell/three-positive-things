@@ -651,6 +651,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K64ZP5ML7E;
 				INFOPLIST_FILE = "three-positive-things/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigobell.three-positive-things";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -668,6 +669,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K64ZP5ML7E;
 				INFOPLIST_FILE = "three-positive-things/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigobell.three-positive-things";
 				PRODUCT_NAME = "$(TARGET_NAME)";
