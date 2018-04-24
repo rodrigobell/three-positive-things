@@ -11,6 +11,8 @@
 		4F739D7A1E91985E005D7103 /* DateCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F739D791E91985E005D7103 /* DateCellView.xib */; };
 		4F739D7C1E91991E005D7103 /* DateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F739D7B1E91991E005D7103 /* DateCellView.swift */; };
 		4F739D811E91A0BE005D7103 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F739D801E91A0BE005D7103 /* CalendarViewController.swift */; };
+		4F9125CF208EF632000B2351 /* ColorOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9125CE208EF632000B2351 /* ColorOptionTableViewCell.swift */; };
+		4FA0D201208E916700C1655A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0D200208E916700C1655A /* Theme.swift */; };
 		4FB2A22B1E97FE5B00637649 /* PositiveThingsDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A22A1E97FE5B00637649 /* PositiveThingsDay.swift */; };
 		4FB2A22D1E9800F700637649 /* PositiveThingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */; };
 		4FB8EC7B1E918ED6002D7346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */; };
@@ -50,6 +52,8 @@
 		4F739D791E91985E005D7103 /* DateCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCellView.xib; sourceTree = "<group>"; };
 		4F739D7B1E91991E005D7103 /* DateCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCellView.swift; sourceTree = "<group>"; };
 		4F739D801E91A0BE005D7103 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		4F9125CE208EF632000B2351 /* ColorOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOptionTableViewCell.swift; sourceTree = "<group>"; };
+		4FA0D200208E916700C1655A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		4FB2A22A1E97FE5B00637649 /* PositiveThingsDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositiveThingsDay.swift; sourceTree = "<group>"; };
 		4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositiveThingTableViewCell.swift; sourceTree = "<group>"; };
 		4FB8EC771E918ED6002D7346 /* three-positive-things.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "three-positive-things.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,9 +114,10 @@
 		4F739D7E1E91992D005D7103 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4F739D7B1E91991E005D7103 /* DateCellView.swift */,
+				4FB8EC7E1E918ED6002D7346 /* Main.storyboard */,
 				4F739D791E91985E005D7103 /* DateCellView.xib */,
-				4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */,
+				4FB8EC831E918ED6002D7346 /* LaunchScreen.storyboard */,
+				4FB8EC811E918ED6002D7346 /* Assets.xcassets */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -122,6 +127,11 @@
 			children = (
 				4F739D801E91A0BE005D7103 /* CalendarViewController.swift */,
 				4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */,
+				4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */,
+				4F9125CE208EF632000B2351 /* ColorOptionTableViewCell.swift */,
+				4F739D7B1E91991E005D7103 /* DateCellView.swift */,
+				4FA0D200208E916700C1655A /* Theme.swift */,
+				4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -154,10 +164,6 @@
 				4F739D7D1E919927005D7103 /* Model */,
 				4F739D7E1E91992D005D7103 /* View */,
 				4F739D7F1E919931005D7103 /* Controller */,
-				4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */,
-				4FB8EC7E1E918ED6002D7346 /* Main.storyboard */,
-				4FB8EC811E918ED6002D7346 /* Assets.xcassets */,
-				4FB8EC831E918ED6002D7346 /* LaunchScreen.storyboard */,
 				4FB8EC861E918ED6002D7346 /* Info.plist */,
 			);
 			path = "three-positive-things";
@@ -216,7 +222,6 @@
 				4FB8EC741E918ED6002D7346 /* Frameworks */,
 				4FB8EC751E918ED6002D7346 /* Resources */,
 				C4D736592C022294AF411B49 /* [CP] Embed Pods Frameworks */,
-				CFDE0BD5FBF0484049AB1941 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,8 +240,6 @@
 				4FB8EC871E918ED7002D7346 /* Sources */,
 				4FB8EC881E918ED7002D7346 /* Frameworks */,
 				4FB8EC891E918ED7002D7346 /* Resources */,
-				567EADF46B18E193D897F50F /* [CP] Embed Pods Frameworks */,
-				ED16C1B5726223BD09094941 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,8 +259,6 @@
 				4FB8EC921E918ED7002D7346 /* Sources */,
 				4FB8EC931E918ED7002D7346 /* Frameworks */,
 				4FB8EC941E918ED7002D7346 /* Resources */,
-				8D9FA82E9CF3BB6554795523 /* [CP] Embed Pods Frameworks */,
-				EED6A53807E320DC72CD24C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -347,49 +348,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		567EADF46B18E193D897F50F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-thingsTests/Pods-three-positive-thingsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		68FBC4B00CE513D72B021EB8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-three-positive-things-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8D9FA82E9CF3BB6554795523 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C4D736592C022294AF411B49 /* [CP] Embed Pods Frameworks */ = {
@@ -398,9 +372,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -413,58 +392,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-three-positive-thingsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CFDE0BD5FBF0484049AB1941 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ED16C1B5726223BD09094941 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-thingsTests/Pods-three-positive-thingsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EED6A53807E320DC72CD24C0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F92DAD313E01686AC04D625A /* [CP] Check Pods Manifest.lock */ = {
@@ -473,13 +410,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-three-positive-thingsUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -493,8 +433,10 @@
 				4FB8EC7B1E918ED6002D7346 /* AppDelegate.swift in Sources */,
 				4FB2A22D1E9800F700637649 /* PositiveThingTableViewCell.swift in Sources */,
 				4F739D7C1E91991E005D7103 /* DateCellView.swift in Sources */,
+				4F9125CF208EF632000B2351 /* ColorOptionTableViewCell.swift in Sources */,
 				4FB2A22B1E97FE5B00637649 /* PositiveThingsDay.swift in Sources */,
 				4FD35D41202A5EB40033A5E8 /* SettingsViewController.swift in Sources */,
+				4FA0D201208E916700C1655A /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

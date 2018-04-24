@@ -1,12 +1,22 @@
 PODS:
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
   - JTAppleCalendar (6.1.2)
 
 DEPENDENCIES:
+  - ChameleonFramework/Swift
   - JTAppleCalendar (~> 6.0)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ChameleonFramework
+    - JTAppleCalendar
+
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   JTAppleCalendar: 4424fdd0daac0daf1db93299c07949505055135d
 
-PODFILE CHECKSUM: 98847355dcaf92c170bba1844631ed0696c7576c
+PODFILE CHECKSUM: 2f359ce18683d058235449ab7188840083f9cb9b
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.0

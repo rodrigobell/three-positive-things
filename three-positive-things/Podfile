@@ -7,6 +7,7 @@ target 'three-positive-things' do
 
   # Pods for three-positive-things
   pod 'JTAppleCalendar', '~> 6.0'
+  pod 'ChameleonFramework/Swift'
 
   target 'three-positive-thingsTests' do
     inherit! :search_paths

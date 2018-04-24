@@ -21,22 +21,17 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var weekDaysLabel: UILabel!
+    @IBOutlet weak var headerView: UIView!
     
     let userDefaults = UserDefaults.standard
-    
+//    let iCloudKeyStore: NSUbiquitousKeyValueStore = NSUbiquitousKeyValueStore()
     var positiveThings: [NSDictionary] = []
-    
-    let black = UIColor.black
-    let gray = UIColor.gray
-    let white = UIColor.white
-    let red = UIColor.red
-    
     var bottomPositionTableView: CGPoint?
     var topPositionTableView: CGPoint?
+    var theme: Theme!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(UserDefaults.standard.dictionaryRepresentation().values)
         
         calendarView.delegate = self
         calendarView.dataSource = self
@@ -48,7 +43,14 @@ class CalendarViewController: UIViewController {
         tableView.dataSource = self
         bottomPositionTableView = tableView.center
         topPositionTableView = CGPoint(x: tableView.center.x, y: tableView.center.y - 258)
+        theme = ThemeManager.currentTheme()
+    }
     
+    override func viewDidAppear(_ animated: Bool) {
+        theme = ThemeManager.currentTheme()
+        headerView.backgroundColor = theme.mainColor
+        ThemeManager.applyTheme(theme: theme)
+        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,14 +64,14 @@ class CalendarViewController: UIViewController {
         }
 
         if cellState.isSelected {
-            myCustomCell.dayLabel.textColor = white
+            myCustomCell.dayLabel.textColor = UIColor.white
         } else {
             if Calendar.current.isDateInToday(date) && cellState.dateBelongsTo == .thisMonth {
-                myCustomCell.dayLabel.textColor = red
+                myCustomCell.dayLabel.textColor = UIColor.red
             } else if cellState.dateBelongsTo == .thisMonth {
-                myCustomCell.dayLabel.textColor = black
+                myCustomCell.dayLabel.textColor = UIColor.black
             } else {
-                myCustomCell.dayLabel.textColor = gray
+                myCustomCell.dayLabel.textColor = UIColor.gray
             }
         }
     }
@@ -82,9 +84,9 @@ class CalendarViewController: UIViewController {
         
         if cellState.isSelected {
             if Calendar.current.isDateInToday(date) && cellState.dateBelongsTo == .thisMonth  {
-                myCustomCell.selectedView.layer.backgroundColor = red.cgColor
+                myCustomCell.selectedView.layer.backgroundColor = UIColor.red.cgColor
             } else {
-                myCustomCell.selectedView.layer.backgroundColor = black.cgColor
+                myCustomCell.selectedView.layer.backgroundColor = UIColor.black.cgColor
             }
             myCustomCell.selectedView.layer.cornerRadius = 20
             myCustomCell.selectedView.isHidden = false
@@ -103,14 +105,14 @@ class CalendarViewController: UIViewController {
         myCustomCell.dotView.isHidden = false
         
         if cellState.isSelected {
-            myCustomCell.dotView.layer.backgroundColor  = white.cgColor
+            myCustomCell.dotView.layer.backgroundColor  = UIColor.white.cgColor
         } else {
             if Calendar.current.isDateInToday(date) && cellState.dateBelongsTo == .thisMonth {
-                myCustomCell.dotView.layer.backgroundColor = red.cgColor
+                myCustomCell.dotView.layer.backgroundColor = UIColor.red.cgColor
             } else if cellState.dateBelongsTo == .thisMonth {
-                myCustomCell.dotView.layer.backgroundColor = black.cgColor
+                myCustomCell.dotView.layer.backgroundColor = UIColor.black.cgColor
             } else {
-                myCustomCell.dotView.layer.backgroundColor = gray.cgColor
+                myCustomCell.dotView.layer.backgroundColor = UIColor.gray.cgColor
             }
         }
     }
@@ -144,9 +146,12 @@ class CalendarViewController: UIViewController {
         if !(things.isEmpty) {
             print("saving \(things) to date \(dateString)")
             userDefaults.set(things, forKey: "\(dateString)")
+//            iCloudKeyStore.set(things, forKey: "\(dateString)")
         } else {
             userDefaults.set(nil, forKey: "\(dateString)")
+//            iCloudKeyStore.set([], forKey: "\(dateString)")
         }
+//        iCloudKeyStore.synchronize()
     }
     
     func goToToday() {
@@ -199,6 +204,9 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         if userDefaults.stringArray(forKey: "\(dateString)") != nil {
             handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
         }
+//        if let things = iCloudKeyStore.value(forKey: "\(dateString)") as? [String], things.isEmpty == false {
+//            handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
+//        }
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
@@ -286,7 +294,6 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
         print(indexPath.row)
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "positive-thing-cell", for: indexPath) as! PositiveThingTableViewCell
         
@@ -301,6 +308,10 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = theme.secondaryColor
     }
 }
 
@@ -332,15 +343,3 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
         endTableViewEditing()
     }
 }
-
-extension UIColor {
-    convenience init(colorWithHexValue value: Int, alpha:CGFloat = 1.0){
-        self.init(
-            red: CGFloat((value & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((value & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(value & 0x0000FF) / 255.0,
-            alpha: alpha
-        )
-    }
-}
-
