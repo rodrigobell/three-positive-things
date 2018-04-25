@@ -13,7 +13,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var colorsTableView: UITableView!
     
-    let colors = [("Orange", Theme.Orange), ("Blue", Theme.Blue), ("Coffee", Theme.Coffee)]
+    let colors = Theme.allCases
     
     override func viewDidLoad() {
         colorsTableView.delegate = self
@@ -35,20 +35,23 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         return colors.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 30
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "color-option-cell", for: indexPath) as! ColorOptionTableViewCell
         
-        let colorTuple = colors[indexPath.row]
-        cell.colorLabel.text = colorTuple.0
-        cell.colorView.backgroundColor = colorTuple.1.mainColor
+        let theme = colors[indexPath.row]
+        cell.colorLabel.text = theme.name
+        cell.colorView.backgroundColor = theme.mainColor
         cell.colorView.layer.cornerRadius = 10
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let theme = colors[indexPath.row].1
+        let theme = colors[indexPath.row]
         ThemeManager.applyTheme(theme: theme)
     }
 }

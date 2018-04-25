@@ -22,12 +22,11 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var weekDaysLabel: UILabel!
     @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var tableViewYConstraint: NSLayoutConstraint!
     
     let userDefaults = UserDefaults.standard
 //    let iCloudKeyStore: NSUbiquitousKeyValueStore = NSUbiquitousKeyValueStore()
     var positiveThings: [NSDictionary] = []
-    var bottomPositionTableView: CGPoint?
-    var topPositionTableView: CGPoint?
     var theme: Theme!
     
     override func viewDidLoad() {
@@ -41,8 +40,6 @@ class CalendarViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        bottomPositionTableView = tableView.center
-        topPositionTableView = CGPoint(x: tableView.center.x, y: tableView.center.y - 258)
         theme = ThemeManager.currentTheme()
     }
     
@@ -118,13 +115,17 @@ class CalendarViewController: UIViewController {
     }
     
     func endTableViewEditing() {
-        UIView.animate(withDuration: 0.3) {
-            self.tableView.center = self.bottomPositionTableView!
-            self.weekDaysLabel.isHidden = false
-        }
-        tableView.endEditing(true)
-        
         saveThingsToDate()
+        self.tableViewYConstraint.priority = 1
+        self.tableViewYConstraint.constant = 255
+        self.calendarView.reloadDates(self.calendarView.selectedDates)
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+            self.weekDaysLabel.isHidden = false
+            self.calendarView.isHidden = false
+        }
+
+        tableView.endEditing(true)
     }
     
     func saveThingsToDate() {
@@ -306,6 +307,8 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
         } else if (indexPath.row == 2) {
             cell.positiveThingNumberLabel.text = "3."
         }
+        cell.positiveThingTextView.textContainer.maximumNumberOfLines = 3
+        cell.positiveThingTextView.textContainer.lineBreakMode = .byClipping
         
         return cell
     }
@@ -326,8 +329,11 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
             }
         }
         
+        self.tableViewYConstraint.priority = 999
+        self.tableViewYConstraint.constant = 0
         UIView.animate(withDuration: 0.3) {
-            self.tableView.center = self.topPositionTableView!
+            self.view.layoutIfNeeded()
+            self.calendarView.isHidden = true
         }
         
         UIView.transition(with: self.weekDaysLabel, duration: 0.4, options: .transitionCrossDissolve, animations: {() -> Void in

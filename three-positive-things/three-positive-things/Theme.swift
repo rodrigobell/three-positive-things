@@ -10,16 +10,32 @@ import UIKit
 import ChameleonFramework
 
 enum Theme: Int {
-    case Orange, Blue, Coffee
+    case Orange, Red, NavyBlue, Black, Magenta, Teal, SkyBlue, Green, Mint, Blue, Coffee
     
     var mainColor: UIColor {
         switch self {
         case .Orange:
-            return FlatOrangeDark()
+            return FlatOrange()
+        case .Red:
+            return FlatRed()
+        case .NavyBlue:
+            return FlatNavyBlue()
+        case .Black:
+            return FlatBlack()
+        case .Magenta:
+            return FlatMagenta()
+        case .Teal:
+            return FlatTeal()
+        case .SkyBlue:
+            return FlatSkyBlue()
+        case .Green:
+            return FlatGreen()
+        case .Mint:
+            return FlatMint()
         case .Blue:
-            return FlatBlueDark()
+            return FlatBlue()
         case .Coffee:
-            return FlatCoffeeDark()
+            return FlatCoffee()
         }
     }
     
@@ -27,11 +43,64 @@ enum Theme: Int {
         switch self {
         case .Orange:
             return FlatOrange().withAlphaComponent(0.1)
+        case .Red:
+            return FlatRed().withAlphaComponent(0.1)
+        case .NavyBlue:
+            return FlatNavyBlue().withAlphaComponent(0.1)
+        case .Black:
+            return FlatBlack().withAlphaComponent(0.1)
+        case .Magenta:
+            return FlatMagenta().withAlphaComponent(0.1)
+        case .Teal:
+            return FlatTeal().withAlphaComponent(0.1)
+        case .SkyBlue:
+            return FlatSkyBlue().withAlphaComponent(0.1)
+        case .Green:
+            return FlatGreen().withAlphaComponent(0.1)
+        case .Mint:
+            return FlatMint().withAlphaComponent(0.1)
         case .Blue:
             return FlatBlue().withAlphaComponent(0.1)
         case .Coffee:
             return FlatCoffee().withAlphaComponent(0.1)
         }
+    }
+    
+    var name: String {
+        switch self {
+        case .Orange:
+            return "Orange"
+        case .Red:
+            return "Red"
+        case .NavyBlue:
+            return "Navy Blue"
+        case .Black:
+            return "Black"
+        case .Magenta:
+            return "Magenta"
+        case .Teal:
+            return "Teal"
+        case .SkyBlue:
+            return "Sky Blue"
+        case .Green:
+            return "Green"
+        case .Mint:
+            return "Mint"
+        case .Blue:
+            return "Blue"
+        case .Coffee:
+            return "Coffee"
+        }
+    }
+    
+    static var allCases: [Theme] {
+        var values: [Theme] = []
+        var index = 0
+        while let element = self.init(rawValue: index) {
+            values.append(element)
+            index += 1
+        }
+        return values
     }
 }
 
