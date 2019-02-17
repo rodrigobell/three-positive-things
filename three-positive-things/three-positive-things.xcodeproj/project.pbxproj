@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		10D635E4DC4C920FAC0A4CE4 /* Pods_three_positive_things.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6567EBD4392E33EEBFBFCF /* Pods_three_positive_things.framework */; };
+		4F61836E2091351800AC53CC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F61836D2091351800AC53CC /* CloudKit.framework */; };
 		4F739D7A1E91985E005D7103 /* DateCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F739D791E91985E005D7103 /* DateCellView.xib */; };
 		4F739D7C1E91991E005D7103 /* DateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F739D7B1E91991E005D7103 /* DateCellView.swift */; };
 		4F739D811E91A0BE005D7103 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F739D801E91A0BE005D7103 /* CalendarViewController.swift */; };
 		4F9125CF208EF632000B2351 /* ColorOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9125CE208EF632000B2351 /* ColorOptionTableViewCell.swift */; };
-		4FA0D201208E916700C1655A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0D200208E916700C1655A /* Theme.swift */; };
+		4FA0D201208E916700C1655A /* ThemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0D200208E916700C1655A /* ThemeController.swift */; };
 		4FB2A22B1E97FE5B00637649 /* PositiveThingsDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A22A1E97FE5B00637649 /* PositiveThingsDay.swift */; };
 		4FB2A22D1E9800F700637649 /* PositiveThingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */; };
 		4FB8EC7B1E918ED6002D7346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 		4FB8EC851E918ED6002D7346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB8EC831E918ED6002D7346 /* LaunchScreen.storyboard */; };
 		4FB8EC901E918ED7002D7346 /* three_positive_thingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC8F1E918ED7002D7346 /* three_positive_thingsTests.swift */; };
 		4FB8EC9B1E918ED7002D7346 /* three_positive_thingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC9A1E918ED7002D7346 /* three_positive_thingsUITests.swift */; };
+		4FC2D9D7221A22BD00333ED4 /* ReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2D9D6221A22BD00333ED4 /* ReviewController.swift */; };
 		4FD35D41202A5EB40033A5E8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */; };
 		51AEFB4C310A684038A0AAB7 /* Pods_three_positive_thingsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C22897677CB5C3164B2FD64 /* Pods_three_positive_thingsUITests.framework */; };
 		78D8B0093C4781F7F1EE595C /* Pods_three_positive_thingsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */; };
@@ -49,11 +51,13 @@
 		33B81409C78A2ED1BEAC17EE /* Pods-three-positive-thingsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_thingsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		491DDCAB4AFDD48AEF74B17C /* Pods-three-positive-thingsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsTests/Pods-three-positive-thingsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F61836C209130B200AC53CC /* three-positive-things.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "three-positive-things.entitlements"; sourceTree = "<group>"; };
+		4F61836D2091351800AC53CC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		4F739D791E91985E005D7103 /* DateCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCellView.xib; sourceTree = "<group>"; };
 		4F739D7B1E91991E005D7103 /* DateCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCellView.swift; sourceTree = "<group>"; };
 		4F739D801E91A0BE005D7103 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		4F9125CE208EF632000B2351 /* ColorOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOptionTableViewCell.swift; sourceTree = "<group>"; };
-		4FA0D200208E916700C1655A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		4FA0D200208E916700C1655A /* ThemeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeController.swift; sourceTree = "<group>"; };
 		4FB2A22A1E97FE5B00637649 /* PositiveThingsDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositiveThingsDay.swift; sourceTree = "<group>"; };
 		4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositiveThingTableViewCell.swift; sourceTree = "<group>"; };
 		4FB8EC771E918ED6002D7346 /* three-positive-things.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "three-positive-things.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +72,7 @@
 		4FB8EC961E918ED7002D7346 /* three-positive-thingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "three-positive-thingsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FB8EC9A1E918ED7002D7346 /* three_positive_thingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = three_positive_thingsUITests.swift; sourceTree = "<group>"; };
 		4FB8EC9C1E918ED7002D7346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FC2D9D6221A22BD00333ED4 /* ReviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewController.swift; sourceTree = "<group>"; };
 		4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5DC115E4103E2A0D2D38AD7F /* Pods-three-positive-things.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-things.debug.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things.debug.xcconfig"; sourceTree = "<group>"; };
 		8BE4A9657E36A75B987181C6 /* Pods-three-positive-thingsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D635E4DC4C920FAC0A4CE4 /* Pods_three_positive_things.framework in Frameworks */,
+				4F61836E2091351800AC53CC /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +136,8 @@
 				4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */,
 				4F9125CE208EF632000B2351 /* ColorOptionTableViewCell.swift */,
 				4F739D7B1E91991E005D7103 /* DateCellView.swift */,
-				4FA0D200208E916700C1655A /* Theme.swift */,
+				4FC2D9D6221A22BD00333ED4 /* ReviewController.swift */,
+				4FA0D200208E916700C1655A /* ThemeController.swift */,
 				4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */,
 			);
 			name = Controller;
@@ -161,6 +168,7 @@
 		4FB8EC791E918ED6002D7346 /* three-positive-things */ = {
 			isa = PBXGroup;
 			children = (
+				4F61836C209130B200AC53CC /* three-positive-things.entitlements */,
 				4F739D7D1E919927005D7103 /* Model */,
 				4F739D7E1E91992D005D7103 /* View */,
 				4F739D7F1E919931005D7103 /* Controller */,
@@ -203,6 +211,7 @@
 		D72263A3B951ABA8DDD7BF4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F61836D2091351800AC53CC /* CloudKit.framework */,
 				BD6567EBD4392E33EEBFBFCF /* Pods_three_positive_things.framework */,
 				4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */,
 				0C22897677CB5C3164B2FD64 /* Pods_three_positive_thingsUITests.framework */,
@@ -284,6 +293,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = K64ZP5ML7E;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					4FB8EC8A1E918ED7002D7346 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -433,10 +450,11 @@
 				4FB8EC7B1E918ED6002D7346 /* AppDelegate.swift in Sources */,
 				4FB2A22D1E9800F700637649 /* PositiveThingTableViewCell.swift in Sources */,
 				4F739D7C1E91991E005D7103 /* DateCellView.swift in Sources */,
+				4FC2D9D7221A22BD00333ED4 /* ReviewController.swift in Sources */,
 				4F9125CF208EF632000B2351 /* ColorOptionTableViewCell.swift in Sources */,
 				4FB2A22B1E97FE5B00637649 /* PositiveThingsDay.swift in Sources */,
 				4FD35D41202A5EB40033A5E8 /* SettingsViewController.swift in Sources */,
-				4FA0D201208E916700C1655A /* Theme.swift in Sources */,
+				4FA0D201208E916700C1655A /* ThemeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +607,7 @@
 			baseConfigurationReference = 5DC115E4103E2A0D2D38AD7F /* Pods-three-positive-things.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "three-positive-things/three-positive-things.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K64ZP5ML7E;
@@ -607,6 +626,7 @@
 			baseConfigurationReference = 2032EF96EEE7BCE7B84A4C01 /* Pods-three-positive-things.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "three-positive-things/three-positive-things.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K64ZP5ML7E;

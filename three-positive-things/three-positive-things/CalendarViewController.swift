@@ -6,12 +6,8 @@
 //  Copyright © 2017 Rodrigo Bell. All rights reserved.
 //
 
-//
-// TODO:
-// > save empty table view cell if user deletes their data for a given day
-//
-
 import UIKit
+import CloudKit
 import JTAppleCalendar
 
 class CalendarViewController: UIViewController {
@@ -24,10 +20,10 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var tableViewYConstraint: NSLayoutConstraint!
     
-    let userDefaults = UserDefaults.standard
-//    let iCloudKeyStore: NSUbiquitousKeyValueStore = NSUbiquitousKeyValueStore()
+    let iCloudKeyStore: NSUbiquitousKeyValueStore = NSUbiquitousKeyValueStore()
     var positiveThings: [NSDictionary] = []
-    var theme: Theme!
+    var currentDate: Date!
+    var theme: ThemeController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,18 +32,31 @@ class CalendarViewController: UIViewController {
         calendarView.dataSource = self
         calendarView.registerCellViewXib(file: "DateCellView") // Registering your cell is mandatory
         calendarView.cellInset = CGPoint(x: 0, y: 0)
+        calendarView.reloadDates(calendarView.visibleDates().monthDates) // This will take care of loading saved user data upon app reinstall
         goToToday()
         
         tableView.delegate = self
         tableView.dataSource = self
         theme = ThemeManager.currentTheme()
+        currentDate = Date()
+        
+        if #available(iOS 10.3, *) {
+            ReviewHandler().showReviewView(atLaunchCounts: [2,5,15,30,60])
+        }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         theme = ThemeManager.currentTheme()
         headerView.backgroundColor = theme.mainColor
-        ThemeManager.applyTheme(theme: theme)
         tableView.reloadData()
+        if currentDate != Date() {
+            calendarView.reloadData()
+            currentDate = Date()
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        endTableViewEditing()
     }
     
     override func didReceiveMemoryWarning() {
@@ -145,14 +154,11 @@ class CalendarViewController: UIViewController {
         }
         
         if !(things.isEmpty) {
-            print("saving \(things) to date \(dateString)")
-            userDefaults.set(things, forKey: "\(dateString)")
-//            iCloudKeyStore.set(things, forKey: "\(dateString)")
+            iCloudKeyStore.set(things, forKey: "\(dateString)")
         } else {
-            userDefaults.set(nil, forKey: "\(dateString)")
-//            iCloudKeyStore.set([], forKey: "\(dateString)")
+            iCloudKeyStore.set([], forKey: "\(dateString)")
         }
-//        iCloudKeyStore.synchronize()
+        iCloudKeyStore.synchronize()
     }
     
     func goToToday() {
@@ -202,12 +208,9 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateString = dateFormatter.string(from: date)
         
-        if userDefaults.stringArray(forKey: "\(dateString)") != nil {
+        if let things = iCloudKeyStore.array(forKey: "\(dateString)") as? [String], things.isEmpty == false {
             handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
         }
-//        if let things = iCloudKeyStore.value(forKey: "\(dateString)") as? [String], things.isEmpty == false {
-//            handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
-//        }
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleDayCellView?, cellState: CellState) {
@@ -218,8 +221,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateString = dateFormatter.string(from: date)
         
-        if let things = userDefaults.stringArray(forKey: "\(dateString)") {
-            print("found \(things) for \(dateString)")
+        if let things = iCloudKeyStore.array(forKey: "\(dateString)") as? [String], things.isEmpty == false {
             var i = 0
             for thing in things {
                 let tableCell = tableView.visibleCells[i]
@@ -240,12 +242,12 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         let dateString = dateFormatter.string(from: date)
         
         if let myCustomCell = cell as? DateCellView {
-            if userDefaults.stringArray(forKey: "\(dateString)") == nil {
+            if let things = iCloudKeyStore.array(forKey: "\(dateString)") as? [String], things.isEmpty == false {
                 myCustomCell.dotView.isHidden = true
             }
         }
         
-        if userDefaults.stringArray(forKey: "\(dateString)") != nil {
+        if let things = iCloudKeyStore.array(forKey: "\(dateString)") as? [String], things.isEmpty == false {
             handleCellDisplayDotView(view: cell, date: date, cellState: cellState)
         }
     
@@ -290,11 +292,7 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
-    }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "positive-thing-cell", for: indexPath) as! PositiveThingTableViewCell
         
