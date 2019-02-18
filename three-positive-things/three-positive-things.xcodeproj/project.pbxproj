@@ -23,6 +23,7 @@
 		4FB8EC901E918ED7002D7346 /* three_positive_thingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC8F1E918ED7002D7346 /* three_positive_thingsTests.swift */; };
 		4FB8EC9B1E918ED7002D7346 /* three_positive_thingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8EC9A1E918ED7002D7346 /* three_positive_thingsUITests.swift */; };
 		4FC2D9D7221A22BD00333ED4 /* ReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2D9D6221A22BD00333ED4 /* ReviewController.swift */; };
+		4FC2D9D9221B6F4F00333ED4 /* WordCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC2D9D8221B6F4F00333ED4 /* WordCloudViewController.swift */; };
 		4FD35D41202A5EB40033A5E8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */; };
 		51AEFB4C310A684038A0AAB7 /* Pods_three_positive_thingsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C22897677CB5C3164B2FD64 /* Pods_three_positive_thingsUITests.framework */; };
 		78D8B0093C4781F7F1EE595C /* Pods_three_positive_thingsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */; };
@@ -73,6 +74,7 @@
 		4FB8EC9A1E918ED7002D7346 /* three_positive_thingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = three_positive_thingsUITests.swift; sourceTree = "<group>"; };
 		4FB8EC9C1E918ED7002D7346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FC2D9D6221A22BD00333ED4 /* ReviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewController.swift; sourceTree = "<group>"; };
+		4FC2D9D8221B6F4F00333ED4 /* WordCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCloudViewController.swift; sourceTree = "<group>"; };
 		4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5DC115E4103E2A0D2D38AD7F /* Pods-three-positive-things.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-things.debug.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things.debug.xcconfig"; sourceTree = "<group>"; };
 		8BE4A9657E36A75B987181C6 /* Pods-three-positive-thingsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				4F739D801E91A0BE005D7103 /* CalendarViewController.swift */,
+				4FC2D9D8221B6F4F00333ED4 /* WordCloudViewController.swift */,
 				4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */,
 				4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */,
 				4F9125CE208EF632000B2351 /* ColorOptionTableViewCell.swift */,
@@ -389,18 +392,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-three-positive-things/Pods-three-positive-things-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/DBSphereTagCloudSwift/DBSphereTagCloudSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBSphereTagCloudSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-three-positive-things/Pods-three-positive-things-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C5CDE4A64E1DC62F7061702F /* [CP] Check Pods Manifest.lock */ = {
@@ -452,6 +457,7 @@
 				4F739D7C1E91991E005D7103 /* DateCellView.swift in Sources */,
 				4FC2D9D7221A22BD00333ED4 /* ReviewController.swift in Sources */,
 				4F9125CF208EF632000B2351 /* ColorOptionTableViewCell.swift in Sources */,
+				4FC2D9D9221B6F4F00333ED4 /* WordCloudViewController.swift in Sources */,
 				4FB2A22B1E97FE5B00637649 /* PositiveThingsDay.swift in Sources */,
 				4FD35D41202A5EB40033A5E8 /* SettingsViewController.swift in Sources */,
 				4FA0D201208E916700C1655A /* ThemeController.swift in Sources */,
