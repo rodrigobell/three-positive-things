@@ -43,6 +43,8 @@ class CalendarViewController: UIViewController {
         if #available(iOS 10.3, *) {
             ReviewHandler().showReviewView(atLaunchCounts: [2,5,15,30,60])
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(saveThingsToDate), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -313,6 +315,10 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = theme.secondaryColor
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        saveThingsToDate()
     }
 }
 
