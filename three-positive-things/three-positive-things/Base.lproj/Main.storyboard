@@ -156,7 +156,7 @@
                                 </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PUu-Lm-Hk0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="2l1-zD-M1P"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ySs-Lb-6pQ" secondAttribute="bottom" priority="250" id="6Sa-fb-Mm0"/>

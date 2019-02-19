@@ -20,7 +20,7 @@ class WordCloudViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sphereView = DBSphereView(frame: CGRect(x: 25, y: (screenSize.height / 2) - 280, width: screenSize.width - 50, height: screenSize.width + 100))
+        sphereView = DBSphereView(frame: CGRect(x: 25, y: (screenSize.height / 2) - 280, width: screenSize.width - 50, height: screenSize.width - 50))
         var array = [UIButton]()
     
         let words = getWords()
