@@ -20,16 +20,28 @@ class WordCloudViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sphereView = DBSphereView(frame: CGRect(x: 10, y: (screenSize.height / 2) - 265, width: screenSize.width - 20, height: screenSize.width - 20))
+        sphereView = DBSphereView(frame: CGRect(x: 10, y: (screenSize.height / 2) - 270, width: screenSize.width - 20, height: screenSize.width - 20))
         var array = [UIButton]()
     
         let words = getWords()
         
-        for word in words {
+        for wordTouple in words {
             let btn = UIButton(type: UIButton.ButtonType.system)
-            btn.setTitle(word, for: .normal)
+            btn.setTitle(wordTouple.0, for: .normal)
             btn.setTitleColor(.darkGray, for: .normal)
-            btn.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: 0.5)
+            var weight = CGFloat()
+            switch wordTouple.1 {
+            case 0..<5:
+                weight = 0.38
+            case 5..<10:
+                weight = 0.45
+            case 10..<15:
+                weight = 0.52
+            default:
+                weight = 0.55
+            }
+            let fontWeight = UIFontWeight(exactly: weight)
+            btn.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: fontWeight!)
             btn.frame = CGRect(x: 0, y: 0, width: 200, height: 20)
             array.append(btn)
             sphereView.addSubview(btn)
@@ -45,7 +57,7 @@ class WordCloudViewController: UIViewController {
 
     }
     
-    func getWords() -> [String] {
+    func getWords() -> [(String,Int)] {
         var wordCounts = [String : Int]()
         let iCloudDict = iCloudKeyStore.dictionaryRepresentation
         for (_, value) in iCloudDict {
@@ -71,18 +83,18 @@ class WordCloudViewController: UIViewController {
         }
         let sortedWordCounts = wordCounts.sorted { $0.1 > $1.1 }
         let stopWords = readStopWords()
-        var words = [String]()
-        var maxWords = 50
-        for (word, _) in sortedWordCounts {
+        var words = [(String, Int)]()
+        var maxWords = 48
+        for (word, count) in sortedWordCounts {
             if stopWords.contains(word) {
                 continue
             }
             if maxWords > 0 {
-                words.append(word)
+                words.append((word,count))
                 maxWords = maxWords - 1
             }
         }
-        return words
+        return words.shuffled()
     }
     
     func readStopWords() -> [String] {

@@ -322,7 +322,7 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-// GestireRecognizer methods
+// GestureRecognizer methods
 extension CalendarViewController: UIGestureRecognizerDelegate {
     @IBAction func onTableViewCoverTapGesture(_ sender: UITapGestureRecognizer) {
         let tapLocation = sender.location(in: self.tableView)
