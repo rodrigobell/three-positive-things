@@ -20,7 +20,7 @@ class WordCloudViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sphereView = DBSphereView(frame: CGRect(x: 25, y: (screenSize.height / 2) - 280, width: screenSize.width - 50, height: screenSize.width - 50))
+        sphereView = DBSphereView(frame: CGRect(x: 10, y: (screenSize.height / 2) - 265, width: screenSize.width - 20, height: screenSize.width - 20))
         var array = [UIButton]()
     
         let words = getWords()
@@ -53,6 +53,12 @@ class WordCloudViewController: UIViewController {
                 for thing in things {
                     let words = thing.wordList
                     for word in words {
+                        // Ignore words that contain numbers
+                        let numbersRange = word.rangeOfCharacter(from: .decimalDigits)
+                        if (numbersRange != nil) {
+                            continue
+                        }
+                        // Convert word to lowercase and add to word dict
                         let word = word.lowercased()
                         if wordCounts[word] == nil {
                             wordCounts[word] = 1
@@ -66,7 +72,7 @@ class WordCloudViewController: UIViewController {
         let sortedWordCounts = wordCounts.sorted { $0.1 > $1.1 }
         let stopWords = readStopWords()
         var words = [String]()
-        var maxWords = 75
+        var maxWords = 50
         for (word, _) in sortedWordCounts {
             if stopWords.contains(word) {
                 continue
