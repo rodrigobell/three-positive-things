@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ila-pM-rV9">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ila-pM-rV9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5M-gK-DSU">
-                                        <rect key="frame" x="390" y="61" width="16" height="22"/>
+                                        <rect key="frame" x="384" y="61" width="22" height="22"/>
                                         <state key="normal" image="iconmonstr-gear-22">
                                             <color key="titleColor" red="1" green="0.9182156454" blue="0.75540929010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -62,7 +60,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxk-In-NIl">
-                                        <rect key="frame" x="356" y="61" width="16" height="22"/>
+                                        <rect key="frame" x="344" y="61" width="22" height="22"/>
                                         <state key="normal" image="iconmonstr-globe-22">
                                             <color key="titleColor" red="1" green="0.9182156454" blue="0.75540929010000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -104,11 +102,11 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6aR-G6-w75" id="ISh-hs-OGi">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3s-Wh-rGB">
-                                                    <rect key="frame" x="20" y="65" width="17" height="21"/>
+                                                    <rect key="frame" x="20" y="21" width="17" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -254,7 +252,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="28"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tkV-e8-9wo" id="eVP-ef-OMJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="27.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="28"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQL-tR-Tf5">
@@ -344,20 +342,46 @@
                                     <constraint firstAttribute="height" constant="110" id="VQB-U3-RFA"/>
                                     <constraint firstItem="Q2J-Pe-7nc" firstAttribute="centerX" secondItem="vcb-gA-cUf" secondAttribute="centerX" id="Wo3-L0-Fue"/>
                                     <constraint firstAttribute="bottom" secondItem="Q2J-Pe-7nc" secondAttribute="bottom" constant="13" id="eDc-W5-EIb"/>
+                                    <constraint firstItem="lyB-oj-opQ" firstAttribute="leading" secondItem="vcb-gA-cUf" secondAttribute="leading" constant="12" id="ssv-pc-OAd"/>
                                     <constraint firstItem="Q2J-Pe-7nc" firstAttribute="centerY" secondItem="lyB-oj-opQ" secondAttribute="centerY" id="yo1-cs-HnU"/>
-                                    <constraint firstItem="lyB-oj-opQ" firstAttribute="leading" secondItem="vcb-gA-cUf" secondAttribute="leading" constant="12" id="zou-yg-7bo"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ph0-Uf-YZ6">
                                 <rect key="frame" x="0.0" y="110" width="414" height="754"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0f-pP-6fF">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="757"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0f-pP-6fF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="754"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Sk1-by-guA">
+                                                <rect key="frame" x="90.5" y="12" width="233" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="rro-qo-gJa"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="All Time"/>
+                                                    <segment title="3 Months"/>
+                                                    <segment title="1 Month"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="segmentedControlIndexChanged:" destination="OLh-r6-mJl" eventType="valueChanged" id="IdU-sU-33d"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Sk1-by-guA" firstAttribute="centerX" secondItem="k0f-pP-6fF" secondAttribute="centerX" id="Kni-cy-vSo"/>
+                                            <constraint firstItem="Sk1-by-guA" firstAttribute="top" secondItem="k0f-pP-6fF" secondAttribute="top" constant="12" id="gwr-vf-Gkc"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="k0f-pP-6fF" firstAttribute="leading" secondItem="Ph0-Uf-YZ6" secondAttribute="leading" id="AaF-o1-3lj"/>
+                                    <constraint firstAttribute="trailing" secondItem="k0f-pP-6fF" secondAttribute="trailing" id="Mgk-qL-idL"/>
+                                    <constraint firstItem="k0f-pP-6fF" firstAttribute="centerX" secondItem="Ph0-Uf-YZ6" secondAttribute="centerX" id="Xuv-6B-wTu"/>
+                                    <constraint firstItem="k0f-pP-6fF" firstAttribute="top" secondItem="Ph0-Uf-YZ6" secondAttribute="top" id="gz3-IY-alH"/>
+                                    <constraint firstAttribute="bottom" secondItem="k0f-pP-6fF" secondAttribute="bottom" id="sO4-AM-1FD"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -365,6 +389,7 @@
                             <constraint firstItem="FNH-JC-W6I" firstAttribute="top" secondItem="Ph0-Uf-YZ6" secondAttribute="bottom" constant="-2" id="0Ud-S7-pzD"/>
                             <constraint firstAttribute="trailing" secondItem="Ph0-Uf-YZ6" secondAttribute="trailing" id="4u5-8z-md4"/>
                             <constraint firstAttribute="trailing" secondItem="vcb-gA-cUf" secondAttribute="trailing" id="CUD-So-h2k"/>
+                            <constraint firstItem="Ph0-Uf-YZ6" firstAttribute="centerX" secondItem="fDz-Ih-egf" secondAttribute="centerX" id="RRe-S1-ohi"/>
                             <constraint firstItem="vcb-gA-cUf" firstAttribute="leading" secondItem="fDz-Ih-egf" secondAttribute="leading" id="Vd0-4R-AP8"/>
                             <constraint firstItem="Ph0-Uf-YZ6" firstAttribute="leading" secondItem="fDz-Ih-egf" secondAttribute="leading" id="WAk-MC-rWS"/>
                             <constraint firstItem="vcb-gA-cUf" firstAttribute="top" secondItem="fDz-Ih-egf" secondAttribute="top" id="p91-Be-X3F"/>
@@ -402,8 +427,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iconmonstr-arrow-20" width="15" height="15"/>
-        <image name="iconmonstr-gear-22" width="16.5" height="16.5"/>
-        <image name="iconmonstr-globe-22" width="16.5" height="16.5"/>
+        <image name="iconmonstr-arrow-20" width="20" height="20"/>
+        <image name="iconmonstr-gear-22" width="22" height="22"/>
+        <image name="iconmonstr-globe-22" width="22" height="22"/>
     </resources>
 </document>

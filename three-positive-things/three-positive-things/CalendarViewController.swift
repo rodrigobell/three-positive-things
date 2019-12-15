@@ -127,7 +127,7 @@ class CalendarViewController: UIViewController {
     
     func endTableViewEditing() {
         saveThingsToDate()
-        self.tableViewYConstraint.priority = 1
+        self.tableViewYConstraint.priority = UILayoutPriority(rawValue: 1)
         self.tableViewYConstraint.constant = 255
         self.calendarView.reloadDates(self.calendarView.selectedDates)
         UIView.animate(withDuration: 0.3) {
@@ -139,7 +139,7 @@ class CalendarViewController: UIViewController {
         tableView.endEditing(true)
     }
     
-    func saveThingsToDate() {
+    @objc func saveThingsToDate() {
         let date = calendarView.selectedDates[0]
         
         let dateFormatter = DateFormatter()
@@ -333,7 +333,7 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
             }
         }
         
-        self.tableViewYConstraint.priority = 999
+        self.tableViewYConstraint.priority = UILayoutPriority(rawValue: 999)
         self.tableViewYConstraint.constant = 0
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()

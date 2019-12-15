@@ -2,8 +2,8 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
-  - DBSphereTagCloudSwift (2.0.1)
-  - JTAppleCalendar (6.1.2)
+  - DBSphereTagCloudSwift (2.0.2)
+  - JTAppleCalendar (6.1.6)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift
@@ -18,9 +18,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  DBSphereTagCloudSwift: 940bea38f8bf552552319ed413fa20b658964e38
-  JTAppleCalendar: 4424fdd0daac0daf1db93299c07949505055135d
+  DBSphereTagCloudSwift: 47d03bf7f0decec371a932630412b37938a9aaa5
+  JTAppleCalendar: 560fb46421880f53ad54123295072de24bca2b18
 
 PODFILE CHECKSUM: 2a7c2ce2831c9c6db0b51d1fbbfd60a2b4257151
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.7.5

@@ -155,7 +155,7 @@ enum ThemeController: Int {
 let selectedThemeKey = "SelectedTheme"
 struct ThemeManager {
     static func currentTheme() -> ThemeController {
-        if let storedTheme = (NSUbiquitousKeyValueStore.default().object(forKey: selectedThemeKey)) {
+        if let storedTheme = (NSUbiquitousKeyValueStore.default.object(forKey: selectedThemeKey)) {
             let temp = storedTheme as? AnyObject
             return ThemeController(rawValue: temp!.integerValue)!
         } else {
@@ -165,8 +165,8 @@ struct ThemeManager {
     
     static func applyTheme(theme: ThemeController) {
         // 1
-        NSUbiquitousKeyValueStore.default().set(theme.rawValue, forKey: selectedThemeKey)
-        NSUbiquitousKeyValueStore.default().synchronize()
+        NSUbiquitousKeyValueStore.default.set(theme.rawValue, forKey: selectedThemeKey)
+        NSUbiquitousKeyValueStore.default.synchronize()
         // 2
         let sharedApplication = UIApplication.shared
         sharedApplication.delegate?.window??.tintColor = theme.mainColor

@@ -69,14 +69,14 @@ open class DBSphereView: UIView, UIGestureRecognizerDelegate {
     /**
      *  Starts the cloud autorotation animation.
      */
-    func timerStart() {
+    public func timerStart() {
         timer.isPaused = false
     }
     
     /**
      *  Stops the cloud autorotation animation.
      */
-    func timerStop() {
+    public func timerStop() {
         timer.isPaused = true
     }
 
@@ -85,10 +85,10 @@ open class DBSphereView: UIView, UIGestureRecognizerDelegate {
         self.addGestureRecognizer(gesture)
         
         inertia = CADisplayLink(target: self, selector: #selector(inertiaStep))
-        inertia.add(to: .main, forMode: RunLoopMode.defaultRunLoopMode)
+        inertia.add(to: .main, forMode: RunLoop.Mode.default)
         
         timer  = CADisplayLink(target: self, selector: #selector(autoTurnRotation))
-        timer.add(to: .main, forMode: RunLoopMode.defaultRunLoopMode)
+        timer.add(to: .main, forMode: RunLoop.Mode.default)
     }
     
     override public init(frame: CGRect) {

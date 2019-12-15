@@ -7,481 +7,481 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		048CBEE3605A79448EA7C599D0A60C0F /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA24314536EF9AD69206F8349258C98 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BA66A92141BA26C5CF155454A00F4D4 /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D3A9CCF07967E4F191BDCC878DC78 /* UserInteractionFunctions.swift */; };
-		0DBDB8261CA9228807DE6E512778DC53 /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EA7895C6FE6AB13FDE5A838425834 /* CalendarEnums.swift */; };
-		0E13FC19A37E79CA38B37464D55248A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471A43441C2C8D253804F7CCC04D0C7 /* Foundation.framework */; };
-		0F674CE9C6295392F20DDF8A805D090E /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE2166E1475B886E076568EEA737CCD /* UILabel+Chameleon.m */; };
-		16654F2F614A5D58B34A44FFE0BD59F0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E249BB478CD8BBCB96340CD214286BD6 /* Accelerate.framework */; };
-		176104A8FB47982F530314847C330A73 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D95AAFD299D57CCA5E96E7BDC888C1B3 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		181DF24CE1EF2E15C1E9E04535B315B5 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F672E5F0535FBE2772A305823309DF /* UIColor+ChameleonPrivate.m */; };
-		195C100B016A4694CAB71A2EACD0FDC7 /* JTAppleDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3A71770296E5A165E3700BF21709F /* JTAppleDayCell.swift */; };
-		1D70897E547B174945A00F9BF68A40E0 /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC766614571FC59F506E02B94ED847A2 /* JTCalendarProtocols.swift */; };
-		1EC23CE32ACC4444AEA4342256BF176A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA95ED07D3FED9693EC006F7B93E796 /* QuartzCore.framework */; };
-		24646492E182A15834C35A7377D5B562 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 911816A5DA60DA577E700C0F505970E9 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2696CC6F6B0AEBEC0A532DCCC0480CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471A43441C2C8D253804F7CCC04D0C7 /* Foundation.framework */; };
-		2EA14DCEF7A53F46112987411BFF056D /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B7E36AB12A0131960C936A4A657469 /* UIButton+Chameleon.m */; };
-		31E5A610AA4FD13AB3A92E4EB192DCAC /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E6088ABEC099E7BD601C81993F68FF /* UIViewController+Chameleon.m */; };
-		3325DDBE26D878544FD06407A2D56C11 /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E11FF64E887A7E76EF3F6935F42A3E /* JTAppleCalendarView.swift */; };
-		405A46D43457696F9463D8D49D1B2E47 /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7458D6EA73171F938A78185BDB3B831D /* UIScrollViewDelegates.swift */; };
-		4168677DA39B1DAF653F6CF2C742F746 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099FEC04B8DBBC74F5CA789190F24C74 /* UIKit.framework */; };
-		45ADC2EFF50481EEBE29D7513A82C24C /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD51213864DCCC96EBE11CE45119C96 /* NSArray+Chameleon.m */; };
-		4622B4E13080FF258DD341E2E4D4FEC6 /* Pods-three-positive-thingsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F366491B9B3DF187178E76FCDCB831F4 /* Pods-three-positive-thingsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49C48431C3428DA78CE324E250FD04CC /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FC1B88057CD0BED5BF0DE859EE842C /* CalendarStructs.swift */; };
-		4B758B30DB436120AA73964009F8C825 /* JTAppleCalendarLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1574FE687573CA3B5A96F35AAD26F1 /* JTAppleCalendarLayoutProtocol.swift */; };
-		4C6C900322F07F724CE7A30215C84ED0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471A43441C2C8D253804F7CCC04D0C7 /* Foundation.framework */; };
-		4DB68BD2B147D653BF257E5455809FFD /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B06E84213FA14B9B58ED6E954F7D98 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E7164F686751E436C078FA3646A018F /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CACD06CD8B04EA4DB0EA937119E0B6 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FC67E29EB0D9E0FB2E4122751573059 /* JTAppleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A47DB4DC8A9A97FE05621CB8BFD741 /* JTAppleViews.swift */; };
-		520C26988D102C008B94FDA5B3596962 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B12C4844420F987FF4E8EE0B08DA568 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54E994B06FF18CFA113C7CB8BE6401CB /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4657E138362AA293D13061DF334761 /* UINavigationController+Chameleon.m */; };
-		552BD36EFA03424A5B9ACE572183B14D /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C61E92612707C69188404DF72613AA /* UIView+ChameleonPrivate.m */; };
-		5BCF7340683AC03AA1EDA8C5D8F063D7 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1DBF63DBC445701F6FD529EDFB4EAB /* MatrixSubscripting.swift */; };
-		5D317810964E0A07E54C0DC6EAE6E1F1 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914CC07E7AE89A392762FD6D289C46A /* MatrixMultiplication.swift */; };
-		5DEBDAE3AF4BD65A296E6A113C192EE8 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73284066BA5D7CF1581012029A20729F /* ChameleonFramework-dummy.m */; };
-		60DF177E0040436ACEF4AAED7A723493 /* Pods-three-positive-thingsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B24CCF453F67F0176CB54EAC0DE74C /* Pods-three-positive-thingsUITests-dummy.m */; };
-		67DEC6287AB496078C0AF3358771BF3F /* Pods-three-positive-thingsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C11D55172CDA52B727CCCF78578777 /* Pods-three-positive-thingsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A26FBCC90A1285AA8330996AA44EFB0 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 263DCF0D83BE69F14576CF15FA2BEA5B /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6AEBB394B8BC4F161F4ACADA86A04C17 /* DBSphereTagCloudSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE9278940DACA064EDAE3650A1161E /* DBSphereTagCloudSwift-dummy.m */; };
-		6B55EC684682F90E5343A3B802827A98 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EBF51F0FFEAD189CA5F942D9B2D8C6 /* UIColor+Chameleon.m */; };
-		6B7481606ECA01FBD9A1F69228EE3C8C /* Pods-three-positive-thingsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C48A63BB989DA173EEFC40D0E8EC34D /* Pods-three-positive-thingsTests-dummy.m */; };
-		6C08B7DD16627E53E1137B201274552B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471A43441C2C8D253804F7CCC04D0C7 /* Foundation.framework */; };
-		6F2216CEEACF033BABDB5F98F9F15109 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EADF87256CDA5107491008945D20672 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7456373CA05C470A0AD64D5D7187FFE5 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = C59413BA5A49C5CD21D9924DF5C5377C /* UIImage+ChameleonPrivate.m */; };
-		77E4F8B50479FF5021DF75297F930A60 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 247217C92D157FCB6192E1DD2E5928F6 /* ChameleonConstants.m */; };
-		7E0B6F36FAF17AFE5EEAC571D71FCED2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099FEC04B8DBBC74F5CA789190F24C74 /* UIKit.framework */; };
-		7EC2C456C502D082B372261CB1C685C1 /* DBSphereTagCloudSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4811176D0390134EDCE6FCBB11EE5C /* DBSphereTagCloudSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EE588B80E0B1766AA46E261C408EB41 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07BF24600C85B46B0A9B32D212182D2F /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		886657D2A48CB4AC6272DB93B2583E3F /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 465416177101F6B85441FB425C32D3C3 /* Chameleon_.m */; };
-		92AD35CEC385C4695751D77CE845FB5E /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A77E3F61C89D0BED3E23BE227F43E1 /* MatrixCreation.swift */; };
-		9CCCAD9B837E51A296C8FEC903BD6E83 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C10B79A2BDA36D2945D962A1BE91E55 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9D2E59A536F6A9665E958C90ED472A2 /* Pods-three-positive-things-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F48667EF33F8CF6A6D049A82C6A01C0 /* Pods-three-positive-things-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB3E7EB0DB558D2DD86672B8EC6182A3 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7615D025AEEA6163C415473F461B601E /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2D977425D99948CAB9190713C0A4A99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C1D914B7AAB75C25FE4B3567B0C903 /* CoreGraphics.framework */; };
-		B7A0E6A18665DBA68F843C98A3F4563B /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6990640D4956E82014D8E6F56A12442F /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8785342D922BF69699BE842663338A1 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22191C7269C1BAFA82466EE4103B974E /* ChameleonShorthand.swift */; };
-		C36D92F1403DE415341CD0DE60FB5C19 /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C099428487889B1488A05BEC302020F2 /* JTAppleCalendarLayout.swift */; };
-		C74879D68D0D88636E07D7D1BE9820C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471A43441C2C8D253804F7CCC04D0C7 /* Foundation.framework */; };
-		C9E7D874BF49220659E22775E85A9EC0 /* UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2500B0BEC096A7988D5FF10D386C2F /* UICollectionViewDelegates.swift */; };
-		CCF47C26C87C67EF44351767B016157E /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C35F538697363877CB5C627760DC53E /* JTAppleCollectionReusableView.swift */; };
-		CD0406CED1628F178C4AB9A60AD44EDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471A43441C2C8D253804F7CCC04D0C7 /* Foundation.framework */; };
-		CEA33CB3A8F7D56A0204B7556B3F0D0E /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EC9BAB6D1C2399438C57B1148BEC50 /* UIAppearance+Swift.m */; };
-		CF2B227368462B88D1AD9B876B464DA4 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C72DA8322DB38BD9682EE3CC332890 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D252A58B8AAF0E2C676BEC90DD89E7E6 /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE845794F06D77C72B46C39D6B4C2A15 /* JTAppleCalendarDelegateProtocol.swift */; };
-		D3D4B32B42DF24DBEC85FD008845410E /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FA39765654D9EA052C19AA661F9B32 /* Matrix.swift */; };
-		D6897EC41B66A991C9D6AB9DE5AAC810 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 65009B3709377A585BB5BAF72755670C /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D79AAF41DD1FBB43D5F226917FD30EB5 /* DBSphereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80DEB64B81DFABA3DC510C9F020F13 /* DBSphereView.swift */; };
-		DC22AF907572D644656D24E899058922 /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5B2DAC09A7C5DB3DF58278F4A85686 /* MatrixConcatenation.swift */; };
-		DD9355F57A78278A15F0F1F0C9C79377 /* JTAppleReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68CE137F720C5563590B4CDA03DAB5C /* JTAppleReusableViewProtocol.swift */; };
-		E965F7E744BB2C09CB9BDF3D45C1D07E /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D8BC1EDE8197C38F517568B345A4 /* GlobalFunctionsAndExtensions.swift */; };
-		EB8061116245C328D0ED4075519B4247 /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EFFEB0DF7C4E5B82F9E12362AA23DD /* JTAppleCalendar-dummy.m */; };
-		EF2BF3945A7E3753CC4CDD818D93DB0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C1D914B7AAB75C25FE4B3567B0C903 /* CoreGraphics.framework */; };
-		EFC9D2AA27445BD59B2E4EB2449F2F30 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E7DF31EE78190DD84E25B5BF01F75F /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0266706E351F141F5C7F0B0D77E095E /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 04DBC1CFB8183D5E31B9325814DD31E3 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F818E9EC7F283C9B48C805669828732E /* Pods-three-positive-things-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8385A46CB74107C32DC1B3A34E4882D /* Pods-three-positive-things-dummy.m */; };
-		FB114A7AE122B806F75B47BF957A31ED /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = F22C4982950BDC52F7DE71DC609C2E8A /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		015A05B381E25C2FA80A0DA797179580 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D79DBD759A424BDFD5D3F78E783A0D5 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		023F20C99064795776C21FAFD4FE953A /* DBSphereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B1666CFAC738E4DA9AF7BE6AB58543 /* DBSphereView.swift */; };
+		03E30CF83F65342B20446EA6E7974BDA /* Pods-three-positive-things-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2DA21D300B11EF0508CD5FF4B32106A /* Pods-three-positive-things-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07A0DFFBB0EA1EA20CE1C511B55C13B2 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E710B09DF169ADBA52978C59A5CFE38 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07F4634E722082DB20A867BD271864CA /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7A77635063599E823A89FA10EB838D /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09166686349E0A1C4FC2FEA3E4C23B6A /* JTAppleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481746FC59A964D955267B40981F6237 /* JTAppleViews.swift */; };
+		0C66E72276B24115F4EE16246D0D11C0 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 602F8153A3985FE461E93C8EE07D72E8 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DABC15493B0D3514C059D032FB235FD /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F23DE3533EC720CF234C689634E39E /* CustomCollectionView.swift */; };
+		1355620BE3501C29A64B4A9F98929B05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29725C588677E8258B73FAA8747E9945 /* Foundation.framework */; };
+		1CD3086B9B1345B04252FF6EA9AF1224 /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A3B29514E792FBC3D79A5FC741DE60 /* JTAppleCollectionReusableView.swift */; };
+		20625E4B879D18D7821B8B1668EFEBAA /* Pods-three-positive-thingsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D849E30123A15C84DB6DCED380840AEB /* Pods-three-positive-thingsUITests-dummy.m */; };
+		275CF53070F9850F9CF142A83F29F9D2 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = BF13625620486B7D3286FA88AC5107FE /* UIAppearance+Swift.m */; };
+		2A1B6DD950FF7E44EE6FC7055E57180F /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A9EE1DA5F1237CA963936BF6E40A7 /* MatrixSubscripting.swift */; };
+		2DE099B2ADF505CC566D1AAF5109783C /* Pods-three-positive-thingsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C929250F8898527E21CE7D4D40A881 /* Pods-three-positive-thingsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32693F5EBD11B0361C4E51408C3E087E /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613D61ED69D1F53D7A67A04EBB6DF72 /* UserInteractionFunctions.swift */; };
+		3C996FBEFFF38718E791135C621B8C59 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4E17DA1BF4E3F86D26B2907DEACAF3 /* UIButton+Chameleon.m */; };
+		3F804315D86F80935202C015D3A1187E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29725C588677E8258B73FAA8747E9945 /* Foundation.framework */; };
+		41AC52084F10EF0AB6A2F82DCFEE2FED /* DBSphereTagCloudSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 938645C728BBD618E6F143C03B3986C0 /* DBSphereTagCloudSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ADF4F0E3452A6640E42B8CAF869DB3D /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CE76D1CC36D61B6403F090869E016 /* MatrixMultiplication.swift */; };
+		4C98E687ED1C6D3781CB27CA6AF3FB69 /* Pods-three-positive-thingsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC8B7F7C6CBA68EBC101F25926B8A3 /* Pods-three-positive-thingsTests-dummy.m */; };
+		4DF43DB058D1638FE6E51EC9B5BA01B9 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 227B8E5EA2232180BE856A62848553FB /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5998406296525F4EEA4926A23EC9BB70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71104F63A2DCDCB94A130639EE8C9955 /* UIKit.framework */; };
+		5B014CC87C131F9C79702060EDCBDFE8 /* JTAppleReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA0577B48800320112634BEBD65B4C8 /* JTAppleReusableViewProtocol.swift */; };
+		5BFF270F89D3B7F7687D21D91F0A3302 /* Pods-three-positive-things-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4144C3CBF2223BBB2A3FBB74B06C1 /* Pods-three-positive-things-dummy.m */; };
+		63B7FAF3B3F4BA5A42B1F016BEE0FC47 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A228F2BC4A0F9D8689B049F76A4F66A /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		659687B4A3D1E814D3580C4B3880B27C /* JTAppleCalendarLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724797F6072654FE8662D09B68AE82A /* JTAppleCalendarLayoutProtocol.swift */; };
+		693B98DE045C80265A735BD94C87953D /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0866DFA20D7301C418E8C41AA4B94D /* ChameleonConstants.m */; };
+		6987165120801D15E8FE52441B0EBECE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D4600C6C4A0D8449B3205DE5678D9E /* Accelerate.framework */; };
+		69A43A2B7A08B596BE088B5D2B9E13F1 /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96B374DE0E54F711630990FD72E601 /* JTCalendarProtocols.swift */; };
+		6B2DC678EA5CCC291354FE306DF0B28E /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA74BCA9DC6DB1D1E0D5861BEB22F1 /* Chameleon_.m */; };
+		6C87CCC7E974983BF3DDB7CDDD1CCC6A /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 4928C2ADB24CF36D70EE8C853E7F7190 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		793DCBCB27A9610E4EBB20F0956ADA12 /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E1EF54F4FFD9D78D54B824FD82820C /* MatrixCreation.swift */; };
+		7C9E93D55FA61BE58D618F385193D640 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B206A1B89F3C5AEDEAA8A7C5024130BF /* CoreGraphics.framework */; };
+		7EC742D2DACBDE8FAC78B3E4157C0B3C /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5F78522D7D12F24F001EFEA6ED8B3C /* GlobalFunctionsAndExtensions.swift */; };
+		843266A08D390ABBE0EF41AA3A1FC78E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29725C588677E8258B73FAA8747E9945 /* Foundation.framework */; };
+		8624349E44507A5863651CAB51E38F7F /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1158D8442CC4AD2AABB8CC6A200678D6 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8659D5863A89A6F9539AE15D673C07C5 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 729A9B88B6CBEFBF8F57832FF8EA57A6 /* UIViewController+Chameleon.m */; };
+		866A210E47AEF4ABB16E6D6F5B6A6E51 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = A472B7CAF9A4209C596A1B821A1E851B /* UIView+ChameleonPrivate.m */; };
+		866B54511E7CBFADD1F78C285087AE8E /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E79A68EC9B4C0C28E39B3125D5D96 /* ChameleonShorthand.swift */; };
+		86DEA4463846A1CC032537E1D2136BCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29725C588677E8258B73FAA8747E9945 /* Foundation.framework */; };
+		874D8A04ABF919CED20EB0E440C44101 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F31295617D33E02E1E4A60C196D67FE /* NSArray+Chameleon.m */; };
+		88A569DC5FA4CEED7FCD51F8F762D4F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29725C588677E8258B73FAA8747E9945 /* Foundation.framework */; };
+		8FCC7418CF7EF461040F9C54DE8B1F38 /* JTAppleDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B10CE7D5D5E404F5674B08B593540 /* JTAppleDayCell.swift */; };
+		918885B90BECC18ABC5F58D92E34EF13 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E29496CB2D22A002FFFBD0A8C2DDFD /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9247AA02A534F1A201D929C39C057B50 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = F78F4B685857C03DB163DD3A6FD464F2 /* UIColor+Chameleon.m */; };
+		936F268AB9257A3435DD4BAAB5A4A135 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B27245138081FD72EFCDD5DBCB4F578D /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A61B34101FFFBF1E1C454A42847F24F /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E64C38A1AF7B48C713A4D9846BB4C /* CalendarStructs.swift */; };
+		A68832C167B77BE09F6F3485A607A744 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9763E32F7CC25ECE8259F389ED75CF /* UILabel+Chameleon.m */; };
+		A76F7D32C5211F892AFA81C06CF3FFFD /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C90E1C85CF86DFB529E404B52A2A6 /* Matrix.swift */; };
+		AE750D84013C7D5FFBAFF04F626F8507 /* DBSphereTagCloudSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2629DF69524932EEF18464338E04D12 /* DBSphereTagCloudSwift-dummy.m */; };
+		B3588F3A5CA514FCE0BBB4EEADA8791F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29725C588677E8258B73FAA8747E9945 /* Foundation.framework */; };
+		B5A016EF854BECCCBA5FF11BBA529A85 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB692682243EB278B5111E341151869 /* QuartzCore.framework */; };
+		BB8ADE41C116ED2F50BE43E1F1AB543B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71104F63A2DCDCB94A130639EE8C9955 /* UIKit.framework */; };
+		C0CC0C1D2B21070DB23B4AA450B0A195 /* UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B1F94481DCF021F4B08C39DFC9928E /* UICollectionViewDelegates.swift */; };
+		CAF49E2A54F794D5F6DD10F1FE77F321 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B756CA08A419149795CA7D4BBCE2878 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEF9D16015CAC1D27AC48248C4119E0B /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3945289B0701B3A5C95E3475BC8F2C2E /* UIScrollViewDelegates.swift */; };
+		D8E5CC50666940FFDC04F0874BB92BE4 /* Pods-three-positive-thingsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9AFAA8262A13DC9E907EDAEB16CE475 /* Pods-three-positive-thingsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA97A7E5793FADE5749D21002AB10B57 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DD63DDCA8C94436A400B0D176F4473 /* UIImage+ChameleonPrivate.m */; };
+		DD7B1A58C5C68491723265E6D763B26E /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82007314AA9D0C34EF25617E0B3488E4 /* ChameleonFramework-dummy.m */; };
+		DDBC762ABE86F3917C6553A64E722A70 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 56419534C8562D23D55CE961ED5B4849 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0DBD978FE1FBA3923D9A482352252D4 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AC7509700731D9AA3B43A939FD0206 /* UIColor+ChameleonPrivate.m */; };
+		E4F73B1487AEB36B772FAC5211CAC9F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B206A1B89F3C5AEDEAA8A7C5024130BF /* CoreGraphics.framework */; };
+		E6E3748D96FE92488FDEEB2F769696E3 /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 700BD70E25F3F4A7030352D08FA457CC /* JTAppleCalendar-dummy.m */; };
+		E7D344059042D076A5C61D13018BA0D8 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 601C9FA58F7A1F0C0BBCC63F83B7D2D8 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E82EF3AFD38848BAC02735643F4FBF6C /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = A30D023C67783606580A29D65F239A06 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEF22A1455C96635E480D1DCCE664913 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE984CC25C4C5D3CAABBB5398782471 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3C500CDBAC4D62309685D0FDBAD2DBE /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7C78EB0DE2C4142B369659178657812 /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9D36E23C0096B87D143FB89DDCCAD36 /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EE20097F7239E4A96616E8D8EF0AAF /* JTAppleCalendarDelegateProtocol.swift */; };
+		FA49618EEDBE490B9BF56CAD65ABF8EA /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D88EFB74A36E3627F24813137D9F8E0 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAF3E5132752CCE2C149BBB9FF0E7BB3 /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C025B25D551D819471E9E000FFCAB77D /* MatrixConcatenation.swift */; };
+		FD866EAB0DD239E198D410BD037CCD70 /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0552E00DD06648FE66AB22F8483AF /* JTAppleCalendarView.swift */; };
+		FE3A4BBC89893220B5590FC8A65C0233 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0462BBB14424394D1C3BDB95786F94D5 /* UINavigationController+Chameleon.m */; };
+		FEABBE5CCAC851EC6B81BEC13F602FF5 /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D2D13306D941A4E6B06ED12B2D022 /* JTAppleCalendarLayout.swift */; };
+		FEDDEF4BDE0BA27F6314016ED93CD096 /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279143038FDEAE9543FB48EF93C30D18 /* CalendarEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		285075BF46D1FFFBE98E2354372CF24E /* PBXContainerItemProxy */ = {
+		478D1D83DBEB3897CE9C0BD44702D6CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A5DF63BA1CEAC125789721A669856508;
-			remoteInfo = JTAppleCalendar;
-		};
-		4C2BD11DD3A1641BC9CEED6EAB594BA2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B23117E458B86F3DA0716A7F5CB789E;
+			remoteGlobalIDString = A4FEB4B862003C47DC11CEF7E7A5F5AF;
 			remoteInfo = "Pods-three-positive-things";
 		};
-		54984644D6AE2E1819EF11200F896139 /* PBXContainerItemProxy */ = {
+		47CE3105C12A81AC6145071C796DCD75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B23117E458B86F3DA0716A7F5CB789E;
-			remoteInfo = "Pods-three-positive-things";
-		};
-		5B0AA0809214BA4B7CC2FFD01EC1BEFE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9FE7EDA641B673E235FD345BF0736F7F;
+			remoteGlobalIDString = 28BFDC89BA4363F4F3576DEC70EE10AE;
 			remoteInfo = ChameleonFramework;
 		};
-		BD62AF7F0B1D58A9C8B6D4425CA84945 /* PBXContainerItemProxy */ = {
+		DDE9152CA2DCB19F6F95335AFF7E0577 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 576AE9F53F27416269E41C258CA742A1;
+			remoteGlobalIDString = A4FEB4B862003C47DC11CEF7E7A5F5AF;
+			remoteInfo = "Pods-three-positive-things";
+		};
+		EAA9DCF529AFEE931D491F3062E3F618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2096AE7BB28DBC80384A8E5136579F81;
 			remoteInfo = DBSphereTagCloudSwift;
+		};
+		F592CCA5B77DBB517D00C2C4B8AEED97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 421B6ABF460857FE6CA2905EFB5A4F74;
+			remoteInfo = JTAppleCalendar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		023AB520CBBEE8B980309B364C7584A4 /* Pods-three-positive-things-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-three-positive-things-frameworks.sh"; sourceTree = "<group>"; };
-		04A47DB4DC8A9A97FE05621CB8BFD741 /* JTAppleViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleViews.swift; path = Sources/JTAppleViews.swift; sourceTree = "<group>"; };
-		04DBC1CFB8183D5E31B9325814DD31E3 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
-		07BF24600C85B46B0A9B32D212182D2F /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
-		099FEC04B8DBBC74F5CA789190F24C74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		0CC71A6A096211FB686F108D1DAE6D46 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
-		0DC41A8763B985927A5B3432DF9DFA5C /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
-		0F48667EF33F8CF6A6D049A82C6A01C0 /* Pods-three-positive-things-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-three-positive-things-umbrella.h"; sourceTree = "<group>"; };
-		17B7E36AB12A0131960C936A4A657469 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
-		1850EBE17E07D8C7F8651C855F0B0090 /* ChameleonFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChameleonFramework-Info.plist"; sourceTree = "<group>"; };
-		1B12C4844420F987FF4E8EE0B08DA568 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
-		1EADF87256CDA5107491008945D20672 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
-		217F48FA34512E57550C8B90869FFEA9 /* Pods_three_positive_things.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_three_positive_things.framework; path = "Pods-three-positive-things.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21A77E3F61C89D0BED3E23BE227F43E1 /* MatrixCreation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatrixCreation.swift; path = SwiftNum/Sources/Linear/MatrixCreation.swift; sourceTree = "<group>"; };
-		22191C7269C1BAFA82466EE4103B974E /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
-		247217C92D157FCB6192E1DD2E5928F6 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
-		263DCF0D83BE69F14576CF15FA2BEA5B /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
-		30CB5460454C5399149C4790EF424113 /* Pods_three_positive_thingsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_three_positive_thingsUITests.framework; path = "Pods-three-positive-thingsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32CE9278940DACA064EDAE3650A1161E /* DBSphereTagCloudSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DBSphereTagCloudSwift-dummy.m"; sourceTree = "<group>"; };
-		37C61E92612707C69188404DF72613AA /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		3DAA8CDE2DB2D6F33936EAB262C9A961 /* Pods-three-positive-things.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-three-positive-things.modulemap"; sourceTree = "<group>"; };
-		3FDE87FCB9806B8579CE84B7961FF0EA /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
-		41B06E84213FA14B9B58ED6E954F7D98 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
-		42998022FBBF684DDFB77E07EA6DAC7C /* Pods-three-positive-thingsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-thingsTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		42A03FDD5EB84AF72391924E01475DAA /* DBSphereTagCloudSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DBSphereTagCloudSwift.xcconfig; sourceTree = "<group>"; };
-		44E7DF31EE78190DD84E25B5BF01F75F /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		465416177101F6B85441FB425C32D3C3 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
-		46C11D55172CDA52B727CCCF78578777 /* Pods-three-positive-thingsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-three-positive-thingsTests-umbrella.h"; sourceTree = "<group>"; };
-		529D3A9CCF07967E4F191BDCC878DC78 /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Sources/UserInteractionFunctions.swift; sourceTree = "<group>"; };
-		5471A43441C2C8D253804F7CCC04D0C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		55E11FF64E887A7E76EF3F6935F42A3E /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Sources/JTAppleCalendarView.swift; sourceTree = "<group>"; };
-		5B07D78BFF9A79F8DC3DE1A0EAEDFD3D /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTAppleCalendar.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C48A63BB989DA173EEFC40D0E8EC34D /* Pods-three-positive-thingsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-three-positive-thingsTests-dummy.m"; sourceTree = "<group>"; };
-		5D5D35C3EEED784E67F249222D93083D /* Pods-three-positive-thingsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-thingsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5F49C1C88725ED266A6153F62F7683E6 /* Pods-three-positive-things.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-things.release.xcconfig"; sourceTree = "<group>"; };
-		65009B3709377A585BB5BAF72755670C /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		6990640D4956E82014D8E6F56A12442F /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		6B0E6358DE47F72A79BDB885BB4E0943 /* Pods-three-positive-thingsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-thingsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6B4657E138362AA293D13061DF334761 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
-		73284066BA5D7CF1581012029A20729F /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
-		7458D6EA73171F938A78185BDB3B831D /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScrollViewDelegates.swift; path = Sources/UIScrollViewDelegates.swift; sourceTree = "<group>"; };
-		74C72DA8322DB38BD9682EE3CC332890 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
-		7615D025AEEA6163C415473F461B601E /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
-		7840DF98EF4F2CB26A1D070E0B0C0DEB /* DBSphereTagCloudSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBSphereTagCloudSwift-prefix.pch"; sourceTree = "<group>"; };
-		7B8D8C63E419BCD939D9978BF67B3CE7 /* Pods-three-positive-thingsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-three-positive-thingsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7BA95ED07D3FED9693EC006F7B93E796 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		7BD51213864DCCC96EBE11CE45119C96 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		7C35F538697363877CB5C627760DC53E /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Sources/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
-		7F4620D45E2B55CE83FA00C6A06D81A6 /* DBSphereTagCloudSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DBSphereTagCloudSwift.framework; path = DBSphereTagCloudSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D2EA7895C6FE6AB13FDE5A838425834 /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/CalendarEnums.swift; sourceTree = "<group>"; };
-		90F0414CF75BDCA1E63C0123F3F1D5E9 /* Pods-three-positive-thingsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-three-positive-thingsUITests.modulemap"; sourceTree = "<group>"; };
-		911816A5DA60DA577E700C0F505970E9 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		981F0A2D5651C01E84B5792AE765257D /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
-		98C1D914B7AAB75C25FE4B3567B0C903 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		99EBF51F0FFEAD189CA5F942D9B2D8C6 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
-		9C10B79A2BDA36D2945D962A1BE91E55 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
-		9D5B2DAC09A7C5DB3DF58278F4A85686 /* MatrixConcatenation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatrixConcatenation.swift; path = SwiftNum/Sources/Linear/MatrixConcatenation.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EF4E495A4211621281A938C02A85943 /* Pods-three-positive-thingsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-thingsTests-Info.plist"; sourceTree = "<group>"; };
-		9F7D5B299D99A73171A571395E10211E /* Pods-three-positive-thingsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-thingsUITests-Info.plist"; sourceTree = "<group>"; };
-		9FE2166E1475B886E076568EEA737CCD /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
-		A415712346D384C5412DBE6EFC9A930B /* Pods_three_positive_thingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_three_positive_thingsTests.framework; path = "Pods-three-positive-thingsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8D456AC7F22BB3EB6541D56159D55C3 /* Pods-three-positive-things-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-things-acknowledgements.plist"; sourceTree = "<group>"; };
-		ABA24314536EF9AD69206F8349258C98 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
-		AC766614571FC59F506E02B94ED847A2 /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTCalendarProtocols.swift; path = Sources/JTCalendarProtocols.swift; sourceTree = "<group>"; };
-		B3EC9BAB6D1C2399438C57B1148BEC50 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
-		B3EFFEB0DF7C4E5B82F9E12362AA23DD /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
-		B889F3F412A01196F3390B9982283D50 /* Pods-three-positive-thingsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-thingsUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B8F4F4B920FCCB252061E437C8748DDF /* DBSphereTagCloudSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DBSphereTagCloudSwift.modulemap; sourceTree = "<group>"; };
-		BE0F76160E59EA6310C216FA839879DD /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE80DEB64B81DFABA3DC510C9F020F13 /* DBSphereView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DBSphereView.swift; path = Sources/DBSphereView.swift; sourceTree = "<group>"; };
-		C099428487889B1488A05BEC302020F2 /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayout.swift; path = Sources/JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
-		C1F672E5F0535FBE2772A305823309DF /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		C4A53CDC58B237DBF3615A48C9453A94 /* Pods-three-positive-thingsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-three-positive-thingsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C59413BA5A49C5CD21D9924DF5C5377C /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		C5FC1B88057CD0BED5BF0DE859EE842C /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/CalendarStructs.swift; sourceTree = "<group>"; };
-		C7E6088ABEC099E7BD601C81993F68FF /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
-		C8385A46CB74107C32DC1B3A34E4882D /* Pods-three-positive-things-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-three-positive-things-dummy.m"; sourceTree = "<group>"; };
-		C914CC07E7AE89A392762FD6D289C46A /* MatrixMultiplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatrixMultiplication.swift; path = SwiftNum/Sources/Linear/MatrixMultiplication.swift; sourceTree = "<group>"; };
-		C9B24CCF453F67F0176CB54EAC0DE74C /* Pods-three-positive-thingsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-three-positive-thingsUITests-dummy.m"; sourceTree = "<group>"; };
-		CB313542F7ABCA3A4E35911BFF4CF035 /* Pods-three-positive-thingsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-thingsTests.release.xcconfig"; sourceTree = "<group>"; };
-		CC1DBF63DBC445701F6FD529EDFB4EAB /* MatrixSubscripting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatrixSubscripting.swift; path = SwiftNum/Sources/Linear/MatrixSubscripting.swift; sourceTree = "<group>"; };
-		D294D8BC1EDE8197C38F517568B345A4 /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
-		D5CACD06CD8B04EA4DB0EA937119E0B6 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
-		D95AAFD299D57CCA5E96E7BDC888C1B3 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		DD1574FE687573CA3B5A96F35AAD26F1 /* JTAppleCalendarLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayoutProtocol.swift; path = Sources/JTAppleCalendarLayoutProtocol.swift; sourceTree = "<group>"; };
-		DE7E656ADA568AF01E98C13837479044 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
-		DF4811176D0390134EDCE6FCBB11EE5C /* DBSphereTagCloudSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBSphereTagCloudSwift-umbrella.h"; sourceTree = "<group>"; };
-		E249BB478CD8BBCB96340CD214286BD6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		E56D6343CDEA1D7D02699045F18A1294 /* Pods-three-positive-thingsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-thingsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E68CE137F720C5563590B4CDA03DAB5C /* JTAppleReusableViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleReusableViewProtocol.swift; path = Sources/JTAppleReusableViewProtocol.swift; sourceTree = "<group>"; };
-		E83591748539C4242800DB5CB9492187 /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
-		E9D98BFFB845E4C6D83B2F83F808E2CA /* JTAppleCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JTAppleCalendar-Info.plist"; sourceTree = "<group>"; };
-		ECA3A71770296E5A165E3700BF21709F /* JTAppleDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleDayCell.swift; path = Sources/JTAppleDayCell.swift; sourceTree = "<group>"; };
-		ECC9BED9795A522AE0E007F645AB66D4 /* Pods-three-positive-things.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-things.debug.xcconfig"; sourceTree = "<group>"; };
-		EFDE2D67C6BC44059CAD79D9B244F210 /* Pods-three-positive-thingsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-three-positive-thingsTests.modulemap"; sourceTree = "<group>"; };
-		F22C4982950BDC52F7DE71DC609C2E8A /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
-		F366491B9B3DF187178E76FCDCB831F4 /* Pods-three-positive-thingsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-three-positive-thingsUITests-umbrella.h"; sourceTree = "<group>"; };
-		F7565B45D9AACA2CAFA3E3EC41A1EE7F /* Pods-three-positive-things-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-three-positive-things-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F8FA39765654D9EA052C19AA661F9B32 /* Matrix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matrix.swift; path = SwiftNum/Sources/Linear/Matrix.swift; sourceTree = "<group>"; };
-		FB249C71C206A3F1D0408F2241AD6C59 /* Pods-three-positive-things-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-things-Info.plist"; sourceTree = "<group>"; };
-		FD2500B0BEC096A7988D5FF10D386C2F /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewDelegates.swift; path = Sources/UICollectionViewDelegates.swift; sourceTree = "<group>"; };
-		FDC9B23E286620FCCDFB4D13E6DB3F63 /* DBSphereTagCloudSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DBSphereTagCloudSwift-Info.plist"; sourceTree = "<group>"; };
-		FE845794F06D77C72B46C39D6B4C2A15 /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarDelegateProtocol.swift; path = Sources/JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
+		0383903D05EDD5C442C682C1F7A1752D /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B1666CFAC738E4DA9AF7BE6AB58543 /* DBSphereView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DBSphereView.swift; path = Sources/DBSphereView.swift; sourceTree = "<group>"; };
+		0462BBB14424394D1C3BDB95786F94D5 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		05B42880AF23D8E529AC2545B3FBD2AD /* Pods-three-positive-thingsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-three-positive-thingsTests.modulemap"; sourceTree = "<group>"; };
+		1158D8442CC4AD2AABB8CC6A200678D6 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		180E64C38A1AF7B48C713A4D9846BB4C /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/CalendarStructs.swift; sourceTree = "<group>"; };
+		182A9EE1DA5F1237CA963936BF6E40A7 /* MatrixSubscripting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatrixSubscripting.swift; path = SwiftNum/Sources/Linear/MatrixSubscripting.swift; sourceTree = "<group>"; };
+		1A5F78522D7D12F24F001EFEA6ED8B3C /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
+		1C039940E2042765448424DBEF346A4B /* Pods-three-positive-things.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-things.debug.xcconfig"; sourceTree = "<group>"; };
+		1C7A77635063599E823A89FA10EB838D /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		1CBCF5FDD9ACB86DB1A886A3556CBE17 /* Pods_three_positive_thingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_thingsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E710B09DF169ADBA52978C59A5CFE38 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		1EE4144C3CBF2223BBB2A3FBB74B06C1 /* Pods-three-positive-things-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-three-positive-things-dummy.m"; sourceTree = "<group>"; };
+		227B8E5EA2232180BE856A62848553FB /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		24B1F94481DCF021F4B08C39DFC9928E /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewDelegates.swift; path = Sources/UICollectionViewDelegates.swift; sourceTree = "<group>"; };
+		279143038FDEAE9543FB48EF93C30D18 /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/CalendarEnums.swift; sourceTree = "<group>"; };
+		27F23DE3533EC720CF234C689634E39E /* CustomCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomCollectionView.swift; path = Sources/CustomCollectionView.swift; sourceTree = "<group>"; };
+		29725C588677E8258B73FAA8747E9945 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2AF8DE2C7A02DDCF32B74C4CFA27073B /* Pods-three-positive-things-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-things-Info.plist"; sourceTree = "<group>"; };
+		2CBA74BCA9DC6DB1D1E0D5861BEB22F1 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		38383BE04FE808F436D573F6A3DD7385 /* Pods-three-positive-things-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-three-positive-things-frameworks.sh"; sourceTree = "<group>"; };
+		3945289B0701B3A5C95E3475BC8F2C2E /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScrollViewDelegates.swift; path = Sources/UIScrollViewDelegates.swift; sourceTree = "<group>"; };
+		3CEAC222B18345433DF8C5BA9F200DEC /* Pods-three-positive-thingsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-thingsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		41F0C228D7633BF7996699EA6EA688BD /* Pods-three-positive-thingsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-thingsTests-Info.plist"; sourceTree = "<group>"; };
+		4613D61ED69D1F53D7A67A04EBB6DF72 /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Sources/UserInteractionFunctions.swift; sourceTree = "<group>"; };
+		481746FC59A964D955267B40981F6237 /* JTAppleViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleViews.swift; path = Sources/JTAppleViews.swift; sourceTree = "<group>"; };
+		481C90E1C85CF86DFB529E404B52A2A6 /* Matrix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matrix.swift; path = SwiftNum/Sources/Linear/Matrix.swift; sourceTree = "<group>"; };
+		4928C2ADB24CF36D70EE8C853E7F7190 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		4AB692682243EB278B5111E341151869 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		4C9CE76D1CC36D61B6403F090869E016 /* MatrixMultiplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatrixMultiplication.swift; path = SwiftNum/Sources/Linear/MatrixMultiplication.swift; sourceTree = "<group>"; };
+		4D4D2D13306D941A4E6B06ED12B2D022 /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayout.swift; path = Sources/JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
+		4D88EFB74A36E3627F24813137D9F8E0 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		525E96273D3ECA35EDDCEB97982F095D /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		56419534C8562D23D55CE961ED5B4849 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		601C9FA58F7A1F0C0BBCC63F83B7D2D8 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		602F8153A3985FE461E93C8EE07D72E8 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		647C608046FCFA8780A35FBB746C8D79 /* Pods-three-positive-thingsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-three-positive-thingsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A4BEBC4F9105E0DBD4EFE6CC062E240 /* Pods-three-positive-thingsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-thingsUITests-Info.plist"; sourceTree = "<group>"; };
+		6C9763E32F7CC25ECE8259F389ED75CF /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		700BD70E25F3F4A7030352D08FA457CC /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
+		71104F63A2DCDCB94A130639EE8C9955 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		729A9B88B6CBEFBF8F57832FF8EA57A6 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		72EE20097F7239E4A96616E8D8EF0AAF /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarDelegateProtocol.swift; path = Sources/JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
+		78D4600C6C4A0D8449B3205DE5678D9E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		7A228F2BC4A0F9D8689B049F76A4F66A /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		7BA3F80D6D46B99C65E1CEAAC03DA789 /* Pods_three_positive_thingsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_thingsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4AD4A1F8D0AEF031246BAFACFF8D2D /* Pods-three-positive-thingsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-thingsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7F9734200F39EDB457BD0F5D73AD74D3 /* DBSphereTagCloudSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DBSphereTagCloudSwift.xcconfig; sourceTree = "<group>"; };
+		82007314AA9D0C34EF25617E0B3488E4 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		8A7F98679825C43965A7CB181BACF6E7 /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
+		8B756CA08A419149795CA7D4BBCE2878 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		8F91A53D0888532FA570160216C06B20 /* DBSphereTagCloudSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DBSphereTagCloudSwift-Info.plist"; sourceTree = "<group>"; };
+		905E33E5958FC2F7BD06B12FF6927411 /* Pods-three-positive-things.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-three-positive-things.modulemap"; sourceTree = "<group>"; };
+		90DD63DDCA8C94436A400B0D176F4473 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		922B96954BC6A3530217E27B7EE19380 /* Pods-three-positive-thingsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-thingsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		938645C728BBD618E6F143C03B3986C0 /* DBSphereTagCloudSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBSphereTagCloudSwift-umbrella.h"; sourceTree = "<group>"; };
+		96A3B29514E792FBC3D79A5FC741DE60 /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Sources/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
+		9D79DBD759A424BDFD5D3F78E783A0D5 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F31295617D33E02E1E4A60C196D67FE /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30D023C67783606580A29D65F239A06 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		A3B78EA4D91E2AF658AF7C5FC621F9EB /* Pods-three-positive-thingsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-thingsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A472B7CAF9A4209C596A1B821A1E851B /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		A6C929250F8898527E21CE7D4D40A881 /* Pods-three-positive-thingsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-three-positive-thingsUITests-umbrella.h"; sourceTree = "<group>"; };
+		A724797F6072654FE8662D09B68AE82A /* JTAppleCalendarLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayoutProtocol.swift; path = Sources/JTAppleCalendarLayoutProtocol.swift; sourceTree = "<group>"; };
+		A86656DAE291714A9578ADFE9EDEFFDD /* DBSphereTagCloudSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DBSphereTagCloudSwift.modulemap; sourceTree = "<group>"; };
+		A970402AB96239D30FF1EB732389AC86 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
+		AAD0552E00DD06648FE66AB22F8483AF /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Sources/JTAppleCalendarView.swift; sourceTree = "<group>"; };
+		AE0821F8F7E59246FFF16A5020693041 /* DBSphereTagCloudSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DBSphereTagCloudSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF61228093BDE999D318EBA94E88F0CD /* Pods-three-positive-things-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-three-positive-things-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF9B10CE7D5D5E404F5674B08B593540 /* JTAppleDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleDayCell.swift; path = Sources/JTAppleDayCell.swift; sourceTree = "<group>"; };
+		AFE8AA8DBF7FA9FA4E378EF22E7209CC /* ChameleonFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChameleonFramework-Info.plist"; sourceTree = "<group>"; };
+		B0C3F6224E866E3926241502AC748FF4 /* Pods-three-positive-thingsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-thingsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B206A1B89F3C5AEDEAA8A7C5024130BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B27245138081FD72EFCDD5DBCB4F578D /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
+		B2DA21D300B11EF0508CD5FF4B32106A /* Pods-three-positive-things-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-three-positive-things-umbrella.h"; sourceTree = "<group>"; };
+		B2EB41DC97712869DBE84EBEEE443604 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		B3D938BD762DE0EF9D952BCDEB35EF56 /* Pods-three-positive-thingsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-thingsTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC6CF454DD7F2A8ABEEEFD84E77D4D49 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
+		BF13625620486B7D3286FA88AC5107FE /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		BF4E17DA1BF4E3F86D26B2907DEACAF3 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		C025B25D551D819471E9E000FFCAB77D /* MatrixConcatenation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatrixConcatenation.swift; path = SwiftNum/Sources/Linear/MatrixConcatenation.swift; sourceTree = "<group>"; };
+		C0E1EF54F4FFD9D78D54B824FD82820C /* MatrixCreation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatrixCreation.swift; path = SwiftNum/Sources/Linear/MatrixCreation.swift; sourceTree = "<group>"; };
+		C7C78EB0DE2C4142B369659178657812 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
+		C9AFAA8262A13DC9E907EDAEB16CE475 /* Pods-three-positive-thingsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-three-positive-thingsTests-umbrella.h"; sourceTree = "<group>"; };
+		CC31DE80FACA9A35D92B93EAC25E1163 /* DBSphereTagCloudSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DBSphereTagCloudSwift-prefix.pch"; sourceTree = "<group>"; };
+		CCD30C7D5AD78C8F3CE793981EC46B1B /* Pods-three-positive-things.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-three-positive-things.release.xcconfig"; sourceTree = "<group>"; };
+		CDE984CC25C4C5D3CAABBB5398782471 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		CE0866DFA20D7301C418E8C41AA4B94D /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		D2DC8B7F7C6CBA68EBC101F25926B8A3 /* Pods-three-positive-thingsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-three-positive-thingsTests-dummy.m"; sourceTree = "<group>"; };
+		D309E7587CCDD486E331F54B0074FDCE /* Pods-three-positive-thingsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-three-positive-thingsUITests.modulemap"; sourceTree = "<group>"; };
+		D849E30123A15C84DB6DCED380840AEB /* Pods-three-positive-thingsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-three-positive-thingsUITests-dummy.m"; sourceTree = "<group>"; };
+		D90FE61C675E8C4D3BAD021E5F1ADCF7 /* JTAppleCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JTAppleCalendar-Info.plist"; sourceTree = "<group>"; };
+		E92E79A68EC9B4C0C28E39B3125D5D96 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		EB107FDD590365845D832DAA9CAB2A2D /* Pods-three-positive-thingsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-three-positive-thingsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF96B374DE0E54F711630990FD72E601 /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTCalendarProtocols.swift; path = Sources/JTCalendarProtocols.swift; sourceTree = "<group>"; };
+		F1AC7509700731D9AA3B43A939FD0206 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		F1E71EBF13A4BF616C4BC6CE114E4D2F /* Pods-three-positive-things-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-three-positive-things-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F2629DF69524932EEF18464338E04D12 /* DBSphereTagCloudSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DBSphereTagCloudSwift-dummy.m"; sourceTree = "<group>"; };
+		F619438B34129A2DA3850227F65CC8CA /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
+		F6E29496CB2D22A002FFFBD0A8C2DDFD /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		F78F4B685857C03DB163DD3A6FD464F2 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		FDA0577B48800320112634BEBD65B4C8 /* JTAppleReusableViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleReusableViewProtocol.swift; path = Sources/JTAppleReusableViewProtocol.swift; sourceTree = "<group>"; };
+		FEF176F9D0582D41B6F6F602B202A55E /* Pods_three_positive_things.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_things.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28E3A8F706492E4BB2AE1FBC8226D437 /* Frameworks */ = {
+		1C116A63458314E8C324E322DDE7D79E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0406CED1628F178C4AB9A60AD44EDC /* Foundation.framework in Frameworks */,
+				86DEA4463846A1CC032537E1D2136BCE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B4C0D14CF691580F0C8D8F62054722D /* Frameworks */ = {
+		33E929DF114110D79F0F5CAAE3F90C0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C08B7DD16627E53E1137B201274552B /* Foundation.framework in Frameworks */,
+				6987165120801D15E8FE52441B0EBECE /* Accelerate.framework in Frameworks */,
+				E4F73B1487AEB36B772FAC5211CAC9F8 /* CoreGraphics.framework in Frameworks */,
+				843266A08D390ABBE0EF41AA3A1FC78E /* Foundation.framework in Frameworks */,
+				5998406296525F4EEA4926A23EC9BB70 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41B2A4BB76FA2013C6FEB855E61B430F /* Frameworks */ = {
+		52E38F8796625BD452537607D17A1BCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C6C900322F07F724CE7A30215C84ED0 /* Foundation.framework in Frameworks */,
+				3F804315D86F80935202C015D3A1187E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6214497F15EDD434CE9FFD12BAE76922 /* Frameworks */ = {
+		72FCBED230C996317A485724760EB018 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2BF3945A7E3753CC4CDD818D93DB0D /* CoreGraphics.framework in Frameworks */,
-				2696CC6F6B0AEBEC0A532DCCC0480CF6 /* Foundation.framework in Frameworks */,
-				1EC23CE32ACC4444AEA4342256BF176A /* QuartzCore.framework in Frameworks */,
-				7E0B6F36FAF17AFE5EEAC571D71FCED2 /* UIKit.framework in Frameworks */,
+				7C9E93D55FA61BE58D618F385193D640 /* CoreGraphics.framework in Frameworks */,
+				88A569DC5FA4CEED7FCD51F8F762D4F9 /* Foundation.framework in Frameworks */,
+				B5A016EF854BECCCBA5FF11BBA529A85 /* QuartzCore.framework in Frameworks */,
+				BB8ADE41C116ED2F50BE43E1F1AB543B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0159A5A4C497776859257EB77F3F8BA /* Frameworks */ = {
+		A65E99AA347A0514920C60CD2C13ED41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C74879D68D0D88636E07D7D1BE9820C3 /* Foundation.framework in Frameworks */,
+				B3588F3A5CA514FCE0BBB4EEADA8791F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6F3354D2B3D0560E4D520AE1B831A61 /* Frameworks */ = {
+		B58AECF2E422C53AE1AA9024519F2BC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16654F2F614A5D58B34A44FFE0BD59F0 /* Accelerate.framework in Frameworks */,
-				B2D977425D99948CAB9190713C0A4A99 /* CoreGraphics.framework in Frameworks */,
-				0E13FC19A37E79CA38B37464D55248A2 /* Foundation.framework in Frameworks */,
-				4168677DA39B1DAF653F6CF2C742F746 /* UIKit.framework in Frameworks */,
+				1355620BE3501C29A64B4A9F98929B05 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01B16AF63442403F688F974EC509AD9A /* Swift */ = {
+		22453743D172E410835FDE9DCA7083AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				22191C7269C1BAFA82466EE4103B974E /* ChameleonShorthand.swift */,
-			);
-			name = Swift;
-			sourceTree = "<group>";
-		};
-		06E46D748227D00A744282F5C73EFF91 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				E249BB478CD8BBCB96340CD214286BD6 /* Accelerate.framework */,
-				98C1D914B7AAB75C25FE4B3567B0C903 /* CoreGraphics.framework */,
-				5471A43441C2C8D253804F7CCC04D0C7 /* Foundation.framework */,
-				7BA95ED07D3FED9693EC006F7B93E796 /* QuartzCore.framework */,
-				099FEC04B8DBBC74F5CA789190F24C74 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		1AF4676AEF273DD9060252D707FF70DB /* JTAppleCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				8D2EA7895C6FE6AB13FDE5A838425834 /* CalendarEnums.swift */,
-				C5FC1B88057CD0BED5BF0DE859EE842C /* CalendarStructs.swift */,
-				D294D8BC1EDE8197C38F517568B345A4 /* GlobalFunctionsAndExtensions.swift */,
-				FE845794F06D77C72B46C39D6B4C2A15 /* JTAppleCalendarDelegateProtocol.swift */,
-				C099428487889B1488A05BEC302020F2 /* JTAppleCalendarLayout.swift */,
-				DD1574FE687573CA3B5A96F35AAD26F1 /* JTAppleCalendarLayoutProtocol.swift */,
-				55E11FF64E887A7E76EF3F6935F42A3E /* JTAppleCalendarView.swift */,
-				7C35F538697363877CB5C627760DC53E /* JTAppleCollectionReusableView.swift */,
-				ECA3A71770296E5A165E3700BF21709F /* JTAppleDayCell.swift */,
-				E68CE137F720C5563590B4CDA03DAB5C /* JTAppleReusableViewProtocol.swift */,
-				04A47DB4DC8A9A97FE05621CB8BFD741 /* JTAppleViews.swift */,
-				AC766614571FC59F506E02B94ED847A2 /* JTCalendarProtocols.swift */,
-				FD2500B0BEC096A7988D5FF10D386C2F /* UICollectionViewDelegates.swift */,
-				7458D6EA73171F938A78185BDB3B831D /* UIScrollViewDelegates.swift */,
-				529D3A9CCF07967E4F191BDCC878DC78 /* UserInteractionFunctions.swift */,
-				BA431F1BE5EB071DD821BE23BC822812 /* Support Files */,
-			);
-			name = JTAppleCalendar;
-			path = JTAppleCalendar;
-			sourceTree = "<group>";
-		};
-		4875DF28A41B5263AFA28E5F79263D87 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5A80F41D9643B8ABF9606B865EC5582E /* ChameleonFramework */,
-				9EE09C89D5DA8F94693E82523A9BD540 /* DBSphereTagCloudSwift */,
-				1AF4676AEF273DD9060252D707FF70DB /* JTAppleCalendar */,
+				962925C2D16F79179E598D013C01CB34 /* ChameleonFramework */,
+				29D3CFEC26405C3E3BC139FE224E1A57 /* DBSphereTagCloudSwift */,
+				92F937CA6D8021C7560350C37C998816 /* JTAppleCalendar */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		29D3CFEC26405C3E3BC139FE224E1A57 /* DBSphereTagCloudSwift */ = {
+			isa = PBXGroup;
+			children = (
+				03B1666CFAC738E4DA9AF7BE6AB58543 /* DBSphereView.swift */,
+				481C90E1C85CF86DFB529E404B52A2A6 /* Matrix.swift */,
+				C025B25D551D819471E9E000FFCAB77D /* MatrixConcatenation.swift */,
+				C0E1EF54F4FFD9D78D54B824FD82820C /* MatrixCreation.swift */,
+				4C9CE76D1CC36D61B6403F090869E016 /* MatrixMultiplication.swift */,
+				182A9EE1DA5F1237CA963936BF6E40A7 /* MatrixSubscripting.swift */,
+				6CD777B924A95BAD592E37358B624A46 /* Support Files */,
+			);
+			path = DBSphereTagCloudSwift;
 			sourceTree = "<group>";
 		};
 		4E2C1CE609295FBF1E1675F332F38F23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE0F76160E59EA6310C216FA839879DD /* ChameleonFramework.framework */,
-				7F4620D45E2B55CE83FA00C6A06D81A6 /* DBSphereTagCloudSwift.framework */,
-				5B07D78BFF9A79F8DC3DE1A0EAEDFD3D /* JTAppleCalendar.framework */,
-				217F48FA34512E57550C8B90869FFEA9 /* Pods_three_positive_things.framework */,
-				A415712346D384C5412DBE6EFC9A930B /* Pods_three_positive_thingsTests.framework */,
-				30CB5460454C5399149C4790EF424113 /* Pods_three_positive_thingsUITests.framework */,
+				0383903D05EDD5C442C682C1F7A1752D /* ChameleonFramework.framework */,
+				AE0821F8F7E59246FFF16A5020693041 /* DBSphereTagCloudSwift.framework */,
+				A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar.framework */,
+				FEF176F9D0582D41B6F6F602B202A55E /* Pods_three_positive_things.framework */,
+				1CBCF5FDD9ACB86DB1A886A3556CBE17 /* Pods_three_positive_thingsTests.framework */,
+				7BA3F80D6D46B99C65E1CEAAC03DA789 /* Pods_three_positive_thingsUITests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57FC6E1683D2B0496CD6F6033FD1F015 /* Pods-three-positive-things */ = {
+		54870B17B93D3DCA407CDD47F8232C38 /* Pods-three-positive-things */ = {
 			isa = PBXGroup;
 			children = (
-				3DAA8CDE2DB2D6F33936EAB262C9A961 /* Pods-three-positive-things.modulemap */,
-				F7565B45D9AACA2CAFA3E3EC41A1EE7F /* Pods-three-positive-things-acknowledgements.markdown */,
-				A8D456AC7F22BB3EB6541D56159D55C3 /* Pods-three-positive-things-acknowledgements.plist */,
-				C8385A46CB74107C32DC1B3A34E4882D /* Pods-three-positive-things-dummy.m */,
-				023AB520CBBEE8B980309B364C7584A4 /* Pods-three-positive-things-frameworks.sh */,
-				FB249C71C206A3F1D0408F2241AD6C59 /* Pods-three-positive-things-Info.plist */,
-				0F48667EF33F8CF6A6D049A82C6A01C0 /* Pods-three-positive-things-umbrella.h */,
-				ECC9BED9795A522AE0E007F645AB66D4 /* Pods-three-positive-things.debug.xcconfig */,
-				5F49C1C88725ED266A6153F62F7683E6 /* Pods-three-positive-things.release.xcconfig */,
+				905E33E5958FC2F7BD06B12FF6927411 /* Pods-three-positive-things.modulemap */,
+				F1E71EBF13A4BF616C4BC6CE114E4D2F /* Pods-three-positive-things-acknowledgements.markdown */,
+				AF61228093BDE999D318EBA94E88F0CD /* Pods-three-positive-things-acknowledgements.plist */,
+				1EE4144C3CBF2223BBB2A3FBB74B06C1 /* Pods-three-positive-things-dummy.m */,
+				38383BE04FE808F436D573F6A3DD7385 /* Pods-three-positive-things-frameworks.sh */,
+				2AF8DE2C7A02DDCF32B74C4CFA27073B /* Pods-three-positive-things-Info.plist */,
+				B2DA21D300B11EF0508CD5FF4B32106A /* Pods-three-positive-things-umbrella.h */,
+				1C039940E2042765448424DBEF346A4B /* Pods-three-positive-things.debug.xcconfig */,
+				CCD30C7D5AD78C8F3CE793981EC46B1B /* Pods-three-positive-things.release.xcconfig */,
 			);
 			name = "Pods-three-positive-things";
 			path = "Target Support Files/Pods-three-positive-things";
 			sourceTree = "<group>";
 		};
-		5A80F41D9643B8ABF9606B865EC5582E /* ChameleonFramework */ = {
+		56C18F578CAE5359556EC191F50BF9B4 /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				D88400A37281832B036D6CDB314118F2 /* Default */,
-				70D711B9F7E44DAA946506C0941794C2 /* Support Files */,
-				01B16AF63442403F688F974EC509AD9A /* Swift */,
+				9D79DBD759A424BDFD5D3F78E783A0D5 /* Chameleon.h */,
+				4928C2ADB24CF36D70EE8C853E7F7190 /* Chameleon_.h */,
+				2CBA74BCA9DC6DB1D1E0D5861BEB22F1 /* Chameleon_.m */,
+				4D88EFB74A36E3627F24813137D9F8E0 /* ChameleonConstants.h */,
+				CE0866DFA20D7301C418E8C41AA4B94D /* ChameleonConstants.m */,
+				601C9FA58F7A1F0C0BBCC63F83B7D2D8 /* ChameleonEnums.h */,
+				8B756CA08A419149795CA7D4BBCE2878 /* ChameleonMacros.h */,
+				1158D8442CC4AD2AABB8CC6A200678D6 /* NSArray+Chameleon.h */,
+				9F31295617D33E02E1E4A60C196D67FE /* NSArray+Chameleon.m */,
+				1E710B09DF169ADBA52978C59A5CFE38 /* UIAppearance+Swift.h */,
+				BF13625620486B7D3286FA88AC5107FE /* UIAppearance+Swift.m */,
+				227B8E5EA2232180BE856A62848553FB /* UIButton+Chameleon.h */,
+				BF4E17DA1BF4E3F86D26B2907DEACAF3 /* UIButton+Chameleon.m */,
+				CDE984CC25C4C5D3CAABBB5398782471 /* UIColor+Chameleon.h */,
+				F78F4B685857C03DB163DD3A6FD464F2 /* UIColor+Chameleon.m */,
+				56419534C8562D23D55CE961ED5B4849 /* UIColor+ChameleonPrivate.h */,
+				F1AC7509700731D9AA3B43A939FD0206 /* UIColor+ChameleonPrivate.m */,
+				7A228F2BC4A0F9D8689B049F76A4F66A /* UIImage+ChameleonPrivate.h */,
+				90DD63DDCA8C94436A400B0D176F4473 /* UIImage+ChameleonPrivate.m */,
+				A30D023C67783606580A29D65F239A06 /* UILabel+Chameleon.h */,
+				6C9763E32F7CC25ECE8259F389ED75CF /* UILabel+Chameleon.m */,
+				1C7A77635063599E823A89FA10EB838D /* UINavigationController+Chameleon.h */,
+				0462BBB14424394D1C3BDB95786F94D5 /* UINavigationController+Chameleon.m */,
+				602F8153A3985FE461E93C8EE07D72E8 /* UIView+ChameleonPrivate.h */,
+				A472B7CAF9A4209C596A1B821A1E851B /* UIView+ChameleonPrivate.m */,
+				F6E29496CB2D22A002FFFBD0A8C2DDFD /* UIViewController+Chameleon.h */,
+				729A9B88B6CBEFBF8F57832FF8EA57A6 /* UIViewController+Chameleon.m */,
 			);
-			name = ChameleonFramework;
-			path = ChameleonFramework;
+			name = Default;
 			sourceTree = "<group>";
 		};
-		70D711B9F7E44DAA946506C0941794C2 /* Support Files */ = {
+		6CD777B924A95BAD592E37358B624A46 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0DC41A8763B985927A5B3432DF9DFA5C /* ChameleonFramework.modulemap */,
-				3FDE87FCB9806B8579CE84B7961FF0EA /* ChameleonFramework.xcconfig */,
-				73284066BA5D7CF1581012029A20729F /* ChameleonFramework-dummy.m */,
-				1850EBE17E07D8C7F8651C855F0B0090 /* ChameleonFramework-Info.plist */,
-				DE7E656ADA568AF01E98C13837479044 /* ChameleonFramework-prefix.pch */,
-				263DCF0D83BE69F14576CF15FA2BEA5B /* ChameleonFramework-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ChameleonFramework";
-			sourceTree = "<group>";
-		};
-		8462B20AEF271454131B50E551887D5E /* Pods-three-positive-thingsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				90F0414CF75BDCA1E63C0123F3F1D5E9 /* Pods-three-positive-thingsUITests.modulemap */,
-				7B8D8C63E419BCD939D9978BF67B3CE7 /* Pods-three-positive-thingsUITests-acknowledgements.markdown */,
-				E56D6343CDEA1D7D02699045F18A1294 /* Pods-three-positive-thingsUITests-acknowledgements.plist */,
-				C9B24CCF453F67F0176CB54EAC0DE74C /* Pods-three-positive-thingsUITests-dummy.m */,
-				9F7D5B299D99A73171A571395E10211E /* Pods-three-positive-thingsUITests-Info.plist */,
-				F366491B9B3DF187178E76FCDCB831F4 /* Pods-three-positive-thingsUITests-umbrella.h */,
-				B889F3F412A01196F3390B9982283D50 /* Pods-three-positive-thingsUITests.debug.xcconfig */,
-				6B0E6358DE47F72A79BDB885BB4E0943 /* Pods-three-positive-thingsUITests.release.xcconfig */,
-			);
-			name = "Pods-three-positive-thingsUITests";
-			path = "Target Support Files/Pods-three-positive-thingsUITests";
-			sourceTree = "<group>";
-		};
-		9B01B11428B986FA485A9361CED13CAD /* Pods-three-positive-thingsTests */ = {
-			isa = PBXGroup;
-			children = (
-				EFDE2D67C6BC44059CAD79D9B244F210 /* Pods-three-positive-thingsTests.modulemap */,
-				C4A53CDC58B237DBF3615A48C9453A94 /* Pods-three-positive-thingsTests-acknowledgements.markdown */,
-				42998022FBBF684DDFB77E07EA6DAC7C /* Pods-three-positive-thingsTests-acknowledgements.plist */,
-				5C48A63BB989DA173EEFC40D0E8EC34D /* Pods-three-positive-thingsTests-dummy.m */,
-				9EF4E495A4211621281A938C02A85943 /* Pods-three-positive-thingsTests-Info.plist */,
-				46C11D55172CDA52B727CCCF78578777 /* Pods-three-positive-thingsTests-umbrella.h */,
-				5D5D35C3EEED784E67F249222D93083D /* Pods-three-positive-thingsTests.debug.xcconfig */,
-				CB313542F7ABCA3A4E35911BFF4CF035 /* Pods-three-positive-thingsTests.release.xcconfig */,
-			);
-			name = "Pods-three-positive-thingsTests";
-			path = "Target Support Files/Pods-three-positive-thingsTests";
-			sourceTree = "<group>";
-		};
-		9EE09C89D5DA8F94693E82523A9BD540 /* DBSphereTagCloudSwift */ = {
-			isa = PBXGroup;
-			children = (
-				BE80DEB64B81DFABA3DC510C9F020F13 /* DBSphereView.swift */,
-				F8FA39765654D9EA052C19AA661F9B32 /* Matrix.swift */,
-				9D5B2DAC09A7C5DB3DF58278F4A85686 /* MatrixConcatenation.swift */,
-				21A77E3F61C89D0BED3E23BE227F43E1 /* MatrixCreation.swift */,
-				C914CC07E7AE89A392762FD6D289C46A /* MatrixMultiplication.swift */,
-				CC1DBF63DBC445701F6FD529EDFB4EAB /* MatrixSubscripting.swift */,
-				B2184C4F820ED1A6B8E701989E589866 /* Support Files */,
-			);
-			name = DBSphereTagCloudSwift;
-			path = DBSphereTagCloudSwift;
-			sourceTree = "<group>";
-		};
-		A248B804082BDA78F4757E665B1DCAC3 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				57FC6E1683D2B0496CD6F6033FD1F015 /* Pods-three-positive-things */,
-				9B01B11428B986FA485A9361CED13CAD /* Pods-three-positive-thingsTests */,
-				8462B20AEF271454131B50E551887D5E /* Pods-three-positive-thingsUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B2184C4F820ED1A6B8E701989E589866 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B8F4F4B920FCCB252061E437C8748DDF /* DBSphereTagCloudSwift.modulemap */,
-				42A03FDD5EB84AF72391924E01475DAA /* DBSphereTagCloudSwift.xcconfig */,
-				32CE9278940DACA064EDAE3650A1161E /* DBSphereTagCloudSwift-dummy.m */,
-				FDC9B23E286620FCCDFB4D13E6DB3F63 /* DBSphereTagCloudSwift-Info.plist */,
-				7840DF98EF4F2CB26A1D070E0B0C0DEB /* DBSphereTagCloudSwift-prefix.pch */,
-				DF4811176D0390134EDCE6FCBB11EE5C /* DBSphereTagCloudSwift-umbrella.h */,
+				A86656DAE291714A9578ADFE9EDEFFDD /* DBSphereTagCloudSwift.modulemap */,
+				7F9734200F39EDB457BD0F5D73AD74D3 /* DBSphereTagCloudSwift.xcconfig */,
+				F2629DF69524932EEF18464338E04D12 /* DBSphereTagCloudSwift-dummy.m */,
+				8F91A53D0888532FA570160216C06B20 /* DBSphereTagCloudSwift-Info.plist */,
+				CC31DE80FACA9A35D92B93EAC25E1163 /* DBSphereTagCloudSwift-prefix.pch */,
+				938645C728BBD618E6F143C03B3986C0 /* DBSphereTagCloudSwift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DBSphereTagCloudSwift";
 			sourceTree = "<group>";
 		};
+		92F937CA6D8021C7560350C37C998816 /* JTAppleCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				279143038FDEAE9543FB48EF93C30D18 /* CalendarEnums.swift */,
+				180E64C38A1AF7B48C713A4D9846BB4C /* CalendarStructs.swift */,
+				27F23DE3533EC720CF234C689634E39E /* CustomCollectionView.swift */,
+				1A5F78522D7D12F24F001EFEA6ED8B3C /* GlobalFunctionsAndExtensions.swift */,
+				72EE20097F7239E4A96616E8D8EF0AAF /* JTAppleCalendarDelegateProtocol.swift */,
+				4D4D2D13306D941A4E6B06ED12B2D022 /* JTAppleCalendarLayout.swift */,
+				A724797F6072654FE8662D09B68AE82A /* JTAppleCalendarLayoutProtocol.swift */,
+				AAD0552E00DD06648FE66AB22F8483AF /* JTAppleCalendarView.swift */,
+				96A3B29514E792FBC3D79A5FC741DE60 /* JTAppleCollectionReusableView.swift */,
+				AF9B10CE7D5D5E404F5674B08B593540 /* JTAppleDayCell.swift */,
+				FDA0577B48800320112634BEBD65B4C8 /* JTAppleReusableViewProtocol.swift */,
+				481746FC59A964D955267B40981F6237 /* JTAppleViews.swift */,
+				EF96B374DE0E54F711630990FD72E601 /* JTCalendarProtocols.swift */,
+				24B1F94481DCF021F4B08C39DFC9928E /* UICollectionViewDelegates.swift */,
+				3945289B0701B3A5C95E3475BC8F2C2E /* UIScrollViewDelegates.swift */,
+				4613D61ED69D1F53D7A67A04EBB6DF72 /* UserInteractionFunctions.swift */,
+				C015E996D20507A2831280B42F573437 /* Support Files */,
+			);
+			path = JTAppleCalendar;
+			sourceTree = "<group>";
+		};
+		962925C2D16F79179E598D013C01CB34 /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				56C18F578CAE5359556EC191F50BF9B4 /* Default */,
+				ECCA17E6EA5383ED3D8071099EA8206A /* Support Files */,
+				D8ACC1A081D760A18A2EDFFE001F4F26 /* Swift */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		A248B804082BDA78F4757E665B1DCAC3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54870B17B93D3DCA407CDD47F8232C38 /* Pods-three-positive-things */,
+				BBE0F64F0B5B2F295C76E4D2FC215AF7 /* Pods-three-positive-thingsTests */,
+				A3A727967783D4166B8F580980626641 /* Pods-three-positive-thingsUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A3A727967783D4166B8F580980626641 /* Pods-three-positive-thingsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D309E7587CCDD486E331F54B0074FDCE /* Pods-three-positive-thingsUITests.modulemap */,
+				647C608046FCFA8780A35FBB746C8D79 /* Pods-three-positive-thingsUITests-acknowledgements.markdown */,
+				7E4AD4A1F8D0AEF031246BAFACFF8D2D /* Pods-three-positive-thingsUITests-acknowledgements.plist */,
+				D849E30123A15C84DB6DCED380840AEB /* Pods-three-positive-thingsUITests-dummy.m */,
+				6A4BEBC4F9105E0DBD4EFE6CC062E240 /* Pods-three-positive-thingsUITests-Info.plist */,
+				A6C929250F8898527E21CE7D4D40A881 /* Pods-three-positive-thingsUITests-umbrella.h */,
+				B0C3F6224E866E3926241502AC748FF4 /* Pods-three-positive-thingsUITests.debug.xcconfig */,
+				A3B78EA4D91E2AF658AF7C5FC621F9EB /* Pods-three-positive-thingsUITests.release.xcconfig */,
+			);
+			name = "Pods-three-positive-thingsUITests";
+			path = "Target Support Files/Pods-three-positive-thingsUITests";
+			sourceTree = "<group>";
+		};
 		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				06E46D748227D00A744282F5C73EFF91 /* iOS */,
+				DBDDC487F350FA8D20C905C2045E2521 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BA431F1BE5EB071DD821BE23BC822812 /* Support Files */ = {
+		BBE0F64F0B5B2F295C76E4D2FC215AF7 /* Pods-three-positive-thingsTests */ = {
 			isa = PBXGroup;
 			children = (
-				E83591748539C4242800DB5CB9492187 /* JTAppleCalendar.modulemap */,
-				0CC71A6A096211FB686F108D1DAE6D46 /* JTAppleCalendar.xcconfig */,
-				B3EFFEB0DF7C4E5B82F9E12362AA23DD /* JTAppleCalendar-dummy.m */,
-				E9D98BFFB845E4C6D83B2F83F808E2CA /* JTAppleCalendar-Info.plist */,
-				981F0A2D5651C01E84B5792AE765257D /* JTAppleCalendar-prefix.pch */,
-				07BF24600C85B46B0A9B32D212182D2F /* JTAppleCalendar-umbrella.h */,
+				05B42880AF23D8E529AC2545B3FBD2AD /* Pods-three-positive-thingsTests.modulemap */,
+				EB107FDD590365845D832DAA9CAB2A2D /* Pods-three-positive-thingsTests-acknowledgements.markdown */,
+				3CEAC222B18345433DF8C5BA9F200DEC /* Pods-three-positive-thingsTests-acknowledgements.plist */,
+				D2DC8B7F7C6CBA68EBC101F25926B8A3 /* Pods-three-positive-thingsTests-dummy.m */,
+				41F0C228D7633BF7996699EA6EA688BD /* Pods-three-positive-thingsTests-Info.plist */,
+				C9AFAA8262A13DC9E907EDAEB16CE475 /* Pods-three-positive-thingsTests-umbrella.h */,
+				922B96954BC6A3530217E27B7EE19380 /* Pods-three-positive-thingsTests.debug.xcconfig */,
+				B3D938BD762DE0EF9D952BCDEB35EF56 /* Pods-three-positive-thingsTests.release.xcconfig */,
+			);
+			name = "Pods-three-positive-thingsTests";
+			path = "Target Support Files/Pods-three-positive-thingsTests";
+			sourceTree = "<group>";
+		};
+		C015E996D20507A2831280B42F573437 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A7F98679825C43965A7CB181BACF6E7 /* JTAppleCalendar.modulemap */,
+				BC6CF454DD7F2A8ABEEEFD84E77D4D49 /* JTAppleCalendar.xcconfig */,
+				700BD70E25F3F4A7030352D08FA457CC /* JTAppleCalendar-dummy.m */,
+				D90FE61C675E8C4D3BAD021E5F1ADCF7 /* JTAppleCalendar-Info.plist */,
+				F619438B34129A2DA3850227F65CC8CA /* JTAppleCalendar-prefix.pch */,
+				C7C78EB0DE2C4142B369659178657812 /* JTAppleCalendar-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/JTAppleCalendar";
@@ -492,123 +492,123 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
-				4875DF28A41B5263AFA28E5F79263D87 /* Pods */,
+				22453743D172E410835FDE9DCA7083AA /* Pods */,
 				4E2C1CE609295FBF1E1675F332F38F23 /* Products */,
 				A248B804082BDA78F4757E665B1DCAC3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D88400A37281832B036D6CDB314118F2 /* Default */ = {
+		D8ACC1A081D760A18A2EDFFE001F4F26 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				ABA24314536EF9AD69206F8349258C98 /* Chameleon.h */,
-				74C72DA8322DB38BD9682EE3CC332890 /* Chameleon_.h */,
-				465416177101F6B85441FB425C32D3C3 /* Chameleon_.m */,
-				1B12C4844420F987FF4E8EE0B08DA568 /* ChameleonConstants.h */,
-				247217C92D157FCB6192E1DD2E5928F6 /* ChameleonConstants.m */,
-				41B06E84213FA14B9B58ED6E954F7D98 /* ChameleonEnums.h */,
-				1EADF87256CDA5107491008945D20672 /* ChameleonMacros.h */,
-				911816A5DA60DA577E700C0F505970E9 /* NSArray+Chameleon.h */,
-				7BD51213864DCCC96EBE11CE45119C96 /* NSArray+Chameleon.m */,
-				04DBC1CFB8183D5E31B9325814DD31E3 /* UIAppearance+Swift.h */,
-				B3EC9BAB6D1C2399438C57B1148BEC50 /* UIAppearance+Swift.m */,
-				D5CACD06CD8B04EA4DB0EA937119E0B6 /* UIButton+Chameleon.h */,
-				17B7E36AB12A0131960C936A4A657469 /* UIButton+Chameleon.m */,
-				6990640D4956E82014D8E6F56A12442F /* UIColor+Chameleon.h */,
-				99EBF51F0FFEAD189CA5F942D9B2D8C6 /* UIColor+Chameleon.m */,
-				65009B3709377A585BB5BAF72755670C /* UIColor+ChameleonPrivate.h */,
-				C1F672E5F0535FBE2772A305823309DF /* UIColor+ChameleonPrivate.m */,
-				D95AAFD299D57CCA5E96E7BDC888C1B3 /* UIImage+ChameleonPrivate.h */,
-				C59413BA5A49C5CD21D9924DF5C5377C /* UIImage+ChameleonPrivate.m */,
-				F22C4982950BDC52F7DE71DC609C2E8A /* UILabel+Chameleon.h */,
-				9FE2166E1475B886E076568EEA737CCD /* UILabel+Chameleon.m */,
-				7615D025AEEA6163C415473F461B601E /* UINavigationController+Chameleon.h */,
-				6B4657E138362AA293D13061DF334761 /* UINavigationController+Chameleon.m */,
-				44E7DF31EE78190DD84E25B5BF01F75F /* UIView+ChameleonPrivate.h */,
-				37C61E92612707C69188404DF72613AA /* UIView+ChameleonPrivate.m */,
-				9C10B79A2BDA36D2945D962A1BE91E55 /* UIViewController+Chameleon.h */,
-				C7E6088ABEC099E7BD601C81993F68FF /* UIViewController+Chameleon.m */,
+				E92E79A68EC9B4C0C28E39B3125D5D96 /* ChameleonShorthand.swift */,
 			);
-			name = Default;
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		DBDDC487F350FA8D20C905C2045E2521 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				78D4600C6C4A0D8449B3205DE5678D9E /* Accelerate.framework */,
+				B206A1B89F3C5AEDEAA8A7C5024130BF /* CoreGraphics.framework */,
+				29725C588677E8258B73FAA8747E9945 /* Foundation.framework */,
+				4AB692682243EB278B5111E341151869 /* QuartzCore.framework */,
+				71104F63A2DCDCB94A130639EE8C9955 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		ECCA17E6EA5383ED3D8071099EA8206A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				525E96273D3ECA35EDDCEB97982F095D /* ChameleonFramework.modulemap */,
+				A970402AB96239D30FF1EB732389AC86 /* ChameleonFramework.xcconfig */,
+				82007314AA9D0C34EF25617E0B3488E4 /* ChameleonFramework-dummy.m */,
+				AFE8AA8DBF7FA9FA4E378EF22E7209CC /* ChameleonFramework-Info.plist */,
+				B2EB41DC97712869DBE84EBEEE443604 /* ChameleonFramework-prefix.pch */,
+				B27245138081FD72EFCDD5DBCB4F578D /* ChameleonFramework-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ChameleonFramework";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		046A8BB754A149D8FAE5FAA588B3C766 /* Headers */ = {
+		1730F6C7D0894AA7FD4D7D3943C8754F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EE588B80E0B1766AA46E261C408EB41 /* JTAppleCalendar-umbrella.h in Headers */,
+				41AC52084F10EF0AB6A2F82DCFEE2FED /* DBSphereTagCloudSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4774C86D87DACEA4F97F4C7FC8B3B760 /* Headers */ = {
+		64361ED3E1A488EC0EB67BDA3BF1C4EC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4622B4E13080FF258DD341E2E4D4FEC6 /* Pods-three-positive-thingsUITests-umbrella.h in Headers */,
+				F3C500CDBAC4D62309685D0FDBAD2DBE /* JTAppleCalendar-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5ACA67F7063C376101DB2A45490D7A98 /* Headers */ = {
+		6C0E5D6795A417DE04CAA5A1B793FD7C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048CBEE3605A79448EA7C599D0A60C0F /* Chameleon.h in Headers */,
-				CF2B227368462B88D1AD9B876B464DA4 /* Chameleon_.h in Headers */,
-				520C26988D102C008B94FDA5B3596962 /* ChameleonConstants.h in Headers */,
-				4DB68BD2B147D653BF257E5455809FFD /* ChameleonEnums.h in Headers */,
-				6A26FBCC90A1285AA8330996AA44EFB0 /* ChameleonFramework-umbrella.h in Headers */,
-				6F2216CEEACF033BABDB5F98F9F15109 /* ChameleonMacros.h in Headers */,
-				24646492E182A15834C35A7377D5B562 /* NSArray+Chameleon.h in Headers */,
-				F0266706E351F141F5C7F0B0D77E095E /* UIAppearance+Swift.h in Headers */,
-				4E7164F686751E436C078FA3646A018F /* UIButton+Chameleon.h in Headers */,
-				B7A0E6A18665DBA68F843C98A3F4563B /* UIColor+Chameleon.h in Headers */,
-				D6897EC41B66A991C9D6AB9DE5AAC810 /* UIColor+ChameleonPrivate.h in Headers */,
-				176104A8FB47982F530314847C330A73 /* UIImage+ChameleonPrivate.h in Headers */,
-				FB114A7AE122B806F75B47BF957A31ED /* UILabel+Chameleon.h in Headers */,
-				AB3E7EB0DB558D2DD86672B8EC6182A3 /* UINavigationController+Chameleon.h in Headers */,
-				EFC9D2AA27445BD59B2E4EB2449F2F30 /* UIView+ChameleonPrivate.h in Headers */,
-				9CCCAD9B837E51A296C8FEC903BD6E83 /* UIViewController+Chameleon.h in Headers */,
+				2DE099B2ADF505CC566D1AAF5109783C /* Pods-three-positive-thingsUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2962B8EF9A4C12641386C5658830BDA /* Headers */ = {
+		80C66671584EC649F15BCCEB6D07E387 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D2E59A536F6A9665E958C90ED472A2 /* Pods-three-positive-things-umbrella.h in Headers */,
+				015A05B381E25C2FA80A0DA797179580 /* Chameleon.h in Headers */,
+				6C87CCC7E974983BF3DDB7CDDD1CCC6A /* Chameleon_.h in Headers */,
+				FA49618EEDBE490B9BF56CAD65ABF8EA /* ChameleonConstants.h in Headers */,
+				E7D344059042D076A5C61D13018BA0D8 /* ChameleonEnums.h in Headers */,
+				936F268AB9257A3435DD4BAAB5A4A135 /* ChameleonFramework-umbrella.h in Headers */,
+				CAF49E2A54F794D5F6DD10F1FE77F321 /* ChameleonMacros.h in Headers */,
+				8624349E44507A5863651CAB51E38F7F /* NSArray+Chameleon.h in Headers */,
+				07A0DFFBB0EA1EA20CE1C511B55C13B2 /* UIAppearance+Swift.h in Headers */,
+				4DF43DB058D1638FE6E51EC9B5BA01B9 /* UIButton+Chameleon.h in Headers */,
+				EEF22A1455C96635E480D1DCCE664913 /* UIColor+Chameleon.h in Headers */,
+				DDBC762ABE86F3917C6553A64E722A70 /* UIColor+ChameleonPrivate.h in Headers */,
+				63B7FAF3B3F4BA5A42B1F016BEE0FC47 /* UIImage+ChameleonPrivate.h in Headers */,
+				E82EF3AFD38848BAC02735643F4FBF6C /* UILabel+Chameleon.h in Headers */,
+				07F4634E722082DB20A867BD271864CA /* UINavigationController+Chameleon.h in Headers */,
+				0C66E72276B24115F4EE16246D0D11C0 /* UIView+ChameleonPrivate.h in Headers */,
+				918885B90BECC18ABC5F58D92E34EF13 /* UIViewController+Chameleon.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA5F663E3B22A7C71654671832F7C83E /* Headers */ = {
+		C305ADD3A7CF68F8D426D60A8EFEB090 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67DEC6287AB496078C0AF3358771BF3F /* Pods-three-positive-thingsTests-umbrella.h in Headers */,
+				03E30CF83F65342B20446EA6E7974BDA /* Pods-three-positive-things-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F493B61F4E0B7E353F21DB4A438D1B42 /* Headers */ = {
+		D13234A3AD56E247DFBBDC85D385DA88 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EC2C456C502D082B372261CB1C685C1 /* DBSphereTagCloudSwift-umbrella.h in Headers */,
+				D8E5CC50666940FFDC04F0874BB92BE4 /* Pods-three-positive-thingsTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		576AE9F53F27416269E41C258CA742A1 /* DBSphereTagCloudSwift */ = {
+		2096AE7BB28DBC80384A8E5136579F81 /* DBSphereTagCloudSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D92B5509820E011A505520013CDDD950 /* Build configuration list for PBXNativeTarget "DBSphereTagCloudSwift" */;
+			buildConfigurationList = 3232A82B5D821820310570F500DA1FFE /* Build configuration list for PBXNativeTarget "DBSphereTagCloudSwift" */;
 			buildPhases = (
-				F493B61F4E0B7E353F21DB4A438D1B42 /* Headers */,
-				A24316C4501D10086F521839D0585B2C /* Sources */,
-				D6F3354D2B3D0560E4D520AE1B831A61 /* Frameworks */,
-				9E63B69F9860780C83A475CF088FF3F1 /* Resources */,
+				1730F6C7D0894AA7FD4D7D3943C8754F /* Headers */,
+				2F04A6C028AB9A25B58C5EA5AEF21706 /* Sources */,
+				33E929DF114110D79F0F5CAAE3F90C0F /* Frameworks */,
+				8A66C9314E7C61598D4CD37F64230C1B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -616,38 +616,17 @@
 			);
 			name = DBSphereTagCloudSwift;
 			productName = DBSphereTagCloudSwift;
-			productReference = 7F4620D45E2B55CE83FA00C6A06D81A6 /* DBSphereTagCloudSwift.framework */;
+			productReference = AE0821F8F7E59246FFF16A5020693041 /* DBSphereTagCloudSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9B23117E458B86F3DA0716A7F5CB789E /* Pods-three-positive-things */ = {
+		28BFDC89BA4363F4F3576DEC70EE10AE /* ChameleonFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55850B1CF025BB8EBAF66859BE617AC7 /* Build configuration list for PBXNativeTarget "Pods-three-positive-things" */;
+			buildConfigurationList = 911E8CAE5BC7C27912E3245FC75091FA /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
 			buildPhases = (
-				A2962B8EF9A4C12641386C5658830BDA /* Headers */,
-				92CD61CA9495EE342675CD4F66C9138C /* Sources */,
-				28E3A8F706492E4BB2AE1FBC8226D437 /* Frameworks */,
-				130C7D5F406A6C3CB782346DFCD268DF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				47D11C1B19D0BFD8F7F5BBDF8CC43147 /* PBXTargetDependency */,
-				A17FE46A2590A095DF20D521C4DD5D62 /* PBXTargetDependency */,
-				23C2D2F7767A096A05D9F15AB3F2BDB7 /* PBXTargetDependency */,
-			);
-			name = "Pods-three-positive-things";
-			productName = "Pods-three-positive-things";
-			productReference = 217F48FA34512E57550C8B90869FFEA9 /* Pods_three_positive_things.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9FE7EDA641B673E235FD345BF0736F7F /* ChameleonFramework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6C6427EDAB5E97397D7170EC5C3AA906 /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
-			buildPhases = (
-				5ACA67F7063C376101DB2A45490D7A98 /* Headers */,
-				7CD8990BB6E651F92D05C23D63FAC627 /* Sources */,
-				6214497F15EDD434CE9FFD12BAE76922 /* Frameworks */,
-				03B39B87D51D3C16A0125C4BBE622D64 /* Resources */,
+				80C66671584EC649F15BCCEB6D07E387 /* Headers */,
+				C932BB4B41211AEB55BB8902A20BC875 /* Sources */,
+				72FCBED230C996317A485724760EB018 /* Frameworks */,
+				1D826F16ECC69FA6D6365B89430D4D32 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -655,17 +634,17 @@
 			);
 			name = ChameleonFramework;
 			productName = ChameleonFramework;
-			productReference = BE0F76160E59EA6310C216FA839879DD /* ChameleonFramework.framework */;
+			productReference = 0383903D05EDD5C442C682C1F7A1752D /* ChameleonFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A5DF63BA1CEAC125789721A669856508 /* JTAppleCalendar */ = {
+		421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D947942F9313C691EBF340FA9D48BFAA /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */;
+			buildConfigurationList = EDA2478573242BF77CD5FFA5E5978FCC /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */;
 			buildPhases = (
-				046A8BB754A149D8FAE5FAA588B3C766 /* Headers */,
-				437468AD00188AFD50649D87E045D40F /* Sources */,
-				2B4C0D14CF691580F0C8D8F62054722D /* Frameworks */,
-				479D847737896E7E801CF8228EF78EF7 /* Resources */,
+				64361ED3E1A488EC0EB67BDA3BF1C4EC /* Headers */,
+				DA359312D6A6B62C3B37445D8386E144 /* Sources */,
+				B58AECF2E422C53AE1AA9024519F2BC3 /* Frameworks */,
+				D3FCB8CDE0C4D72777305EC2B17F420F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -673,45 +652,66 @@
 			);
 			name = JTAppleCalendar;
 			productName = JTAppleCalendar;
-			productReference = 5B07D78BFF9A79F8DC3DE1A0EAEDFD3D /* JTAppleCalendar.framework */;
+			productReference = A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CE86A66EEDA550D355FCDC5815031C5F /* Pods-three-positive-thingsTests */ = {
+		6783F00A434D49354DCCCB728D3EFEB7 /* Pods-three-positive-thingsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59023C79639A0C9AF7394EC63F33F4F6 /* Build configuration list for PBXNativeTarget "Pods-three-positive-thingsTests" */;
+			buildConfigurationList = 9E861AE9B3CBF60A6014AFB65F887FC1 /* Build configuration list for PBXNativeTarget "Pods-three-positive-thingsTests" */;
 			buildPhases = (
-				EA5F663E3B22A7C71654671832F7C83E /* Headers */,
-				DBBD44353648A2D40FA291FEDA251D07 /* Sources */,
-				D0159A5A4C497776859257EB77F3F8BA /* Frameworks */,
-				3BC47929315215316D90DB11BD1DC0DA /* Resources */,
+				D13234A3AD56E247DFBBDC85D385DA88 /* Headers */,
+				838445FF54DA0B14E92E2D3A65D2361D /* Sources */,
+				52E38F8796625BD452537607D17A1BCD /* Frameworks */,
+				1A0822F680AC9A17308E03DC16E5CB32 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AA2EF0CE05E8026CF04209EC6B5A6CC2 /* PBXTargetDependency */,
+				DB105529E9FBF91D5A47BAA286BEBF99 /* PBXTargetDependency */,
 			);
 			name = "Pods-three-positive-thingsTests";
 			productName = "Pods-three-positive-thingsTests";
-			productReference = A415712346D384C5412DBE6EFC9A930B /* Pods_three_positive_thingsTests.framework */;
+			productReference = 1CBCF5FDD9ACB86DB1A886A3556CBE17 /* Pods_three_positive_thingsTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E4DD478F2BDE349F701C6343A4DF3008 /* Pods-three-positive-thingsUITests */ = {
+		A4FEB4B862003C47DC11CEF7E7A5F5AF /* Pods-three-positive-things */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64C1634DBCDEF96165A0729450B87A70 /* Build configuration list for PBXNativeTarget "Pods-three-positive-thingsUITests" */;
+			buildConfigurationList = B4C62C349684EF10F223EB8062F30E5C /* Build configuration list for PBXNativeTarget "Pods-three-positive-things" */;
 			buildPhases = (
-				4774C86D87DACEA4F97F4C7FC8B3B760 /* Headers */,
-				EF4355342EBA59B90DC6945DFA0F27B0 /* Sources */,
-				41B2A4BB76FA2013C6FEB855E61B430F /* Frameworks */,
-				D0C0DCAD3C8714EA53F92EADEFB44AD6 /* Resources */,
+				C305ADD3A7CF68F8D426D60A8EFEB090 /* Headers */,
+				6217ED95E1F8B710B7ED6256DDC1E591 /* Sources */,
+				A65E99AA347A0514920C60CD2C13ED41 /* Frameworks */,
+				FE6D15AF781E966CFCBC675AA2137328 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				889D672E91E8C605DE5F4FD13EE3CF7F /* PBXTargetDependency */,
+				9D363DFDE2C21EC75B4315F591B69301 /* PBXTargetDependency */,
+				5CECA0DA32F8883D691A4BCEBB90C1E9 /* PBXTargetDependency */,
+				642013641E8C29B4D8BD19695A2B684B /* PBXTargetDependency */,
+			);
+			name = "Pods-three-positive-things";
+			productName = "Pods-three-positive-things";
+			productReference = FEF176F9D0582D41B6F6F602B202A55E /* Pods_three_positive_things.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBEA166052740BF0C1B55513EF001913 /* Pods-three-positive-thingsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E94A8428386D686E503D27A5682D91D /* Build configuration list for PBXNativeTarget "Pods-three-positive-thingsUITests" */;
+			buildPhases = (
+				6C0E5D6795A417DE04CAA5A1B793FD7C /* Headers */,
+				B7E7DC725C2D182FAC3ADE2DEA940F99 /* Sources */,
+				1C116A63458314E8C324E322DDE7D79E /* Frameworks */,
+				8176FEE3B83FE2BD6A1A5584D9E7219C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				755A94634CE46F1C9BE9229EAF1CD741 /* PBXTargetDependency */,
 			);
 			name = "Pods-three-positive-thingsUITests";
 			productName = "Pods-three-positive-thingsUITests";
-			productReference = 30CB5460454C5399149C4790EF424113 /* Pods_three_positive_thingsUITests.framework */;
+			productReference = 7BA3F80D6D46B99C65E1CEAAC03DA789 /* Pods_three_positive_thingsUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -720,12 +720,12 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -735,53 +735,53 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9FE7EDA641B673E235FD345BF0736F7F /* ChameleonFramework */,
-				576AE9F53F27416269E41C258CA742A1 /* DBSphereTagCloudSwift */,
-				A5DF63BA1CEAC125789721A669856508 /* JTAppleCalendar */,
-				9B23117E458B86F3DA0716A7F5CB789E /* Pods-three-positive-things */,
-				CE86A66EEDA550D355FCDC5815031C5F /* Pods-three-positive-thingsTests */,
-				E4DD478F2BDE349F701C6343A4DF3008 /* Pods-three-positive-thingsUITests */,
+				28BFDC89BA4363F4F3576DEC70EE10AE /* ChameleonFramework */,
+				2096AE7BB28DBC80384A8E5136579F81 /* DBSphereTagCloudSwift */,
+				421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */,
+				A4FEB4B862003C47DC11CEF7E7A5F5AF /* Pods-three-positive-things */,
+				6783F00A434D49354DCCCB728D3EFEB7 /* Pods-three-positive-thingsTests */,
+				DBEA166052740BF0C1B55513EF001913 /* Pods-three-positive-thingsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03B39B87D51D3C16A0125C4BBE622D64 /* Resources */ = {
+		1A0822F680AC9A17308E03DC16E5CB32 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		130C7D5F406A6C3CB782346DFCD268DF /* Resources */ = {
+		1D826F16ECC69FA6D6365B89430D4D32 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BC47929315215316D90DB11BD1DC0DA /* Resources */ = {
+		8176FEE3B83FE2BD6A1A5584D9E7219C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		479D847737896E7E801CF8228EF78EF7 /* Resources */ = {
+		8A66C9314E7C61598D4CD37F64230C1B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E63B69F9860780C83A475CF088FF3F1 /* Resources */ = {
+		D3FCB8CDE0C4D72777305EC2B17F420F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0C0DCAD3C8714EA53F92EADEFB44AD6 /* Resources */ = {
+		FE6D15AF781E966CFCBC675AA2137328 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -791,159 +791,128 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		437468AD00188AFD50649D87E045D40F /* Sources */ = {
+		2F04A6C028AB9A25B58C5EA5AEF21706 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DBDB8261CA9228807DE6E512778DC53 /* CalendarEnums.swift in Sources */,
-				49C48431C3428DA78CE324E250FD04CC /* CalendarStructs.swift in Sources */,
-				E965F7E744BB2C09CB9BDF3D45C1D07E /* GlobalFunctionsAndExtensions.swift in Sources */,
-				EB8061116245C328D0ED4075519B4247 /* JTAppleCalendar-dummy.m in Sources */,
-				D252A58B8AAF0E2C676BEC90DD89E7E6 /* JTAppleCalendarDelegateProtocol.swift in Sources */,
-				C36D92F1403DE415341CD0DE60FB5C19 /* JTAppleCalendarLayout.swift in Sources */,
-				4B758B30DB436120AA73964009F8C825 /* JTAppleCalendarLayoutProtocol.swift in Sources */,
-				3325DDBE26D878544FD06407A2D56C11 /* JTAppleCalendarView.swift in Sources */,
-				CCF47C26C87C67EF44351767B016157E /* JTAppleCollectionReusableView.swift in Sources */,
-				195C100B016A4694CAB71A2EACD0FDC7 /* JTAppleDayCell.swift in Sources */,
-				DD9355F57A78278A15F0F1F0C9C79377 /* JTAppleReusableViewProtocol.swift in Sources */,
-				4FC67E29EB0D9E0FB2E4122751573059 /* JTAppleViews.swift in Sources */,
-				1D70897E547B174945A00F9BF68A40E0 /* JTCalendarProtocols.swift in Sources */,
-				C9E7D874BF49220659E22775E85A9EC0 /* UICollectionViewDelegates.swift in Sources */,
-				405A46D43457696F9463D8D49D1B2E47 /* UIScrollViewDelegates.swift in Sources */,
-				0BA66A92141BA26C5CF155454A00F4D4 /* UserInteractionFunctions.swift in Sources */,
+				AE750D84013C7D5FFBAFF04F626F8507 /* DBSphereTagCloudSwift-dummy.m in Sources */,
+				023F20C99064795776C21FAFD4FE953A /* DBSphereView.swift in Sources */,
+				A76F7D32C5211F892AFA81C06CF3FFFD /* Matrix.swift in Sources */,
+				FAF3E5132752CCE2C149BBB9FF0E7BB3 /* MatrixConcatenation.swift in Sources */,
+				793DCBCB27A9610E4EBB20F0956ADA12 /* MatrixCreation.swift in Sources */,
+				4ADF4F0E3452A6640E42B8CAF869DB3D /* MatrixMultiplication.swift in Sources */,
+				2A1B6DD950FF7E44EE6FC7055E57180F /* MatrixSubscripting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CD8990BB6E651F92D05C23D63FAC627 /* Sources */ = {
+		6217ED95E1F8B710B7ED6256DDC1E591 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				886657D2A48CB4AC6272DB93B2583E3F /* Chameleon_.m in Sources */,
-				77E4F8B50479FF5021DF75297F930A60 /* ChameleonConstants.m in Sources */,
-				5DEBDAE3AF4BD65A296E6A113C192EE8 /* ChameleonFramework-dummy.m in Sources */,
-				B8785342D922BF69699BE842663338A1 /* ChameleonShorthand.swift in Sources */,
-				45ADC2EFF50481EEBE29D7513A82C24C /* NSArray+Chameleon.m in Sources */,
-				CEA33CB3A8F7D56A0204B7556B3F0D0E /* UIAppearance+Swift.m in Sources */,
-				2EA14DCEF7A53F46112987411BFF056D /* UIButton+Chameleon.m in Sources */,
-				6B55EC684682F90E5343A3B802827A98 /* UIColor+Chameleon.m in Sources */,
-				181DF24CE1EF2E15C1E9E04535B315B5 /* UIColor+ChameleonPrivate.m in Sources */,
-				7456373CA05C470A0AD64D5D7187FFE5 /* UIImage+ChameleonPrivate.m in Sources */,
-				0F674CE9C6295392F20DDF8A805D090E /* UILabel+Chameleon.m in Sources */,
-				54E994B06FF18CFA113C7CB8BE6401CB /* UINavigationController+Chameleon.m in Sources */,
-				552BD36EFA03424A5B9ACE572183B14D /* UIView+ChameleonPrivate.m in Sources */,
-				31E5A610AA4FD13AB3A92E4EB192DCAC /* UIViewController+Chameleon.m in Sources */,
+				5BFF270F89D3B7F7687D21D91F0A3302 /* Pods-three-positive-things-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92CD61CA9495EE342675CD4F66C9138C /* Sources */ = {
+		838445FF54DA0B14E92E2D3A65D2361D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F818E9EC7F283C9B48C805669828732E /* Pods-three-positive-things-dummy.m in Sources */,
+				4C98E687ED1C6D3781CB27CA6AF3FB69 /* Pods-three-positive-thingsTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A24316C4501D10086F521839D0585B2C /* Sources */ = {
+		B7E7DC725C2D182FAC3ADE2DEA940F99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AEBB394B8BC4F161F4ACADA86A04C17 /* DBSphereTagCloudSwift-dummy.m in Sources */,
-				D79AAF41DD1FBB43D5F226917FD30EB5 /* DBSphereView.swift in Sources */,
-				D3D4B32B42DF24DBEC85FD008845410E /* Matrix.swift in Sources */,
-				DC22AF907572D644656D24E899058922 /* MatrixConcatenation.swift in Sources */,
-				92AD35CEC385C4695751D77CE845FB5E /* MatrixCreation.swift in Sources */,
-				5D317810964E0A07E54C0DC6EAE6E1F1 /* MatrixMultiplication.swift in Sources */,
-				5BCF7340683AC03AA1EDA8C5D8F063D7 /* MatrixSubscripting.swift in Sources */,
+				20625E4B879D18D7821B8B1668EFEBAA /* Pods-three-positive-thingsUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBBD44353648A2D40FA291FEDA251D07 /* Sources */ = {
+		C932BB4B41211AEB55BB8902A20BC875 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B7481606ECA01FBD9A1F69228EE3C8C /* Pods-three-positive-thingsTests-dummy.m in Sources */,
+				6B2DC678EA5CCC291354FE306DF0B28E /* Chameleon_.m in Sources */,
+				693B98DE045C80265A735BD94C87953D /* ChameleonConstants.m in Sources */,
+				DD7B1A58C5C68491723265E6D763B26E /* ChameleonFramework-dummy.m in Sources */,
+				866B54511E7CBFADD1F78C285087AE8E /* ChameleonShorthand.swift in Sources */,
+				874D8A04ABF919CED20EB0E440C44101 /* NSArray+Chameleon.m in Sources */,
+				275CF53070F9850F9CF142A83F29F9D2 /* UIAppearance+Swift.m in Sources */,
+				3C996FBEFFF38718E791135C621B8C59 /* UIButton+Chameleon.m in Sources */,
+				9247AA02A534F1A201D929C39C057B50 /* UIColor+Chameleon.m in Sources */,
+				E0DBD978FE1FBA3923D9A482352252D4 /* UIColor+ChameleonPrivate.m in Sources */,
+				DA97A7E5793FADE5749D21002AB10B57 /* UIImage+ChameleonPrivate.m in Sources */,
+				A68832C167B77BE09F6F3485A607A744 /* UILabel+Chameleon.m in Sources */,
+				FE3A4BBC89893220B5590FC8A65C0233 /* UINavigationController+Chameleon.m in Sources */,
+				866A210E47AEF4ABB16E6D6F5B6A6E51 /* UIView+ChameleonPrivate.m in Sources */,
+				8659D5863A89A6F9539AE15D673C07C5 /* UIViewController+Chameleon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF4355342EBA59B90DC6945DFA0F27B0 /* Sources */ = {
+		DA359312D6A6B62C3B37445D8386E144 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DF177E0040436ACEF4AAED7A723493 /* Pods-three-positive-thingsUITests-dummy.m in Sources */,
+				FEDDEF4BDE0BA27F6314016ED93CD096 /* CalendarEnums.swift in Sources */,
+				9A61B34101FFFBF1E1C454A42847F24F /* CalendarStructs.swift in Sources */,
+				0DABC15493B0D3514C059D032FB235FD /* CustomCollectionView.swift in Sources */,
+				7EC742D2DACBDE8FAC78B3E4157C0B3C /* GlobalFunctionsAndExtensions.swift in Sources */,
+				E6E3748D96FE92488FDEEB2F769696E3 /* JTAppleCalendar-dummy.m in Sources */,
+				F9D36E23C0096B87D143FB89DDCCAD36 /* JTAppleCalendarDelegateProtocol.swift in Sources */,
+				FEABBE5CCAC851EC6B81BEC13F602FF5 /* JTAppleCalendarLayout.swift in Sources */,
+				659687B4A3D1E814D3580C4B3880B27C /* JTAppleCalendarLayoutProtocol.swift in Sources */,
+				FD866EAB0DD239E198D410BD037CCD70 /* JTAppleCalendarView.swift in Sources */,
+				1CD3086B9B1345B04252FF6EA9AF1224 /* JTAppleCollectionReusableView.swift in Sources */,
+				8FCC7418CF7EF461040F9C54DE8B1F38 /* JTAppleDayCell.swift in Sources */,
+				5B014CC87C131F9C79702060EDCBDFE8 /* JTAppleReusableViewProtocol.swift in Sources */,
+				09166686349E0A1C4FC2FEA3E4C23B6A /* JTAppleViews.swift in Sources */,
+				69A43A2B7A08B596BE088B5D2B9E13F1 /* JTCalendarProtocols.swift in Sources */,
+				C0CC0C1D2B21070DB23B4AA450B0A195 /* UICollectionViewDelegates.swift in Sources */,
+				CEF9D16015CAC1D27AC48248C4119E0B /* UIScrollViewDelegates.swift in Sources */,
+				32693F5EBD11B0361C4E51408C3E087E /* UserInteractionFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		23C2D2F7767A096A05D9F15AB3F2BDB7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JTAppleCalendar;
-			target = A5DF63BA1CEAC125789721A669856508 /* JTAppleCalendar */;
-			targetProxy = 285075BF46D1FFFBE98E2354372CF24E /* PBXContainerItemProxy */;
-		};
-		47D11C1B19D0BFD8F7F5BBDF8CC43147 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ChameleonFramework;
-			target = 9FE7EDA641B673E235FD345BF0736F7F /* ChameleonFramework */;
-			targetProxy = 5B0AA0809214BA4B7CC2FFD01EC1BEFE /* PBXContainerItemProxy */;
-		};
-		889D672E91E8C605DE5F4FD13EE3CF7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-three-positive-things";
-			target = 9B23117E458B86F3DA0716A7F5CB789E /* Pods-three-positive-things */;
-			targetProxy = 54984644D6AE2E1819EF11200F896139 /* PBXContainerItemProxy */;
-		};
-		A17FE46A2590A095DF20D521C4DD5D62 /* PBXTargetDependency */ = {
+		5CECA0DA32F8883D691A4BCEBB90C1E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DBSphereTagCloudSwift;
-			target = 576AE9F53F27416269E41C258CA742A1 /* DBSphereTagCloudSwift */;
-			targetProxy = BD62AF7F0B1D58A9C8B6D4425CA84945 /* PBXContainerItemProxy */;
+			target = 2096AE7BB28DBC80384A8E5136579F81 /* DBSphereTagCloudSwift */;
+			targetProxy = EAA9DCF529AFEE931D491F3062E3F618 /* PBXContainerItemProxy */;
 		};
-		AA2EF0CE05E8026CF04209EC6B5A6CC2 /* PBXTargetDependency */ = {
+		642013641E8C29B4D8BD19695A2B684B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JTAppleCalendar;
+			target = 421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */;
+			targetProxy = F592CCA5B77DBB517D00C2C4B8AEED97 /* PBXContainerItemProxy */;
+		};
+		755A94634CE46F1C9BE9229EAF1CD741 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-three-positive-things";
-			target = 9B23117E458B86F3DA0716A7F5CB789E /* Pods-three-positive-things */;
-			targetProxy = 4C2BD11DD3A1641BC9CEED6EAB594BA2 /* PBXContainerItemProxy */;
+			target = A4FEB4B862003C47DC11CEF7E7A5F5AF /* Pods-three-positive-things */;
+			targetProxy = DDE9152CA2DCB19F6F95335AFF7E0577 /* PBXContainerItemProxy */;
+		};
+		9D363DFDE2C21EC75B4315F591B69301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChameleonFramework;
+			target = 28BFDC89BA4363F4F3576DEC70EE10AE /* ChameleonFramework */;
+			targetProxy = 47CE3105C12A81AC6145071C796DCD75 /* PBXContainerItemProxy */;
+		};
+		DB105529E9FBF91D5A47BAA286BEBF99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-three-positive-things";
+			target = A4FEB4B862003C47DC11CEF7E7A5F5AF /* Pods-three-positive-things */;
+			targetProxy = 478D1D83DBEB3897CE9C0BD44702D6CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		036839A22C6E0D58562C5CECA9CE6A89 /* Debug */ = {
+		0166D9F016F62BBAEB0AF0BC38406F5C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42A03FDD5EB84AF72391924E01475DAA /* DBSphereTagCloudSwift.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift.modulemap";
-				PRODUCT_MODULE_NAME = DBSphereTagCloudSwift;
-				PRODUCT_NAME = DBSphereTagCloudSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0EA6E0FA5F9F857BC939791FD44E86F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B889F3F412A01196F3390B9982283D50 /* Pods-three-positive-thingsUITests.debug.xcconfig */;
+			baseConfigurationReference = A3B78EA4D91E2AF658AF7C5FC621F9EB /* Pods-three-positive-thingsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -971,47 +940,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3DDF8B144C05DAB5E3510C8072BDC247 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CC71A6A096211FB686F108D1DAE6D46 /* JTAppleCalendar.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
-				PRODUCT_MODULE_NAME = JTAppleCalendar;
-				PRODUCT_NAME = JTAppleCalendar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		5A77E052FA86039B8C40DFA81904CF9F /* Release */ = {
+		1F79E2E7D2EAF1335AE1DEE907D5429D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB313542F7ABCA3A4E35911BFF4CF035 /* Pods-three-positive-thingsTests.release.xcconfig */;
+			baseConfigurationReference = 922B96954BC6A3530217E27B7EE19380 /* Pods-three-positive-thingsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1039,19 +976,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		76A35A515D61A1DAE902EB6030904E15 /* Release */ = {
+		201CE96BD865C24F862337897A2FD858 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F49C1C88725ED266A6153F62F7683E6 /* Pods-three-positive-things.release.xcconfig */;
+			baseConfigurationReference = 7F9734200F39EDB457BD0F5D73AD74D3 /* DBSphereTagCloudSwift.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1061,19 +995,50 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-three-positive-things/Pods-three-positive-things-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-three-positive-things/Pods-three-positive-things.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift.modulemap";
+				PRODUCT_MODULE_NAME = DBSphereTagCloudSwift;
+				PRODUCT_NAME = DBSphereTagCloudSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3ECDBFB127DA01E1E21813CA26B19CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F9734200F39EDB457BD0F5D73AD74D3 /* DBSphereTagCloudSwift.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift.modulemap";
+				PRODUCT_MODULE_NAME = DBSphereTagCloudSwift;
+				PRODUCT_NAME = DBSphereTagCloudSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1081,7 +1046,40 @@
 			};
 			name = Release;
 		};
-		7C7D9FC81F470AE33FF86230A663FBDD /* Release */ = {
+		4A90E301DCD4086739E02C2E665DA8B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A970402AB96239D30FF1EB732389AC86 /* ChameleonFramework.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
+				PRODUCT_MODULE_NAME = ChameleonFramework;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B1F13D49B97FF90469FE040925F8D8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1134,16 +1132,15 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		82A262773537F50AE32829AEE48B82CE /* Debug */ = {
+		4BB7FAEC0F4499A916A75F741D15D7B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECC9BED9795A522AE0E007F645AB66D4 /* Pods-three-positive-things.debug.xcconfig */;
+			baseConfigurationReference = 1C039940E2042765448424DBEF346A4B /* Pods-three-positive-things.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1176,9 +1173,9 @@
 			};
 			name = Debug;
 		};
-		8B8F827748E49F8C4F318193D4438A52 /* Release */ = {
+		6AEE3A240A1C9F9D1186C0C30E24AF85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FDE87FCB9806B8579CE84B7961FF0EA /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = BC6CF454DD7F2A8ABEEEFD84E77D4D49 /* JTAppleCalendar.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
@@ -1190,18 +1187,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
-				PRODUCT_MODULE_NAME = ChameleonFramework;
-				PRODUCT_NAME = ChameleonFramework;
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				PRODUCT_MODULE_NAME = JTAppleCalendar;
+				PRODUCT_NAME = JTAppleCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1209,7 +1206,110 @@
 			};
 			name = Release;
 		};
-		95CDB1BD3AAEFAFB16FDBEBBACC13B2E /* Debug */ = {
+		6F0B1E7A29053008543A509BE56E8CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC6CF454DD7F2A8ABEEEFD84E77D4D49 /* JTAppleCalendar.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				PRODUCT_MODULE_NAME = JTAppleCalendar;
+				PRODUCT_NAME = JTAppleCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		972B7C58D65360E552C70A0FC5919787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C3F6224E866E3926241502AC748FF4 /* Pods-three-positive-thingsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D802E8E0DF1439FF32C93C508B15269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD30C7D5AD78C8F3CE793981EC46B1B /* Pods-three-positive-things.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-three-positive-things/Pods-three-positive-things-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-three-positive-things/Pods-three-positive-things.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8EFA68AC855A5B2B43BF716E27BD98D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1268,14 +1368,14 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		ACCED5CBC1924FA5C2CB256F41268347 /* Debug */ = {
+		BD979B53D80D6A33B827FE123A09ECDA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D5D35C3EEED784E67F249222D93083D /* Pods-three-positive-thingsTests.debug.xcconfig */;
+			baseConfigurationReference = B3D938BD762DE0EF9D952BCDEB35EF56 /* Pods-three-positive-thingsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1303,14 +1403,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		AFC8EB75B095948C94EBB977097A8ECD /* Debug */ = {
+		C7715BC10AD3CA6C0B137C563D4E1272 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FDE87FCB9806B8579CE84B7961FF0EA /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = A970402AB96239D30FF1EB732389AC86 /* ChameleonFramework.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
@@ -1333,176 +1434,75 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		CBBEEF199A6BFE879654F76AD7C3E22D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CC71A6A096211FB686F108D1DAE6D46 /* JTAppleCalendar.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
-				PRODUCT_MODULE_NAME = JTAppleCalendar;
-				PRODUCT_NAME = JTAppleCalendar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D518310A11849E88B119541E7FCBDB81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42A03FDD5EB84AF72391924E01475DAA /* DBSphereTagCloudSwift.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DBSphereTagCloudSwift/DBSphereTagCloudSwift.modulemap";
-				PRODUCT_MODULE_NAME = DBSphereTagCloudSwift;
-				PRODUCT_NAME = DBSphereTagCloudSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FA8D8B3BE765D550E82046196F22A6ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B0E6358DE47F72A79BDB885BB4E0943 /* Pods-three-positive-thingsUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3232A82B5D821820310570F500DA1FFE /* Build configuration list for PBXNativeTarget "DBSphereTagCloudSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201CE96BD865C24F862337897A2FD858 /* Debug */,
+				3ECDBFB127DA01E1E21813CA26B19CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				95CDB1BD3AAEFAFB16FDBEBBACC13B2E /* Debug */,
-				7C7D9FC81F470AE33FF86230A663FBDD /* Release */,
+				A8EFA68AC855A5B2B43BF716E27BD98D /* Debug */,
+				4B1F13D49B97FF90469FE040925F8D8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55850B1CF025BB8EBAF66859BE617AC7 /* Build configuration list for PBXNativeTarget "Pods-three-positive-things" */ = {
+		8E94A8428386D686E503D27A5682D91D /* Build configuration list for PBXNativeTarget "Pods-three-positive-thingsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82A262773537F50AE32829AEE48B82CE /* Debug */,
-				76A35A515D61A1DAE902EB6030904E15 /* Release */,
+				972B7C58D65360E552C70A0FC5919787 /* Debug */,
+				0166D9F016F62BBAEB0AF0BC38406F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59023C79639A0C9AF7394EC63F33F4F6 /* Build configuration list for PBXNativeTarget "Pods-three-positive-thingsTests" */ = {
+		911E8CAE5BC7C27912E3245FC75091FA /* Build configuration list for PBXNativeTarget "ChameleonFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACCED5CBC1924FA5C2CB256F41268347 /* Debug */,
-				5A77E052FA86039B8C40DFA81904CF9F /* Release */,
+				C7715BC10AD3CA6C0B137C563D4E1272 /* Debug */,
+				4A90E301DCD4086739E02C2E665DA8B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64C1634DBCDEF96165A0729450B87A70 /* Build configuration list for PBXNativeTarget "Pods-three-positive-thingsUITests" */ = {
+		9E861AE9B3CBF60A6014AFB65F887FC1 /* Build configuration list for PBXNativeTarget "Pods-three-positive-thingsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0EA6E0FA5F9F857BC939791FD44E86F5 /* Debug */,
-				FA8D8B3BE765D550E82046196F22A6ED /* Release */,
+				1F79E2E7D2EAF1335AE1DEE907D5429D /* Debug */,
+				BD979B53D80D6A33B827FE123A09ECDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C6427EDAB5E97397D7170EC5C3AA906 /* Build configuration list for PBXNativeTarget "ChameleonFramework" */ = {
+		B4C62C349684EF10F223EB8062F30E5C /* Build configuration list for PBXNativeTarget "Pods-three-positive-things" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFC8EB75B095948C94EBB977097A8ECD /* Debug */,
-				8B8F827748E49F8C4F318193D4438A52 /* Release */,
+				4BB7FAEC0F4499A916A75F741D15D7B0 /* Debug */,
+				9D802E8E0DF1439FF32C93C508B15269 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D92B5509820E011A505520013CDDD950 /* Build configuration list for PBXNativeTarget "DBSphereTagCloudSwift" */ = {
+		EDA2478573242BF77CD5FFA5E5978FCC /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				036839A22C6E0D58562C5CECA9CE6A89 /* Debug */,
-				D518310A11849E88B119541E7FCBDB81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D947942F9313C691EBF340FA9D48BFAA /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CBBEEF199A6BFE879654F76AD7C3E22D /* Debug */,
-				3DDF8B144C05DAB5E3510C8072BDC247 /* Release */,
+				6F0B1E7A29053008543A509BE56E8CBE /* Debug */,
+				6AEE3A240A1C9F9D1186C0C30E24AF85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

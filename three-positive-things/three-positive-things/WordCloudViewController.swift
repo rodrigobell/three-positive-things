@@ -16,14 +16,30 @@ class WordCloudViewController: UIViewController {
     @IBOutlet weak var headerView: UIView!
     let screenSize: CGRect = UIScreen.main.bounds
     let iCloudKeyStore: NSUbiquitousKeyValueStore = NSUbiquitousKeyValueStore()
+    var segmentedControlLastIndex: Int = 0
     var theme: ThemeController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         sphereView = DBSphereView(frame: CGRect(x: 10, y: (screenSize.height / 2) - 270, width: screenSize.width - 20, height: screenSize.width - 20))
-        var array = [UIButton]()
+        self.containerView.addSubview(sphereView)
+        theme = ThemeManager.currentTheme()
+        headerView.backgroundColor = theme.mainColor
+        containerView.backgroundColor = theme.secondaryColor
+        if iCloudKeyStore.bool(forKey: "segmentedControlLastIndex") {
+            self.segmentedControlLastIndex = iCloudKeyStore.value(forKey: "segmentedControlLastIndex") as! Int
+        }
     
+        self.updateSphereView()
+    }
+    
+    func updateSphereView() {
+        var array = [UIButton]()
         let words = getWords()
+        
+        sphereView.removeFromSuperview()
+        sphereView = DBSphereView(frame: CGRect(x: 10, y: (screenSize.height / 2) - 270, width: screenSize.width - 20, height: screenSize.width - 20))
+        self.containerView.addSubview(sphereView)
         
         for wordTouple in words {
             let btn = UIButton(type: UIButton.ButtonType.system)
@@ -40,27 +56,46 @@ class WordCloudViewController: UIViewController {
             default:
                 weight = 0.55
             }
-            let fontWeight = UIFontWeight(exactly: weight)
-            btn.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: fontWeight!)
+            let fontWeight = UIFont.Weight(weight)
+            btn.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: fontWeight)
             btn.frame = CGRect(x: 0, y: 0, width: 200, height: 20)
             array.append(btn)
             sphereView.addSubview(btn)
         }
         
         sphereView.setCloudTags(array)
-        sphereView.backgroundColor = .white
-        self.containerView.addSubview(sphereView)
-        theme = ThemeManager.currentTheme()
-        headerView.backgroundColor = theme.mainColor
-        containerView.backgroundColor = theme.secondaryColor
-        sphereView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
-
+    }
+    
+    @IBAction func segmentedControlIndexChanged(_ sender: Any) {
+        self.segmentedControlLastIndex = (sender as AnyObject).selectedSegmentIndex
+        iCloudKeyStore.set(segmentedControlLastIndex, forKey: "segmentedControlLastIndex")
+        iCloudKeyStore.synchronize()
+        self.updateSphereView()
     }
     
     func getWords() -> [(String,Int)] {
         var wordCounts = [String : Int]()
         let iCloudDict = iCloudKeyStore.dictionaryRepresentation
-        for (_, value) in iCloudDict {
+        var daysBack: Int = -999
+        if (self.segmentedControlLastIndex == 2) {
+            daysBack = -30
+        } else if (self.segmentedControlLastIndex == 1) {
+            daysBack = -90
+        }
+        
+        for (key, value) in iCloudDict {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            if let thingsDate = dateFormatter.date(from: key) {
+                let startDate = Calendar.current.date(byAdding: .day, value: daysBack, to: Date())
+                let fallsBetween = (startDate! ... Date()).contains(thingsDate)
+                if (!fallsBetween) {
+                    continue
+                }
+            } else {
+                continue
+            }
+            
             if let things = value as? [String] {
                 for thing in things {
                     let words = thing.wordList
