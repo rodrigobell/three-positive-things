@@ -19,7 +19,10 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var weekDaysLabel: UILabel!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var tableViewYConstraint: NSLayoutConstraint!
-    
+    @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tableViewCoverHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var calendarViewBottomOffsetConstraint: NSLayoutConstraint!
     let iCloudKeyStore: NSUbiquitousKeyValueStore = NSUbiquitousKeyValueStore()
     var positiveThings: [NSDictionary] = []
     var currentDate: Date!
@@ -27,6 +30,22 @@ class CalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 13.0, *) {
+            // Always adopt a light interface style.
+            overrideUserInterfaceStyle = .light
+        }
+        if (UIScreen.main.bounds.height < 600) {
+            headerViewHeightConstraint.constant -= 20
+        }
+        
+        let screenHeight = UIScreen.main.bounds.height
+        let headerHeight = self.headerView.bounds.height
+        let delta = (screenHeight - headerHeight) / 2
+        tableViewHeightConstraint.constant = delta
+        tableViewCoverHeightConstraint.constant = delta
+        calendarViewBottomOffsetConstraint.constant = delta
+        tableView.rowHeight = delta / 3
         
         calendarView.delegate = self
         calendarView.dataSource = self
@@ -128,7 +147,6 @@ class CalendarViewController: UIViewController {
     func endTableViewEditing() {
         saveThingsToDate()
         self.tableViewYConstraint.priority = UILayoutPriority(rawValue: 1)
-        self.tableViewYConstraint.constant = 255
         self.calendarView.reloadDates(self.calendarView.selectedDates)
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
@@ -307,7 +325,7 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
         } else if (indexPath.row == 2) {
             cell.positiveThingNumberLabel.text = "3."
         }
-        cell.positiveThingTextView.textContainer.maximumNumberOfLines = 3
+        cell.positiveThingTextView.textContainer.maximumNumberOfLines = 2
         cell.positiveThingTextView.textContainer.lineBreakMode = .byClipping
         
         return cell
@@ -335,6 +353,10 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
         
         self.tableViewYConstraint.priority = UILayoutPriority(rawValue: 999)
         self.tableViewYConstraint.constant = 0
+        if (UIScreen.main.bounds.height < 600) {
+            self.tableViewYConstraint.constant = -self.weekDaysLabel.bounds.height - 12
+        }
+
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
             self.calendarView.isHidden = true

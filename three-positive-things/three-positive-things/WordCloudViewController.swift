@@ -14,6 +14,7 @@ class WordCloudViewController: UIViewController {
     var sphereView: DBSphereView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     let screenSize: CGRect = UIScreen.main.bounds
     let iCloudKeyStore: NSUbiquitousKeyValueStore = NSUbiquitousKeyValueStore()
     var segmentedControlLastIndex: Int = 0
@@ -26,8 +27,15 @@ class WordCloudViewController: UIViewController {
         theme = ThemeManager.currentTheme()
         headerView.backgroundColor = theme.mainColor
         containerView.backgroundColor = theme.secondaryColor
+        if #available(iOS 13.0, *) {
+            segmentedControl.selectedSegmentTintColor = theme.mainColor
+        }
         if iCloudKeyStore.bool(forKey: "segmentedControlLastIndex") {
-            self.segmentedControlLastIndex = iCloudKeyStore.value(forKey: "segmentedControlLastIndex") as! Int
+            self.segmentedControlLastIndex = Int(iCloudKeyStore.longLong(forKey: "segmentedControlLastIndex"))
+            self.segmentedControl.selectedSegmentIndex = self.segmentedControlLastIndex
+        } else {
+            iCloudKeyStore.set(self.segmentedControlLastIndex, forKey: "segmentedControlLastIndex")
+            iCloudKeyStore.synchronize()
         }
     
         self.updateSphereView()
@@ -68,7 +76,7 @@ class WordCloudViewController: UIViewController {
     
     @IBAction func segmentedControlIndexChanged(_ sender: Any) {
         self.segmentedControlLastIndex = (sender as AnyObject).selectedSegmentIndex
-        iCloudKeyStore.set(segmentedControlLastIndex, forKey: "segmentedControlLastIndex")
+        iCloudKeyStore.set(self.segmentedControlLastIndex, forKey: "segmentedControlLastIndex")
         iCloudKeyStore.synchronize()
         self.updateSphereView()
     }
@@ -119,7 +127,7 @@ class WordCloudViewController: UIViewController {
         let sortedWordCounts = wordCounts.sorted { $0.1 > $1.1 }
         let stopWords = readStopWords()
         var words = [(String, Int)]()
-        var maxWords = 48
+        var maxWords = 15
         for (word, count) in sortedWordCounts {
             if stopWords.contains(word) {
                 continue
