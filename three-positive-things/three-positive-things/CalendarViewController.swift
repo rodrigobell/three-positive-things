@@ -16,7 +16,7 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var weekDaysLabel: UILabel!
+    @IBOutlet weak var weekDayLabels: UIStackView!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var tableViewYConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
@@ -150,7 +150,7 @@ class CalendarViewController: UIViewController {
         self.calendarView.reloadDates(self.calendarView.selectedDates)
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
-            self.weekDaysLabel.isHidden = false
+            self.weekDayLabels.isHidden = false
             self.calendarView.isHidden = false
         }
 
@@ -354,7 +354,7 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
         self.tableViewYConstraint.priority = UILayoutPriority(rawValue: 999)
         self.tableViewYConstraint.constant = 0
         if (UIScreen.main.bounds.height < 600) {
-            self.tableViewYConstraint.constant = -self.weekDaysLabel.bounds.height - 12
+            self.tableViewYConstraint.constant = -self.weekDayLabels.bounds.height - 12
         }
 
         UIView.animate(withDuration: 0.3) {
@@ -362,8 +362,8 @@ extension CalendarViewController: UIGestureRecognizerDelegate {
             self.calendarView.isHidden = true
         }
         
-        UIView.transition(with: self.weekDaysLabel, duration: 0.4, options: .transitionCrossDissolve, animations: {() -> Void in
-            self.weekDaysLabel.isHidden = true
+        UIView.transition(with: self.weekDayLabels, duration: 0.4, options: .transitionCrossDissolve, animations: {() -> Void in
+            self.weekDayLabels.isHidden = true
         }, completion: { _ in })
     }
     

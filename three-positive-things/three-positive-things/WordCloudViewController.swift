@@ -15,9 +15,11 @@ class WordCloudViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var segmentedControlTopWords: UISegmentedControl!
     let screenSize: CGRect = UIScreen.main.bounds
     let iCloudKeyStore: NSUbiquitousKeyValueStore = NSUbiquitousKeyValueStore()
     var segmentedControlLastIndex: Int = 0
+    var segmentedControlTopWordsLastIndex: Int = 0
     var theme: ThemeController!
     
     override func viewDidLoad() {
@@ -27,14 +29,29 @@ class WordCloudViewController: UIViewController {
         theme = ThemeManager.currentTheme()
         headerView.backgroundColor = theme.mainColor
         containerView.backgroundColor = theme.secondaryColor
+        segmentedControl.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .selected)
+        segmentedControl.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+        segmentedControlTopWords.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .selected)
+        segmentedControlTopWords.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+
         if #available(iOS 13.0, *) {
             segmentedControl.selectedSegmentTintColor = theme.mainColor
+            segmentedControlTopWords.selectedSegmentTintColor = theme.mainColor
         }
+        
         if iCloudKeyStore.bool(forKey: "segmentedControlLastIndex") {
             self.segmentedControlLastIndex = Int(iCloudKeyStore.longLong(forKey: "segmentedControlLastIndex"))
             self.segmentedControl.selectedSegmentIndex = self.segmentedControlLastIndex
         } else {
             iCloudKeyStore.set(self.segmentedControlLastIndex, forKey: "segmentedControlLastIndex")
+            iCloudKeyStore.synchronize()
+        }
+        
+        if iCloudKeyStore.bool(forKey: "segmentedControlTopWordsLastIndex") {
+            self.segmentedControlTopWordsLastIndex = Int(iCloudKeyStore.longLong(forKey: "segmentedControlTopWordsLastIndex"))
+            self.segmentedControlTopWords.selectedSegmentIndex = self.segmentedControlTopWordsLastIndex
+        } else {
+            iCloudKeyStore.set(self.segmentedControlTopWordsLastIndex, forKey: "segmentedControlTopWordsLastIndex")
             iCloudKeyStore.synchronize()
         }
     
@@ -77,6 +94,12 @@ class WordCloudViewController: UIViewController {
     @IBAction func segmentedControlIndexChanged(_ sender: Any) {
         self.segmentedControlLastIndex = (sender as AnyObject).selectedSegmentIndex
         iCloudKeyStore.set(self.segmentedControlLastIndex, forKey: "segmentedControlLastIndex")
+        iCloudKeyStore.synchronize()
+        self.updateSphereView()
+    }
+    @IBAction func segmentedControlTopWordsIndexChanged(_ sender: Any) {
+        self.segmentedControlTopWordsLastIndex = (sender as AnyObject).selectedSegmentIndex
+        iCloudKeyStore.set(self.segmentedControlTopWordsLastIndex, forKey: "segmentedControlTopWordsLastIndex")
         iCloudKeyStore.synchronize()
         self.updateSphereView()
     }
@@ -127,7 +150,12 @@ class WordCloudViewController: UIViewController {
         let sortedWordCounts = wordCounts.sorted { $0.1 > $1.1 }
         let stopWords = readStopWords()
         var words = [(String, Int)]()
-        var maxWords = 15
+        var maxWords = 50
+        if (self.segmentedControlTopWordsLastIndex == 1) {
+            maxWords = 25
+        } else if (self.segmentedControlTopWordsLastIndex == 2) {
+            maxWords = 10
+        }
         for (word, count) in sortedWordCounts {
             if stopWords.contains(word) {
                 continue
