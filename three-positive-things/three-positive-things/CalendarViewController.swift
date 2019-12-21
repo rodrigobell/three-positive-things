@@ -64,6 +64,15 @@ class CalendarViewController: UIViewController {
         }
         
         NotificationCenter.default.addObserver(self, selector: #selector(saveThingsToDate), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
+        
+        let iCloudDict = iCloudKeyStore.dictionaryRepresentation
+        for (key, value) in iCloudDict {
+            if let arr = value as? Array<Any> {
+                if (arr.isEmpty) {
+                    iCloudKeyStore.removeObject(forKey: key)
+                }
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -176,7 +185,7 @@ class CalendarViewController: UIViewController {
         if !(things.isEmpty) {
             iCloudKeyStore.set(things, forKey: "\(dateString)")
         } else {
-            iCloudKeyStore.set([], forKey: "\(dateString)")
+            iCloudKeyStore.removeObject(forKey: "\(dateString)")
         }
         iCloudKeyStore.synchronize()
     }

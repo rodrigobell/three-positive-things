@@ -16,6 +16,7 @@ class WordCloudViewController: UIViewController {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var segmentedControlTopWords: UISegmentedControl!
+    @IBOutlet weak var daysLoggedLabel: UILabel!
     let screenSize: CGRect = UIScreen.main.bounds
     let iCloudKeyStore: NSUbiquitousKeyValueStore = NSUbiquitousKeyValueStore()
     var segmentedControlLastIndex: Int = 0
@@ -26,13 +27,16 @@ class WordCloudViewController: UIViewController {
         super.viewDidLoad()
         sphereView = DBSphereView(frame: CGRect(x: 10, y: (screenSize.height / 2) - 270, width: screenSize.width - 20, height: screenSize.width - 20))
         self.containerView.addSubview(sphereView)
+        self.containerView.sendSubview(toBack: sphereView)
         theme = ThemeManager.currentTheme()
         headerView.backgroundColor = theme.mainColor
         containerView.backgroundColor = theme.secondaryColor
         segmentedControl.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .selected)
         segmentedControl.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+        segmentedControl.layer.zPosition = 1
         segmentedControlTopWords.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .selected)
         segmentedControlTopWords.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+        segmentedControlTopWords.layer.zPosition = 1
 
         if #available(iOS 13.0, *) {
             segmentedControl.selectedSegmentTintColor = theme.mainColor
@@ -56,15 +60,31 @@ class WordCloudViewController: UIViewController {
         }
     
         self.updateSphereView()
+        self.daysLoggedLabel.textColor = UIColor.black
+        let daysLogged = getNumberOfDaysLogged()
+        self.daysLoggedLabel.text = String(daysLogged) + " days logged"
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let daysLogged = getNumberOfDaysLogged()
+        self.daysLoggedLabel.text = String(daysLogged) + " days logged"
     }
     
     func updateSphereView() {
         var array = [UIButton]()
         let words = getWords()
         
+        var sphereOffset: CGFloat = 20.0
+        if (self.segmentedControlTopWordsLastIndex == 1) {
+            sphereOffset = 100.0
+        } else if (self.segmentedControlTopWordsLastIndex == 2) {
+            sphereOffset = 180.0
+        }
+        
         sphereView.removeFromSuperview()
-        sphereView = DBSphereView(frame: CGRect(x: 10, y: (screenSize.height / 2) - 270, width: screenSize.width - 20, height: screenSize.width - 20))
+        sphereView = DBSphereView(frame: CGRect(x: (screenSize.width / 2) - ((screenSize.width - sphereOffset) / 2), y: (screenSize.height / 2) - ((screenSize.width - sphereOffset) / 2) - 60, width: screenSize.width - sphereOffset, height: screenSize.width - sphereOffset))
         self.containerView.addSubview(sphereView)
+        self.containerView.sendSubview(toBack: sphereView)
         
         for wordTouple in words {
             let btn = UIButton(type: UIButton.ButtonType.system)
@@ -107,18 +127,18 @@ class WordCloudViewController: UIViewController {
     func getWords() -> [(String,Int)] {
         var wordCounts = [String : Int]()
         let iCloudDict = iCloudKeyStore.dictionaryRepresentation
-        var daysBack: Int = -999
+        var daysBack: Int = 9999
         if (self.segmentedControlLastIndex == 2) {
-            daysBack = -30
+            daysBack = 30
         } else if (self.segmentedControlLastIndex == 1) {
-            daysBack = -90
+            daysBack = 90
         }
         
         for (key, value) in iCloudDict {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
             if let thingsDate = dateFormatter.date(from: key) {
-                let startDate = Calendar.current.date(byAdding: .day, value: daysBack, to: Date())
+                let startDate = Calendar.current.date(byAdding: .day, value: -daysBack, to: Date())
                 let fallsBetween = (startDate! ... Date()).contains(thingsDate)
                 if (!fallsBetween) {
                     continue
@@ -166,6 +186,11 @@ class WordCloudViewController: UIViewController {
             }
         }
         return words.shuffled()
+    }
+    
+    func getNumberOfDaysLogged() -> Int {
+        let iCloudDict = iCloudKeyStore.dictionaryRepresentation
+        return iCloudDict.count
     }
     
     func readStopWords() -> [String] {
