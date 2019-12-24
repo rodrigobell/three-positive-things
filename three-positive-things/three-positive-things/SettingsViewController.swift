@@ -8,6 +8,7 @@
 
 import UIKit
 import ChameleonFramework
+import CTFeedbackSwift
 
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -77,5 +78,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             cell.accessoryType = .none
             
         }
+    }
+    
+    @IBAction func didTapSendFeedback(_ sender: Any) {
+        let configuration = FeedbackConfiguration(toRecipients: ["rbell594@gmail.com"], usesHTML: true)
+        let controller    = FeedbackViewController(configuration: configuration)
+        navigationController?.pushViewController(controller, animated: true)
     }
 }

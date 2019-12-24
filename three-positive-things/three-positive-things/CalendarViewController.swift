@@ -12,6 +12,7 @@ import JTAppleCalendar
 
 class CalendarViewController: UIViewController {
     
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
@@ -78,6 +79,7 @@ class CalendarViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         theme = ThemeManager.currentTheme()
         headerView.backgroundColor = theme.mainColor
+        backgroundView.backgroundColor = theme.secondaryColor
         tableView.reloadData()
         if currentDate != Date() {
             calendarView.reloadData()

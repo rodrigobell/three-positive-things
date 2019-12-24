@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		10D635E4DC4C920FAC0A4CE4 /* Pods_three_positive_things.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6567EBD4392E33EEBFBFCF /* Pods_three_positive_things.framework */; };
+		1A131C8D23B1C74A004A27DE /* CTFeedbackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A131C8C23B1C749004A27DE /* CTFeedbackSwift.framework */; };
 		4F61836E2091351800AC53CC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F61836D2091351800AC53CC /* CloudKit.framework */; };
 		4F739D7A1E91985E005D7103 /* DateCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F739D791E91985E005D7103 /* DateCellView.xib */; };
 		4F739D7C1E91991E005D7103 /* DateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F739D7B1E91991E005D7103 /* DateCellView.swift */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		0C22897677CB5C3164B2FD64 /* Pods_three_positive_thingsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_thingsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A131C8C23B1C749004A27DE /* CTFeedbackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CTFeedbackSwift.framework; path = Carthage/Build/iOS/CTFeedbackSwift.framework; sourceTree = "<group>"; };
 		2032EF96EEE7BCE7B84A4C01 /* Pods-three-positive-things.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-things.release.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things.release.xcconfig"; sourceTree = "<group>"; };
 		33B81409C78A2ED1BEAC17EE /* Pods-three-positive-thingsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_thingsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 			files = (
 				10D635E4DC4C920FAC0A4CE4 /* Pods_three_positive_things.framework in Frameworks */,
 				4F61836E2091351800AC53CC /* CloudKit.framework in Frameworks */,
+				1A131C8D23B1C74A004A27DE /* CTFeedbackSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +220,7 @@
 		D72263A3B951ABA8DDD7BF4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A131C8C23B1C749004A27DE /* CTFeedbackSwift.framework */,
 				4F61836D2091351800AC53CC /* CloudKit.framework */,
 				BD6567EBD4392E33EEBFBFCF /* Pods_three_positive_things.framework */,
 				4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */,
@@ -237,6 +241,7 @@
 				4FB8EC741E918ED6002D7346 /* Frameworks */,
 				4FB8EC751E918ED6002D7346 /* Resources */,
 				C4D736592C022294AF411B49 /* [CP] Embed Pods Frameworks */,
+				1A131C8E23B1C75D004A27DE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -373,6 +378,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1A131C8E23B1C75D004A27DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CTFeedbackSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/CTFeedbackSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
 		68FBC4B00CE513D72B021EB8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -622,6 +646,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K64ZP5ML7E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "three-positive-things/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -642,6 +670,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K64ZP5ML7E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "three-positive-things/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

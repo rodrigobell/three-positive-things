@@ -11,6 +11,7 @@ import DBSphereTagCloudSwift
 
 class WordCloudViewController: UIViewController {
     
+    @IBOutlet weak var backgroundView: UIView!
     var sphereView: DBSphereView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var headerView: UIView!
@@ -22,6 +23,7 @@ class WordCloudViewController: UIViewController {
     var segmentedControlLastIndex: Int = 0
     var segmentedControlTopWordsLastIndex: Int = 0
     var theme: ThemeController!
+    var stopWords: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,7 @@ class WordCloudViewController: UIViewController {
         self.containerView.sendSubview(toBack: sphereView)
         theme = ThemeManager.currentTheme()
         headerView.backgroundColor = theme.mainColor
+        backgroundView.backgroundColor = theme.secondaryColor
         containerView.backgroundColor = theme.secondaryColor
         segmentedControl.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .selected)
         segmentedControl.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
@@ -37,17 +40,19 @@ class WordCloudViewController: UIViewController {
         segmentedControlTopWords.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .selected)
         segmentedControlTopWords.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
         segmentedControlTopWords.layer.zPosition = 1
+        
+        stopWords = readStopWords()
 
         if #available(iOS 13.0, *) {
             segmentedControl.selectedSegmentTintColor = theme.mainColor
             segmentedControlTopWords.selectedSegmentTintColor = theme.mainColor
         }
         
-        if iCloudKeyStore.bool(forKey: "segmentedControlLastIndex") {
-            self.segmentedControlLastIndex = Int(iCloudKeyStore.longLong(forKey: "segmentedControlLastIndex"))
+        if iCloudKeyStore.bool(forKey: "segmentedControlDaysBackLastIndex") {
+            self.segmentedControlLastIndex = Int(iCloudKeyStore.longLong(forKey: "segmentedControlDaysBackLastIndex"))
             self.segmentedControl.selectedSegmentIndex = self.segmentedControlLastIndex
         } else {
-            iCloudKeyStore.set(self.segmentedControlLastIndex, forKey: "segmentedControlLastIndex")
+            iCloudKeyStore.set(self.segmentedControlLastIndex, forKey: "segmentedControlDaysBackLastIndex")
             iCloudKeyStore.synchronize()
         }
         
@@ -111,12 +116,13 @@ class WordCloudViewController: UIViewController {
         sphereView.setCloudTags(array)
     }
     
-    @IBAction func segmentedControlIndexChanged(_ sender: Any) {
+    @IBAction func segmentedControlDaysBackIndexChanged(_ sender: Any) {
         self.segmentedControlLastIndex = (sender as AnyObject).selectedSegmentIndex
-        iCloudKeyStore.set(self.segmentedControlLastIndex, forKey: "segmentedControlLastIndex")
+        iCloudKeyStore.set(self.segmentedControlLastIndex, forKey: "segmentedControlDaysBackLastIndex")
         iCloudKeyStore.synchronize()
         self.updateSphereView()
     }
+    
     @IBAction func segmentedControlTopWordsIndexChanged(_ sender: Any) {
         self.segmentedControlTopWordsLastIndex = (sender as AnyObject).selectedSegmentIndex
         iCloudKeyStore.set(self.segmentedControlTopWordsLastIndex, forKey: "segmentedControlTopWordsLastIndex")
@@ -168,7 +174,6 @@ class WordCloudViewController: UIViewController {
             }
         }
         let sortedWordCounts = wordCounts.sorted { $0.1 > $1.1 }
-        let stopWords = readStopWords()
         var words = [(String, Int)]()
         var maxWords = 50
         if (self.segmentedControlTopWordsLastIndex == 1) {
@@ -177,7 +182,7 @@ class WordCloudViewController: UIViewController {
             maxWords = 10
         }
         for (word, count) in sortedWordCounts {
-            if stopWords.contains(word) {
+            if self.stopWords.contains(word) {
                 continue
             }
             if maxWords > 0 {
