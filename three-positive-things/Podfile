@@ -9,6 +9,7 @@ target 'three-positive-things' do
   pod 'JTAppleCalendar', '~> 6.0'
   pod 'ChameleonFramework/Swift'
   pod 'DBSphereTagCloudSwift'
+  pod 'Firebase'
 
   target 'three-positive-thingsTests' do
     inherit! :search_paths

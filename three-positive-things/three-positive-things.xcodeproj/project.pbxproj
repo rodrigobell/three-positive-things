@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		10D635E4DC4C920FAC0A4CE4 /* Pods_three_positive_things.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6567EBD4392E33EEBFBFCF /* Pods_three_positive_things.framework */; };
 		1A131C8D23B1C74A004A27DE /* CTFeedbackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A131C8C23B1C749004A27DE /* CTFeedbackSwift.framework */; };
+		1A90C24F24451A500019FFFE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A90C24E24451A500019FFFE /* GoogleService-Info.plist */; };
 		4F61836E2091351800AC53CC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F61836D2091351800AC53CC /* CloudKit.framework */; };
 		4F739D7A1E91985E005D7103 /* DateCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F739D791E91985E005D7103 /* DateCellView.xib */; };
 		4F739D7C1E91991E005D7103 /* DateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F739D7B1E91991E005D7103 /* DateCellView.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		0C22897677CB5C3164B2FD64 /* Pods_three_positive_thingsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_thingsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A131C8C23B1C749004A27DE /* CTFeedbackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CTFeedbackSwift.framework; path = Carthage/Build/iOS/CTFeedbackSwift.framework; sourceTree = "<group>"; };
+		1A90C24E24451A500019FFFE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2032EF96EEE7BCE7B84A4C01 /* Pods-three-positive-things.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-things.release.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-things/Pods-three-positive-things.release.xcconfig"; sourceTree = "<group>"; };
 		33B81409C78A2ED1BEAC17EE /* Pods-three-positive-thingsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-three-positive-thingsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-three-positive-thingsUITests/Pods-three-positive-thingsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4363EFE9B1569C54093DD08A /* Pods_three_positive_thingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_three_positive_thingsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,12 +144,12 @@
 		4F739D7F1E919931005D7103 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */,
 				4F739D801E91A0BE005D7103 /* CalendarViewController.swift */,
 				4FC2D9D8221B6F4F00333ED4 /* WordCloudViewController.swift */,
 				4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */,
 				4FC2D9D6221A22BD00333ED4 /* ReviewController.swift */,
 				4FA0D200208E916700C1655A /* ThemeController.swift */,
-				4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -182,6 +184,7 @@
 				4F739D7E1E91992D005D7103 /* View */,
 				4F739D7F1E919931005D7103 /* Controller */,
 				4FB8EC861E918ED6002D7346 /* Info.plist */,
+				1A90C24E24451A500019FFFE /* GoogleService-Info.plist */,
 			);
 			path = "three-positive-things";
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				4FC2D9DB221B829700333ED4 /* stop_words.txt in Resources */,
 				4FB8EC821E918ED6002D7346 /* Assets.xcassets in Resources */,
 				4FB8EC801E918ED6002D7346 /* Main.storyboard in Resources */,
+				1A90C24F24451A500019FFFE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +428,19 @@
 				"${PODS_ROOT}/Target Support Files/Pods-three-positive-things/Pods-three-positive-things-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/DBSphereTagCloudSwift/DBSphereTagCloudSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBSphereTagCloudSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
