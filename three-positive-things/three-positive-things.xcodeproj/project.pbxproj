@@ -130,6 +130,9 @@
 			children = (
 				4FB8EC7E1E918ED6002D7346 /* Main.storyboard */,
 				4F739D791E91985E005D7103 /* DateCellView.xib */,
+				4F739D7B1E91991E005D7103 /* DateCellView.swift */,
+				4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */,
+				4F9125CE208EF632000B2351 /* ColorOptionTableViewCell.swift */,
 				4FB8EC831E918ED6002D7346 /* LaunchScreen.storyboard */,
 				4FB8EC811E918ED6002D7346 /* Assets.xcassets */,
 			);
@@ -142,9 +145,6 @@
 				4F739D801E91A0BE005D7103 /* CalendarViewController.swift */,
 				4FC2D9D8221B6F4F00333ED4 /* WordCloudViewController.swift */,
 				4FD35D40202A5EB40033A5E8 /* SettingsViewController.swift */,
-				4FB2A22C1E9800F700637649 /* PositiveThingTableViewCell.swift */,
-				4F9125CE208EF632000B2351 /* ColorOptionTableViewCell.swift */,
-				4F739D7B1E91991E005D7103 /* DateCellView.swift */,
 				4FC2D9D6221A22BD00333ED4 /* ReviewController.swift */,
 				4FA0D200208E916700C1655A /* ThemeController.swift */,
 				4FB8EC7A1E918ED6002D7346 /* AppDelegate.swift */,
@@ -653,7 +653,7 @@
 				INFOPLIST_FILE = "three-positive-things/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigobell.three-positive-things";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -677,7 +677,7 @@
 				INFOPLIST_FILE = "three-positive-things/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigobell.three-positive-things";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

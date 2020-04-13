@@ -36,7 +36,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
-    }
+    }       
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colors.count
@@ -76,13 +76,12 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .none
-            
         }
     }
     
     @IBAction func didTapSendFeedback(_ sender: Any) {
         let configuration = FeedbackConfiguration(toRecipients: ["rbell594@gmail.com"], usesHTML: true)
-        let controller    = FeedbackViewController(configuration: configuration)
+        let controller = FeedbackViewController(configuration: configuration)
         navigationController?.pushViewController(controller, animated: true)
     }
 }

@@ -195,7 +195,7 @@ class WordCloudViewController: UIViewController {
     
     func getNumberOfDaysLogged() -> Int {
         let iCloudDict = iCloudKeyStore.dictionaryRepresentation
-        return iCloudDict.count
+        return iCloudDict.count - 3
     }
     
     func readStopWords() -> [String] {
