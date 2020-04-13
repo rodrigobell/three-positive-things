@@ -1,13 +1,6 @@
-//
-//  Theme.swift
-//  three-positive-things
-//
-//  Created by Rodrigo Bell on 4/23/18.
-//  Copyright © 2018 Rodrigo Bell. All rights reserved.
-//
-
 import UIKit
 import ChameleonFramework
+import Firebase
 
 enum ThemeController: Int {
   case Orange, Red, NavyBlue, Black, Magenta, Teal, SkyBlue, Green, Mint, Gray, ForestGreen, Purple, Brown, Plum, Watermelon, Pink, Maroon, Blue, Coffee

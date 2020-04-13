@@ -1,23 +1,17 @@
-//
-//  ReviewHandler.swift
-//  symbo
-//
-//  Created by Rodrigo Bell on 2/3/19.
-//  Copyright © 2019 Rodrigo Bell. All rights reserved.
-//
-
 import UIKit
 import StoreKit
+import Firebase
 
 class ReviewHandler {
-    let launchCountUserDefaultsKey = "noOfLaunches"
+  let launchCountUserDefaultsKey = "noOfLaunches"
+  
+  func showReviewView(atLaunchCounts: [Int]) {
+    let launchCount = UserDefaults.standard.integer(forKey: launchCountUserDefaultsKey)
+    UserDefaults.standard.set((launchCount + 1), forKey: launchCountUserDefaultsKey)
     
-    func showReviewView(atLaunchCounts: [Int]) {
-        let launchCount = UserDefaults.standard.integer(forKey: launchCountUserDefaultsKey)
-        UserDefaults.standard.set((launchCount + 1), forKey: launchCountUserDefaultsKey)
-
-        if atLaunchCounts.contains(launchCount) {
-            SKStoreReviewController.requestReview()
-        }
+    if atLaunchCounts.contains(launchCount) {
+      Analytics.logEvent("review_popup_shown", parameters: nil)
+      SKStoreReviewController.requestReview()
     }
+  }
 }
